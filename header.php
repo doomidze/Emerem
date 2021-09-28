@@ -18,7 +18,7 @@
 <body>
 <header class="header">
     <div class="container-desktop">
-        <div class="row header-info">
+        <div class="header-info">
             <div class="logo">
                 <a href="<?php echo get_home_url(); ?>"><img src="<?php echo wp_get_attachment_image_url(carbon_get_theme_option( 'site_logo' ), 'full'); ?>" alt="" style="height:50px"></a>
             </div>
