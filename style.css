@@ -1560,7 +1560,17 @@ img.hover-shadow {
 			max-width: unset;
 		}
 }
-@media (min-width: 1300px) and (max-width: 1399px) {
+@media (min-width: 992px) and (max-width: 1199px) {
+    .projects-list .wp-show-posts-single {
+        max-height: 262px;
+        min-width: 262px;
+    }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+    .projects-info-wrapper h2, .projects-info-wrapper p {
+        padding-left: 30%;
+        padding-right: 10%;
+    }
 }
 @media (min-width: 1400px) and (max-width: 1919px) {
     .projects-info-wrapper h2, .projects-info-wrapper p {
