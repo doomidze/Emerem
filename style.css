@@ -1518,7 +1518,7 @@ img.hover-shadow {
 		padding: 50px 1rem 25px 1rem;
 	}
 	.advantages {
-		padding: 50px 10px 25px 10px;
+		padding: 50px 1rem 25px 1rem;
 	}
 }
 @media (min-width: 480px) and (max-width: 639px) {
@@ -1545,9 +1545,6 @@ img.hover-shadow {
 		.about-us {
 			padding: 0px 0px 25px 0px;
 		}
-			.go-to-more-info-btn {
-				margin: -40px auto 0 auto;
-			}
 		.pipe-img {
 			max-width: unset;
 			padding: unset;
@@ -1577,8 +1574,7 @@ img.hover-shadow {
         font-size: 12px;
     }
             .projects-info-wrapper h2, .projects-info-wrapper p {
-                padding-left: 3%;
-                padding-right: 3%;
+                padding: 0 1rem;
             }
             .projects-info-wrapper p {
                 padding-bottom: 6%;
