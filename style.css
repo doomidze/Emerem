@@ -406,7 +406,7 @@ body header.header .nav-item.active {
     .our-projects-wrapper {/*общий блок*/
         display: flex;
     }
-        .projects-list .wp-show-posts-columns { /*блок картинок*/
+        .projects-list .wp-show-posts-columns, .projects-list .wp-show-posts { /*блок картинок*/
             margin: 0;
         }
             .projects-list .wp-show-posts-single {
