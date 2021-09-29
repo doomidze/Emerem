@@ -440,10 +440,10 @@ body header.header .nav-item.active {
                         .projects-list .wp-show-posts-image a {
                             display: block;
                         }
-    .projects-list .wp-show-posts-columns#wpsp-569 .wp-show-posts-inner:hover .projects-list .wp-show-posts-columns#wpsp-569 .wp-show-posts-inner .wp-show-posts-entry-header {
+    .projects-list .wp-show-posts-columns#wpsp-569 .wp-show-posts-inner:hover .wp-show-posts-entry-header {
         bottom: 40px;    
     }
-    .projects-list .wp-show-posts-columns#wpsp-569 .wp-show-posts-inner:hover .projects-list .wp-show-posts-columns#wpsp-569 .wp-show-posts-inner .wp-show-posts-entry-summary {
+    .projects-list .wp-show-posts-columns#wpsp-569 .wp-show-posts-inner:hover .wp-show-posts-entry-summary {
         max-height: 50px;
     }
 	
