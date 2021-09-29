@@ -518,6 +518,7 @@ body header.header .nav-item.active {
             align-items: center;
             padding: 10px;
             transition: 0.5s all;
+            font-weight: 600;
         }
             .go-to-news-btn:hover, .go-to-about-us-btn:hover {
                 color: white;
