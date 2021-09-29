@@ -481,6 +481,7 @@ body header.header .nav-item.active {
                         left: 10px;
                         max-height: 0;
                         overflow: hidden;
+                        pointer-events: none;
                     }
                     .projects-list .wp-show-posts-image {
                         margin: 0;
