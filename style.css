@@ -1525,6 +1525,13 @@ img.hover-shadow {
 	}
 }
 @media (max-width: 991px) {
+    .our-projects-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+        .projects-info-wrapper {
+            max-width: 100%;
+        }
 }
 @media (max-width: 1199px) {
 	.about-us-wrapper {
@@ -1564,13 +1571,6 @@ img.hover-shadow {
     body {
         font-size: 12px;
     }
-    .our-projects-wrapper {
-        display: flex;
-        flex-direction: column;
-    }
-        .projects-info-wrapper {
-            max-width: 100%;
-        }
             .projects-info-wrapper h2, .projects-info-wrapper p {
                 padding-left: 3%;
                 padding-right: 3%;
@@ -1598,13 +1598,6 @@ img.hover-shadow {
     }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-    .our-projects-wrapper {
-        display: flex;
-        flex-direction: column;
-    }
-        .projects-info-wrapper {
-            max-width: 100%;
-        }
             .projects-info-wrapper h2, .projects-info-wrapper p {
                 padding-left: 10%;
                 padding-right: 10%;
@@ -1614,7 +1607,7 @@ img.hover-shadow {
                 padding: 35px 30px 35px 10%;
             }
             .projects-list .wp-show-posts-single {
-                width: 50%;
+                width: 33.333%;
             }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
