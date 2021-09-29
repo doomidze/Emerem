@@ -1592,6 +1592,9 @@ img.hover-shadow {
             .projects-list .wp-show-posts-image img {
                 width: 100%;
             }
+            .projects-list .wp-show-posts-columns {
+                justify-content: center;
+            }
 }
 @media (min-width: 768px) and (max-width: 991px) {
     .our-projects-wrapper {
