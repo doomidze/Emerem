@@ -432,63 +432,43 @@ body header.header .nav-item.active {
 .advantages-list-item-text {
     padding: 25px 0;
 }
+/**//*News block*//**//**//*News block*//**//**//*News block*//**/
+    .news {
+        max-width: 1200px;
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+        .news-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 0 35px;
+        }
+        .news-secondary-title {
+            width: 70%;
+        }
+        .go-to-news-btn, .go-to-about-us-btn {
+            border: 1px solid rgba(235,28,36,1);
+            color: rgba(235,28,36,1);
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            transition: 0.5s all;
+        }
+            .go-to-news-btn:hover, .go-to-about-us-btn:hover {
+                color: white;
+                text-decoration: none;
+                background: rgba(235,28,36,1);
+            }
+            .go-to-news-btn-svg, .go-to-about-us-btn-svg {
+                margin-left: 20px;
+                line-height: 14px;
+            }
+                .go-to-news-btn:hover .go-to-news-btn-svg svg path, .go-to-about-us-btn:hover .go-to-about-us-btn-svg svg path {
+                    fill: white;
+                }
+    
 
-.news {
-    max-width: 1200px;
-    padding-top: 80px;
-    padding-bottom: 80px;
-}
-
-.news-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px 0 35px;
-}
-
-.go-to-news-btn, .go-to-about-us-btn {
-    border: 1px solid rgba(235,28,36,1);
-    color: rgba(235,28,36,1);
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    transition: 0.5s all;
-}
-
-.go-to-news-btn:hover, .go-to-about-us-btn:hover {
-    color: white;
-    text-decoration: none;
-    background: rgba(235,28,36,1);
-}
-
-.go-to-news-btn-svg, .go-to-about-us-btn-svg {
-    margin-left: 20px;
-	line-height: 14px;
-}
-
-.go-to-news-btn:hover .go-to-news-btn-svg svg path, .go-to-about-us-btn:hover .go-to-about-us-btn-svg svg path {
-    fill: white;
-}
-
-.news-secondary-title {
-    width: 60%;
-}
-
-.news-item-img {
-    height: 250px;
-}
-
-.news-item-title {
-    padding: 15px 0;
-    margin: 0;
-    font-weight: bold;
-    font-size: 18px;
-}
-
-.news-item-text {
-    height: 190px;
-    border-bottom: 1px solid darkgrey;
-}
 
 .see-more-btn {
     display: flex;
