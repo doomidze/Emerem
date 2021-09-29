@@ -378,6 +378,7 @@ body header.header .nav-item.active {
 .advantages {
     text-align: center;
     padding: 110px 6rem 10px 6rem;
+    max-width: unset;
 }
     .advantages-secondary-title {
      padding: 30px;
