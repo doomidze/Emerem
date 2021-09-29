@@ -1586,8 +1586,7 @@ img.hover-shadow {
                 margin-left: 30px;
             }
             .projects-list .wp-show-posts-single {
-                max-width: 160px;
-                max-height: 160px;
+                width: 50%;
             }
             .projects-list .wp-show-posts-columns {
                 justify-content: center;
@@ -1595,8 +1594,7 @@ img.hover-shadow {
 }
 @media (min-width: 640px) and (max-width: 767px) {
     .projects-list .wp-show-posts-single {
-        max-width: 210px;
-        max-height: 210px;
+        width: 33.333%;
     }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -1614,6 +1612,9 @@ img.hover-shadow {
             .go-to-projects-btn {
                 width: 100%;
                 padding: 35px 30px 35px 10%;
+            }
+            .projects-list .wp-show-posts-single {
+                width: 50%;
             }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
