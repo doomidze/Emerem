@@ -1523,10 +1523,10 @@ img.hover-shadow {
 }
 @media (min-width: 480px) and (max-width: 639px) {
 	.about-us-wrapper {
-		padding: 50px 30px 25px 30px;
+		padding: 50px 1rem 25px 1rem;
 	}
 	.advantages {
-		padding: 50px 30px 25px 30px;
+		padding: 50px 1rem 25px 1rem;
 	}
 }
 @media (max-width: 991px) {
@@ -1581,7 +1581,7 @@ img.hover-shadow {
                 font-size: 12px;
             }
             .go-to-projects-btn {
-                padding: 35px 30px 35px 3%;
+                padding: 35px 30px 35px 1rem;
             }
             .go-to-projects-btn div svg {
                 margin-left: 30px;
