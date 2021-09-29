@@ -404,15 +404,15 @@ body header.header .nav-item.active {
     color: white;
 }
     .our-projects-wrapper {
-        display: block;
+        display: flex;
     }
-.wp-show-posts-columns#wpsp-569 {
+.projects-list .wp-show-posts-columns#wpsp-569 {
 	margin: 0!important;
 }
-.wp-show-posts-columns#wpsp-569 .wp-show-posts-inner {
+.projects-list .wp-show-posts-columns#wpsp-569 .wp-show-posts-inner {
 	margin: 0!important;
 }
-.wp-show-posts-single {
+.projects-list .wp-show-posts-single {
 	max-width: 342px;
 	max-height: 342px;
 	overflow: hidden;
