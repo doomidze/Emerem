@@ -1282,7 +1282,7 @@ ul.products li.product {
         width: 100%!important;
     }
     .container-desktop {
-        padding: 0 2rem;
+        padding: 0 1rem;
     }
     .contact-info-wrapper {
         width: 100%;
@@ -1511,7 +1511,7 @@ img.hover-shadow {
 /*}*/
 @media (max-width: 479px) {
 	.about-us-wrapper {
-		padding: 50px 2rem 25px 2rem;
+		padding: 50px 1rem 25px 1rem;
 	}
 	.advantages {
 		padding: 50px 10px 25px 10px;
