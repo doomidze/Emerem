@@ -1624,6 +1624,7 @@ img.hover-shadow {
     .projects-list .wp-show-posts-columns .wp-show-posts-inner .wp-show-posts-entry-header {
         bottom: 5px;
         left: 15px;
+    }
 }
 @media (min-width: 1200px) and (max-width: 1399px) {
     .projects-info-wrapper {
@@ -1679,7 +1680,6 @@ img.hover-shadow {
 }
 /*.nav-item {*/
 /*    padding: 20px;*/
-/*}*/
 .stat-item-number {
     font-size: 40px;
     font-weight: bold;
