@@ -1566,11 +1566,11 @@ img.hover-shadow {
         min-width: 262px;
     }
     .projects-info-wrapper h2, .projects-info-wrapper p {
-        padding-left: 30%;
+        padding-left: 25%;
         padding-right: 10%;
     }
     .go-to-projects-btn {
-        padding: 35px 30px 35px 30%;
+        padding: 35px 30px 35px 25%;
     }
 }
 @media (min-width: 1200px) and (max-width: 1399px) {
