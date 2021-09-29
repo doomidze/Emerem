@@ -1653,6 +1653,9 @@ img.hover-shadow {
         padding-left: 6rem;
         padding-right: 12%;
     }
+    .projects-list .wp-show-posts-image img {
+        width: 100%;
+    }
     .go-to-projects-btn {
         padding: 35px 30px 35px 6rem;
     }
