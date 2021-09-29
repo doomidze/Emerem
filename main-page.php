@@ -163,9 +163,9 @@ Template Name: Home Page
         <div class="our-projects-wrapper">
             <div class="projects-info-wrapper">
                 <h2><?php echo carbon_get_post_meta($page_id, 'projects_title') ?></h1>
-                <p>
+                <div class="projects-info-comment">
                     <?php echo carbon_get_post_meta($page_id, 'projects_text') ?>
-                </p>
+                </div>
                 <a href="<?php echo carbon_get_post_meta($page_id, 'projects_link') ?>" class="go-to-projects-btn">
                     <div><?php echo carbon_get_post_meta($page_id, 'projects_button') ?></div>
                     <div>
