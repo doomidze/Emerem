@@ -105,9 +105,9 @@ Template Name: Home Page
             </div>
             <div class="about-us col-xs-12 col-sm-12 col-lg-12 col-xl-6 col-xxl-6">
                 <h2 class="about-us-title"><?php echo carbon_get_post_meta($page_id, 'about_us_title') ?></h2>
-                <p class="about-us-info">
+                <div class="about-us-info">
                     <?php echo carbon_get_post_meta($page_id, 'about_us_subtitle') ?>
-                </p>
+                </div>
 				<a href="<?php echo carbon_get_post_meta($page_id, 'about_us_button') ?>" class="go-to-about-us-btn">
 					<div class="go-to-about-us-btn-text">Подробнее...</div>
 					<div class="go-to-about-us-btn-svg">

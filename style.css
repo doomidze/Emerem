@@ -459,8 +459,9 @@ body header.header .nav-item.active {
                 }
                     .projects-list .wp-show-posts-columns .wp-show-posts-inner .wp-show-posts-entry-header {
                         position: absolute;
-                        bottom: 20px;
+                        bottom: 30px;
                         left: 10px;
+                        margin: 0;
                     }
                         .projects-list .wp-show-posts-columns .wp-show-posts-inner .wp-show-posts-entry-header a {
                             color: #ffffff;
@@ -1510,7 +1511,7 @@ img.hover-shadow {
 /*}*/
 @media (max-width: 479px) {
 	.about-us-wrapper {
-		padding: 50px 10px 25px 10px;
+		padding: 50px 2rem 25px 2rem;
 	}
 	.advantages {
 		padding: 50px 10px 25px 10px;
@@ -1626,6 +1627,9 @@ img.hover-shadow {
     .projects-list .wp-show-posts-image img {
         width: 100%;
     }
+    .projects-list .wp-show-posts-columns .wp-show-posts-inner .wp-show-posts-entry-header {
+        bottom: 5px;
+        left: 15px;
 }
 @media (min-width: 1200px) and (max-width: 1399px) {
     .projects-info-wrapper {
