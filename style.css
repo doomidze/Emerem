@@ -1560,7 +1560,7 @@ img.hover-shadow {
 			max-width: unset;
 		}
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 320px) and (max-width: 991px) {
     .our-projects-wrapper {
         display: flex;
         flex-direction: column;
@@ -1592,6 +1592,9 @@ img.hover-shadow {
     .go-to-projects-btn {
         padding: 35px 30px 35px 25%;
     }
+    .projects-list .wp-show-posts-image img {
+        width: 100%;
+    }
 }
 @media (min-width: 1200px) and (max-width: 1399px) {
     .projects-info-wrapper {
@@ -1602,7 +1605,7 @@ img.hover-shadow {
         padding-right: 9%;
     }
     .go-to-projects-btn {
-        padding: 35px 30px 35px 30%;
+        padding: 35px 30px 35px 20%;
     }
 }
 @media (min-width: 1400px) and (max-width: 1919px) {
