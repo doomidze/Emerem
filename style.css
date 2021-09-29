@@ -416,7 +416,7 @@ body header.header .nav-item.active {
             }
                 .projects-list .wp-show-posts-columns#wpsp-569 .wp-show-posts-inner {
                     margin: 0;
-                    position: absolute;
+                    position: relative;
                 }
                     .projects-list .wp-show-posts-columns#wpsp-569 .wp-show-posts-inner .wp-show-posts-entry-header {
                         position: absolute;
