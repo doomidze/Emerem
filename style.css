@@ -346,91 +346,125 @@ body header.header .nav-item.active {
 .important-links li a:hover, .pages-links li a:hover {
     color: rgba(235,28,36,1)!important;
 }
-
+/**//*AboutUs block*//**//**//*AboutUs block*//**//**//*AboutUs block*//**/
 .about-us-wrapper {
-    display: flex;
-    
-}
-.pipe-img {
-	max-width: 46%;
-}
-.pipe-img img {
-	max-height: 800px;
-}
-
-.more-info {
-    color: rgba(235,28,36,1);
-    font-size: 20px;
-    text-decoration: none;
-    margin-top: auto;
-}
-
-.more-info:hover {
-    color: rgba(235,28,36,1);
-}
-
-.about-us {
-    display:flex;
-    flex-direction:column;
-	align-items: flex-start;
-	padding: 50px 0 0 4%;
-}
-	.about-us p {
-		max-width: 533px;
-		font-size: 14px;
-		margin-bottom: 40px;
-		color: #000000;
-	}	
-/*.nav-item {*/
-/*    padding: 20px;*/
-/*}*/
-
-.about-us-stats {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-}
-
-.stat-item-number {
-    font-size: 40px;
-    font-weight: bold;
-}
-
+    display: flex;  
+}   
+    .about-us {
+        display:flex;
+        flex-direction:column;
+        align-items: flex-start;
+        padding: 50px 0 0 4%;
+    }
+        .about-us p {
+            max-width: 533px;
+            font-size: 14px;
+            margin-bottom: 40px;
+        }	
+    .pipe-img {
+        max-width: 46%;
+    }
+        .pipe-img img {
+            max-height: 800px;
+        }
+/**//*Advantages block*//**//**//*Advantages block*//**//**//*Advantages block*//**/
 .advantages {
     text-align: center;
     padding: 110px 0 10px 0;
 }
-
-.advantages-secondary-title {
-    padding: 30px;
+    .advantages-secondary-title {
+     padding: 30px;
+    }
+    .advantages-list-item-circle {
+        border: 1px solid black;
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+        text-align: center;
+        margin: auto;
+        position: relative;
+    }
+        .advantages-list-item-circle img {
+            position: absolute;
+            margin: auto;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;   
+        }
+        .advantages-list-item-circle svg {
+            height: 80px;
+        }
+    .advantages-list-item-text {
+        padding: 25px 0;
+    }
+/**//*Projects block*//**//**//*Projects block*//**//**//*Projects block*//**/
+.our-projects {
+    background: black;
+    color: white;
+}
+    .our-projects-wrapper {
+        display: block;
+    }
+.wp-show-posts-columns#wpsp-569 {
+	margin: 0!important;
+}
+.wp-show-posts-columns#wpsp-569 .wp-show-posts-inner {
+	margin: 0!important;
+}
+.wp-show-posts-single {
+	max-width: 342px;
+	max-height: 342px;
+	overflow: hidden;
+}
+	.wp-show-posts-image {
+		margin: 0;
+	}
+		.wp-show-posts-image a {
+			display: block;
+		}
+.projects-info-wrapper {
+    max-width: 47%;
+    display: flex;
+    flex-direction: column;
+}
+.projects-info-wrapper h2 {
+	margin: 57px 0 29px;
+}
+.projects-info-wrapper p {
+	line-height: 25px;
+}
+.projects-info-wrapper h2, .projects-info-wrapper p {
+	padding-left: 370px;
+	padding-right: 135px;
 }
 
-.advantages-list-item-circle {
-    border: 1px solid black;
-    border-radius: 50%;
-    width: 80px;
-    height: 80px;
-    text-align: center;
-    margin: auto;
-    position: relative;
+.go-to-projects-btn {
+    width: 100%;
+    padding: 35px 30px 35px 378px;
+    transition: 0.5s all;
+    border: 2px solid rgba(235,28,36,1);
+    background: rgba(235,28,36,1);
+    color: white;
+    display: flex;
+    text-transform: uppercase;
+    margin-top: auto;
+	line-height: 14px;
 }
 
-.advantages-list-item-circle img {
-    position: absolute;
-    margin: auto;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+.go-to-projects-btn:hover {
+    color: white;
+    border: 2px solid rgba(235,28,36,1);
+    transition: 0.5s all;
 }
 
-.advantages-list-item-circle svg {
-    height: 80px;
+.go-to-projects-btn div svg {
+    margin-left: 40px;
+    transition: 0.5s all;
 }
 
-.advantages-list-item-text {
-    padding: 25px 0;
+.go-to-projects-btn:hover div svg {
+    margin-left: 140px;
 }
 /**//*News block*//**//**//*News block*//**//**//*News block*//**/
     .news {
@@ -467,36 +501,6 @@ body header.header .nav-item.active {
                 .go-to-news-btn:hover .go-to-news-btn-svg svg path, .go-to-about-us-btn:hover .go-to-about-us-btn-svg svg path {
                     fill: white;
                 }
-    
-
-
-.see-more-btn {
-    display: flex;
-    align-items: center;
-    color: rgba(235,28,36,1);
-    text-decoration: none!important;
-    padding: 20px 0;
-    font-weight: 500;
-    transition: 0.5s all;
-}
-
-.see-more-btn:hover {
-    color: black;
-}
-
-.see-more-btn:hover .see-more-btn-svg svg path {
-    fill: black;
-}
-
-.see-more-btn-svg {
-    margin-left: 10px;
-}
-
-.our-projects {
-    background: black;
-    color: white;
-}
-
 .interesting-products {
     background: #F6F6F6;
     color: black;
@@ -788,71 +792,6 @@ body header.header .nav-item.active {
     padding-top: 120px;
     padding-bottom: 40px;
 }
-/**//*Realised Projects block*//**//**//*Realised Projects block*//**//**//*Realised Projects block*//**/
-.our-projects-wrapper {
-	display: flex;
-}
-.wp-show-posts-columns#wpsp-569 {
-	margin: 0!important;
-}
-.wp-show-posts-columns#wpsp-569 .wp-show-posts-inner {
-	margin: 0!important;
-}
-.wp-show-posts-single {
-	max-width: 342px;
-	max-height: 342px;
-	overflow: hidden;
-}
-	.wp-show-posts-image {
-		margin: 0;
-	}
-		.wp-show-posts-image a {
-			display: block;
-		}
-.projects-info-wrapper {
-    max-width: 47%;
-    display: flex;
-    flex-direction: column;
-}
-.projects-info-wrapper h2 {
-	margin: 57px 0 29px;
-}
-.projects-info-wrapper p {
-	line-height: 25px;
-}
-.projects-info-wrapper h2, .projects-info-wrapper p {
-	padding-left: 370px;
-	padding-right: 135px;
-}
-
-.go-to-projects-btn {
-    width: 100%;
-    padding: 35px 30px 35px 378px;
-    transition: 0.5s all;
-    border: 2px solid rgba(235,28,36,1);
-    background: rgba(235,28,36,1);
-    color: white;
-    display: flex;
-    text-transform: uppercase;
-    margin-top: auto;
-	line-height: 14px;
-}
-
-.go-to-projects-btn:hover {
-    color: white;
-    border: 2px solid rgba(235,28,36,1);
-    transition: 0.5s all;
-}
-
-.go-to-projects-btn div svg {
-    margin-left: 40px;
-    transition: 0.5s all;
-}
-
-.go-to-projects-btn:hover div svg {
-    margin-left: 140px;
-}
-
 .projects.news .product-item-info {
     margin-top: 25px;
 }
@@ -1620,5 +1559,21 @@ img.hover-shadow {
         max-width: 1175px;
     }
 }
+/*Styles???*/
+.more-info {
+    color: rgba(235,28,36,1);
+    font-size: 20px;
+    text-decoration: none;
+    margin-top: auto;
+}
 
-
+.more-info:hover {
+    color: rgba(235,28,36,1);
+}
+/*.nav-item {*/
+/*    padding: 20px;*/
+/*}*/
+.stat-item-number {
+    font-size: 40px;
+    font-weight: bold;
+}
