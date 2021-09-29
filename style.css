@@ -403,26 +403,36 @@ body header.header .nav-item.active {
     background: black;
     color: white;
 }
-    .our-projects-wrapper {
+    .our-projects-wrapper {/*общий блок*/
         display: flex;
     }
-.projects-list .wp-show-posts-columns#wpsp-569 {
-	margin: 0!important;
-}
-.projects-list .wp-show-posts-columns#wpsp-569 .wp-show-posts-inner {
-	margin: 0!important;
-}
-.projects-list .wp-show-posts-single {
-	max-width: 342px;
-	max-height: 342px;
-	overflow: hidden;
-}
-	.wp-show-posts-image {
-		margin: 0;
-	}
-		.wp-show-posts-image a {
-			display: block;
-		}
+        .projects-list .wp-show-posts-columns#wpsp-569 { /*блок картинок*/
+            margin: 0;
+        }
+            .projects-list .wp-show-posts-single {
+                max-width: 342px;
+                max-height: 342px;
+                overflow: hidden;
+            }
+                .projects-list .wp-show-posts-columns#wpsp-569 .wp-show-posts-inner {
+                    margin: 0;
+                    position: absolute;
+                }
+                    .projects-list .wp-show-posts-columns#wpsp-569 .wp-show-posts-inner .wp-show-posts-entry-header {
+                        position: absolute;
+                        bottom: 20px;
+                    }
+                    .projects-list .wp-show-posts-columns#wpsp-569 .wp-show-posts-inner .wp-show-posts-entry-header a {
+                        color: #000000;
+                    }
+                    .projects-list .wp-show-posts-image {
+                        margin: 0;
+                    }
+                        .projects-list .wp-show-posts-image a {
+                            display: block;
+                        }
+
+	
 .projects-info-wrapper {
     max-width: 47%;
     display: flex;
@@ -438,7 +448,6 @@ body header.header .nav-item.active {
 	padding-left: 370px;
 	padding-right: 135px;
 }
-
 .go-to-projects-btn {
     width: 100%;
     padding: 35px 30px 35px 378px;
@@ -451,18 +460,15 @@ body header.header .nav-item.active {
     margin-top: auto;
 	line-height: 14px;
 }
-
 .go-to-projects-btn:hover {
     color: white;
     border: 2px solid rgba(235,28,36,1);
     transition: 0.5s all;
 }
-
 .go-to-projects-btn div svg {
     margin-left: 40px;
     transition: 0.5s all;
 }
-
 .go-to-projects-btn:hover div svg {
     margin-left: 140px;
 }
