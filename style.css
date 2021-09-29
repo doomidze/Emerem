@@ -441,7 +441,7 @@ body header.header .nav-item.active {
                             display: block;
                         }
     .projects-list .wp-show-posts-columns#wpsp-569 .wp-show-posts-inner:hover .wp-show-posts-entry-header {
-        bottom: 40px;    
+        bottom: 60px;    
     }
     .projects-list .wp-show-posts-columns#wpsp-569 .wp-show-posts-inner:hover .wp-show-posts-entry-summary {
         max-height: 50px;
