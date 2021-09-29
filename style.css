@@ -1567,6 +1567,9 @@ img.hover-shadow {
         .advantages {
             padding: 50px 1rem 25px 1rem;
         }
+        .advantages-list-item {
+            padding: 0;
+        }
             .projects-info-wrapper h2, .projects-info-wrapper p {
                 padding: 0 1rem;
             }
