@@ -1565,9 +1565,17 @@ img.hover-shadow {
         display: flex;
         flex-direction: column;
     }
-    .projects-info-wrapper {
-        max-width: 100%;
-    }
+        .projects-info-wrapper {
+            max-width: 100%;
+        }
+            .projects-info-wrapper h2, .projects-info-wrapper p {
+                padding-left: 10%;
+                padding-right: 10%;
+            }
+            .go-to-projects-btn {
+                width: 100%;
+                padding: 35px 30px 35px 10%;
+            }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
     .projects-list .wp-show-posts-single {
