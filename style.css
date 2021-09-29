@@ -1576,7 +1576,7 @@ img.hover-shadow {
                 width: 100%;
                 padding: 35px 30px 35px 10%;
             }
-        .projects-list .wp-show-posts-image {
+        .projects-list .wp-show-posts-image img {
             width: 100%;
         }
 }
