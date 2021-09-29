@@ -406,7 +406,7 @@ body header.header .nav-item.active {
     .our-projects-wrapper {/*общий блок*/
         display: flex;
     }
-        .projects-list .wp-show-posts-columns#wpsp-569 { /*блок картинок*/
+        .projects-list .wp-show-posts-columns { /*блок картинок*/
             margin: 0;
         }
             .projects-list .wp-show-posts-single {
@@ -414,20 +414,20 @@ body header.header .nav-item.active {
                 max-height: 342px;
                 overflow: hidden;
             }
-                .projects-list .wp-show-posts-columns#wpsp-569 .wp-show-posts-inner {
+                .projects-list .wp-show-posts-columns .wp-show-posts-inner {
                     margin: 0;
                     position: relative;
                 }
-                    .projects-list .wp-show-posts-columns#wpsp-569 .wp-show-posts-inner .wp-show-posts-entry-header {
+                    .projects-list .wp-show-posts-columns .wp-show-posts-inner .wp-show-posts-entry-header {
                         position: absolute;
                         bottom: 20px;
                         left: 10px;
                     }
-                        .projects-list .wp-show-posts-columns#wpsp-569 .wp-show-posts-inner .wp-show-posts-entry-header a {
+                        .projects-list .wp-show-posts-columns .wp-show-posts-inner .wp-show-posts-entry-header a {
                             color: #ffffff;
                             font-weight: 600;
                         }
-                    .projects-list .wp-show-posts-columns#wpsp-569 .wp-show-posts-inner .wp-show-posts-entry-summary {
+                    .projects-list .wp-show-posts-columns .wp-show-posts-inner .wp-show-posts-entry-summary {
                         position: absolute;
                         bottom: 20px;
                         left: 10px;
@@ -440,53 +440,53 @@ body header.header .nav-item.active {
                         .projects-list .wp-show-posts-image a {
                             display: block;
                         }
-    .projects-list .wp-show-posts-columns#wpsp-569 .wp-show-posts-inner:hover .wp-show-posts-entry-header {
+    .projects-list .wp-show-posts-columns .wp-show-posts-inner:hover .wp-show-posts-entry-header {
         bottom: 60px; 
         transition: all 1s;   
     }
-    .projects-list .wp-show-posts-columns#wpsp-569 .wp-show-posts-inner:hover .wp-show-posts-entry-summary {
+    .projects-list .wp-show-posts-columns .wp-show-posts-inner:hover .wp-show-posts-entry-summary {
         max-height: 50px;
+        font-weight: 500;
     }
-	
 .projects-info-wrapper {
     max-width: 47%;
     display: flex;
     flex-direction: column;
 }
-.projects-info-wrapper h2 {
-	margin: 57px 0 29px;
-}
-.projects-info-wrapper p {
-	line-height: 25px;
-}
-.projects-info-wrapper h2, .projects-info-wrapper p {
-	padding-left: 370px;
-	padding-right: 135px;
-}
-.go-to-projects-btn {
-    width: 100%;
-    padding: 35px 30px 35px 378px;
-    transition: 0.5s all;
-    border: 2px solid rgba(235,28,36,1);
-    background: rgba(235,28,36,1);
-    color: white;
-    display: flex;
-    text-transform: uppercase;
-    margin-top: auto;
-	line-height: 14px;
-}
-.go-to-projects-btn:hover {
-    color: white;
-    border: 2px solid rgba(235,28,36,1);
-    transition: 0.5s all;
-}
-.go-to-projects-btn div svg {
-    margin-left: 40px;
-    transition: 0.5s all;
-}
-.go-to-projects-btn:hover div svg {
-    margin-left: 140px;
-}
+    .projects-info-wrapper h2 {
+        margin: 57px 0 29px;
+    }
+    .projects-info-wrapper p {
+        line-height: 25px;
+    }
+    .projects-info-wrapper h2, .projects-info-wrapper p {
+        padding-left: 370px;
+        padding-right: 135px;
+    }
+    .go-to-projects-btn {
+        width: 100%;
+        padding: 35px 30px 35px 378px;
+        transition: 0.5s all;
+        border: 2px solid rgba(235,28,36,1);
+        background: rgba(235,28,36,1);
+        color: white;
+        display: flex;
+        text-transform: uppercase;
+        margin-top: auto;
+        line-height: 14px;
+    }
+        .go-to-projects-btn:hover {
+            color: white;
+            border: 2px solid rgba(235,28,36,1);
+            transition: 0.5s all;
+        }
+    .go-to-projects-btn div svg {
+        margin-left: 40px;
+        transition: 0.5s all;
+    }
+    .go-to-projects-btn:hover div svg {
+        margin-left: 140px;
+    }
 /**//*News block*//**//**//*News block*//**//**//*News block*//**/
     .news {
         max-width: 1200px;
