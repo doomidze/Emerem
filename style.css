@@ -377,7 +377,7 @@ body header.header .nav-item.active {
 /**//*Advantages block*//**//**//*Advantages block*//**//**//*Advantages block*//**/
 .advantages {
     text-align: center;
-    padding: 110px 0 10px 0;
+    padding: 110px 6rem 10px 6rem;
 }
     .advantages-secondary-title {
      padding: 30px;
@@ -1284,7 +1284,7 @@ ul.products li.product {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .modal-content {
         width: 100%!important;
     }
@@ -1543,11 +1543,14 @@ img.hover-shadow {
 }
 @media (min-width: 640px) and (max-width: 1199px) {
 	.about-us-wrapper {
-		padding: 50px 70px 25px 70px;
+		padding: 50px 5rem 25px 5rem;
 	}
 		.about-us p {
 			max-width: unset;
 		}
+        .advantages {
+            padding: 110px 5rem 10px 5rem;
+        }
 }
 @media (min-width: 1200px) and (max-width: 1799px) {
 	.about-us {
@@ -1597,18 +1600,21 @@ img.hover-shadow {
 }
 @media (min-width: 768px) and (max-width: 991px) {
             .projects-info-wrapper h2, .projects-info-wrapper p {
-                padding-left: 10%;
-                padding-right: 10%;
+                padding-left: 5rem;
+                padding-right: 5rem;
             }
             .go-to-projects-btn {
                 width: 100%;
-                padding: 35px 30px 35px 10%;
+                padding: 35px 30px 35px 5rem;
             }
             .projects-list .wp-show-posts-single {
                 width: 33.333%;
             }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
+    .advantages-list-item {
+        padding: 0;
+    }
     .projects-list .wp-show-posts-single {
         width: 50%;
     }
@@ -1643,11 +1649,11 @@ img.hover-shadow {
 }
 @media (min-width: 1400px) and (max-width: 1919px) {
     .projects-info-wrapper h2, .projects-info-wrapper p {
-        padding-left: 36%;
+        padding-left: 6rem;
         padding-right: 12%;
     }
     .go-to-projects-btn {
-        padding: 35px 30px 35px 36%;
+        padding: 35px 30px 35px 6rem;
     }
 }
 .content {
