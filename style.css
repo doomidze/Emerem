@@ -1560,7 +1560,7 @@ img.hover-shadow {
 			max-width: unset;
 		}
 }
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 768px) {
     body {
         font-size: 12px;
     }
@@ -1595,6 +1595,12 @@ img.hover-shadow {
             .projects-list .wp-show-posts-columns {
                 justify-content: center;
             }
+}
+@media (min-width: 640px) and (max-width: 767px) {
+    .projects-list .wp-show-posts-single {
+        max-width: 210px;
+        max-height: 210px;
+    }
 }
 @media (min-width: 768px) and (max-width: 991px) {
     .our-projects-wrapper {
