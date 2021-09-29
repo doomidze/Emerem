@@ -1569,17 +1569,26 @@ img.hover-shadow {
         padding-left: 30%;
         padding-right: 10%;
     }
+    .go-to-projects-btn {
+        padding: 35px 30px 35px 30%;
+    }
 }
 @media (min-width: 1200px) and (max-width: 1399px) {
     .projects-info-wrapper h2, .projects-info-wrapper p {
         padding-left: 30%;
         padding-right: 10%;
     }
+    .go-to-projects-btn {
+        padding: 35px 30px 35px 30%;
+    }
 }
 @media (min-width: 1400px) and (max-width: 1919px) {
     .projects-info-wrapper h2, .projects-info-wrapper p {
         padding-left: 36%;
         padding-right: 12%;
+    }
+    .go-to-projects-btn {
+        padding: 35px 30px 35px 36%;
     }
 }
 .content {
