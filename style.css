@@ -1560,6 +1560,15 @@ img.hover-shadow {
 			max-width: unset;
 		}
 }
+@media (min-width: 768px) and (max-width: 991px) {
+    .our-projects-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    .projects-info-wrapper {
+        max-width: 100%;
+    }
+}
 @media (min-width: 992px) and (max-width: 1199px) {
     .projects-list .wp-show-posts-single {
         max-height: 262px;
