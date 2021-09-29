@@ -361,6 +361,9 @@ body header.header .nav-item.active {
             font-size: 14px;
             margin-bottom: 40px;
         }	
+            .about-us p:last-child {
+                margin-bottom: 15px;
+            }
     .pipe-img {
         max-width: 46%;
     }
