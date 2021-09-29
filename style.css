@@ -421,9 +421,11 @@ body header.header .nav-item.active {
                     .projects-list .wp-show-posts-columns#wpsp-569 .wp-show-posts-inner .wp-show-posts-entry-header {
                         position: absolute;
                         bottom: 20px;
+                        left: 10px;
                     }
                     .projects-list .wp-show-posts-columns#wpsp-569 .wp-show-posts-inner .wp-show-posts-entry-header a {
-                        color: #000000;
+                        color: #ffffff;
+                        font-weight: 600;
                     }
                     .projects-list .wp-show-posts-image {
                         margin: 0;
