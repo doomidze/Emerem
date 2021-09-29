@@ -1565,6 +1565,10 @@ img.hover-shadow {
         max-height: 262px;
         min-width: 262px;
     }
+    .projects-info-wrapper h2, .projects-info-wrapper p {
+        padding-left: 30%;
+        padding-right: 10%;
+    }
 }
 @media (min-width: 1200px) and (max-width: 1399px) {
     .projects-info-wrapper h2, .projects-info-wrapper p {
