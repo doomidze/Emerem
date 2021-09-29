@@ -1576,6 +1576,9 @@ img.hover-shadow {
                 width: 100%;
                 padding: 35px 30px 35px 10%;
             }
+        .projects-list .wp-show-posts-image {
+            width: 100%;
+        }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
     .projects-list .wp-show-posts-single {
