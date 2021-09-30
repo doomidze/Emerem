@@ -349,7 +349,6 @@ body header.header .nav-item.active {
     padding-bottom: 50px;
     padding-right: var(--bs-gutter-x,.75rem);
     padding-left: var(--bs-gutter-x,.75rem);
-    max-width: unset;
 }
     .advantages-secondary-title {
      padding: 30px;
@@ -474,7 +473,6 @@ body header.header .nav-item.active {
 
 /*News block*/
     .news {
-        max-width: 1200px;
         padding-top: 80px;
         padding-bottom: 80px;
     }

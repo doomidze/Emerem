@@ -112,19 +112,19 @@ Template Name: Home Page
                     <?php echo carbon_get_post_meta($page_id, 'about_us_subtitle') ?>
                 </div>
 				<a href="<?php echo carbon_get_post_meta($page_id, 'about_us_button') ?>" class="go-to-about-us-btn">
-					<div class="go-to-about-us-btn-text">Подробнее...</div>
-					<div class="go-to-about-us-btn-svg">
+				    <?php echo carbon_get_post_meta($page_id, 'about_us_button') ?>
+					<span class="go-to-about-us-btn-svg">
 						<svg width="33" height="14" viewBox="0 0 33 14" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path d="M0.981388 5.85419C1.04818 5.84335 1.11578 5.83835 1.18342 5.83923H28.7L28.4489 5.72242C28.2034 5.60624 27.9801 5.44812 27.789 5.25522L24.5594 2.02567C24.1341 1.61964 24.0626 0.966469 24.3901 0.478059C24.7712 -0.0423995 25.502 -0.155404 26.0225 0.225695C26.0646 0.256502 26.1045 0.290082 26.1421 0.326217L31.9821 6.16627C32.4385 6.62216 32.4389 7.36169 31.9831 7.81809L31.9821 7.819L26.1421 13.6591C25.6853 14.1145 24.9458 14.1135 24.4903 13.6568C24.4544 13.6208 24.421 13.5826 24.3901 13.5423C24.0626 13.0538 24.1341 12.4007 24.5594 11.9946L27.7831 8.75925C27.9545 8.5877 28.1515 8.44385 28.3672 8.33293L28.7176 8.17525H1.24769C0.651022 8.1974 0.127533 7.7806 0.0154419 7.19412C-0.0878181 6.55737 0.344641 5.95749 0.981388 5.85419Z" fill="#EB1C24"/>
 						</svg>
-					</div>
-				<?php echo carbon_get_post_meta($page_id, 'about_us_button') ?></a>
+					</span>
+                </a>
             </div>
         </div>
     </section>
 
 
-    <section class="advantages container-xl">
+    <section class="advantages container">
         <h2 class="advantages-title"><?php echo carbon_get_post_meta($page_id, 'advantages_title') ?></h2>
 		<p class="advantages-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget lectus ipsum. Praesent blandit egestas arcu luctus semper. Praesent ultricies orci ut viverra consequat. </p>
         <div class="advantages-list row">
@@ -162,7 +162,7 @@ Template Name: Home Page
             </div>
         </div>
     </section>
-    
+
 
     <section class="our-projects">
         <div class="our-projects-wrapper">
