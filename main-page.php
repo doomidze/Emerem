@@ -111,7 +111,7 @@ Template Name: Home Page
                 <div class="about-us-info">
                     <?php echo carbon_get_post_meta($page_id, 'about_us_subtitle') ?>
                 </div>
-				<a href="<?php echo carbon_get_post_meta($page_id, 'about_us_button') ?>" class="go-to-about-us-btn">
+				<a href="<?php echo carbon_get_post_meta($page_id, 'about_us_link') ?>" class="go-to-about-us-btn">
 				    <?php echo carbon_get_post_meta($page_id, 'about_us_button') ?>
 					<span class="go-to-about-us-btn-svg">
 						<svg width="33" height="14" viewBox="0 0 33 14" fill="none" xmlns="http://www.w3.org/2000/svg">
