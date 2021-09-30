@@ -322,7 +322,6 @@ body header.header .nav-item.active {
 /*AboutUs block*/
 .about-us-wrapper {
     display: flex;  
-    padding-top: 50px;
     padding-bottom: 25px;
     padding-right: var(--bs-gutter-x,.75rem);
     padding-left: var(--bs-gutter-x,.75rem);
@@ -1456,6 +1455,7 @@ img.hover-shadow {
 @media (max-width: 1199px) {
 	.about-us-wrapper {
 		flex-direction: column-reverse;
+        padding-top: 50px;
 	}
 		.about-us {
 			padding: 0px 0px 25px 0px;
