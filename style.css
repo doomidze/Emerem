@@ -404,13 +404,9 @@ body header.header .nav-item.active {
             .projects-info-wrapper p {
                 line-height: 25px;
             }
-            .projects-info-wrapper h2, .projects-info-wrapper p {
-                padding-left: 41%;
-                padding-right: 15%;
-            }
             .go-to-projects-btn {
                 width: 100%;
-                padding: 35px 30px 35px 41%;
+                padding: 35px;
                 transition: 0.5s all;
                 border: 2px solid rgba(235,28,36,1);
                 background: rgba(235,28,36,1);
@@ -419,6 +415,10 @@ body header.header .nav-item.active {
                 text-transform: uppercase;
                 margin-top: auto;
                 line-height: 14px;
+            }
+            .projects-info-wrapper__inner,
+            .go-to-projects-btn {
+                padding-left: var(--bs-gutter-x,.75rem);
             }
                 .go-to-projects-btn:hover {
                     color: white;
@@ -429,7 +429,7 @@ body header.header .nav-item.active {
                     margin-left: 40px;
                     transition: 0.5s all;
                 }
-                .go-to-projects-btn:hover div svg {
+                .go-to-projects-btn:hover span svg {
                     margin-left: 140px;
                 }
         .projects-list .wp-show-posts-columns { /*блок картинок*/
@@ -1488,23 +1488,17 @@ img.hover-shadow {
 
 
 @media (min-width: 320px) and (max-width: 767px) {
-    body {
+    .projects-list {
         font-size: 12px;
     }
         .advantages-list-item {
             padding: 0;
         }
-            .projects-info-wrapper h2, .projects-info-wrapper p {
-                padding: 0 1rem;
-            }
             .projects-info-wrapper p {
                 padding-bottom: 6%;
                 font-size: 12px;
             }
-            .go-to-projects-btn {
-                padding: 35px 30px 35px 1rem;
-            }
-            .go-to-projects-btn div svg {
+            .go-to-projects-btn span svg {
                 margin-left: 30px;
             }
             .projects-list .wp-show-posts-single {
@@ -1524,13 +1518,8 @@ img.hover-shadow {
 
 
 @media (min-width: 768px) and (max-width: 991px) {
-            .projects-info-wrapper h2, .projects-info-wrapper p {
-                padding-left: 5rem;
-                padding-right: 5rem;
-            }
             .go-to-projects-btn {
                 width: 100%;
-                padding: 35px 30px 35px 5rem;
             }
             .projects-list .wp-show-posts-single {
                 width: 33.333%;
@@ -1544,13 +1533,6 @@ img.hover-shadow {
     }
     .projects-list .wp-show-posts-single {
         width: 50%;
-    }
-    .projects-info-wrapper h2, .projects-info-wrapper p {
-        padding-left: 25%;
-        padding-right: 10%;
-    }
-    .go-to-projects-btn {
-        padding: 35px 30px 35px 25%;
     }
 }
 
@@ -1570,26 +1552,19 @@ img.hover-shadow {
     .projects-info-wrapper {
         max-width: 40%;
     }
-    .projects-info-wrapper h2, .projects-info-wrapper p {
-        padding-left: 20%;
-        padding-right: 9%;
-    }
-    .go-to-projects-btn {
-        padding: 35px 30px 35px 20%;
-    }
 }
 
 
 @media (min-width: 1400px) and (max-width: 1919px) {
-    .projects-info-wrapper h2, .projects-info-wrapper p {
+    .go-to-projects-btn {
+        padding: 35px;
+    }
+    .projects-info-wrapper__inner,
+    .go-to-projects-btn {
         padding-left: 6rem;
-        padding-right: 12%;
     }
     .projects-list .wp-show-posts-image img {
         width: 100%;
-    }
-    .go-to-projects-btn {
-        padding: 35px 30px 35px 6rem;
     }
 }
 .content {
@@ -1609,6 +1584,47 @@ img.hover-shadow {
 @media (min-width: 992px) {
     .content {
         max-width: 880px;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .projects-info-wrapper__inner, 
+    .go-to-projects-btn {
+        padding-left: 7%;
+        padding-right: 30px;
+    }
+}
+
+
+@media (min-width: 1366px) {
+    .projects-info-wrapper__inner, 
+    .go-to-projects-btn {
+        padding-left: 22%;
+    }
+}
+
+
+@media (min-width: 1600px) {
+    .projects-info-wrapper__inner, 
+    .go-to-projects-btn {
+        padding-left: 27%;
+    }
+}
+
+
+@media (min-width: 1920px) {
+    .projects-info-wrapper__inner, 
+    .go-to-projects-btn {
+        padding-left: 41%;
+    }
+}
+
+
+@media (min-width: 2560px) {
+    .projects-info-wrapper__inner, 
+    .go-to-projects-btn {
+        padding-left: 57%;
     }
 }
 

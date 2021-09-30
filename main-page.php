@@ -167,17 +167,19 @@ Template Name: Home Page
     <section class="our-projects">
         <div class="our-projects-wrapper">
             <div class="projects-info-wrapper">
-                <h2><?php echo carbon_get_post_meta($page_id, 'projects_title') ?></h1>
-                <div class="projects-info-comment">
-                    <?php echo carbon_get_post_meta($page_id, 'projects_text') ?>
+                <div class="projects-info-wrapper__inner">
+                    <h2><?php echo carbon_get_post_meta($page_id, 'projects_title') ?></h2>
+                    <div class="projects-info-comment">
+                        <?php echo carbon_get_post_meta($page_id, 'projects_text') ?>
+                    </div>
                 </div>
                 <a href="<?php echo carbon_get_post_meta($page_id, 'projects_link') ?>" class="go-to-projects-btn">
-                    <div><?php echo carbon_get_post_meta($page_id, 'projects_button') ?></div>
-                    <div>
+                    <span><?php echo carbon_get_post_meta($page_id, 'projects_button') ?></span>
+                    <span>
                         <svg width="41" height="14" viewBox="0 0 41 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M0.981388 5.85419C1.04818 5.84335 1.11578 5.83835 1.18342 5.83923H36.7L36.4489 5.72242C36.2034 5.60624 35.9801 5.44812 35.789 5.25522L32.5594 2.02567C32.1341 1.61964 32.0626 0.966469 32.3901 0.478059C32.7712 -0.0423995 33.502 -0.155404 34.0225 0.225695C34.0646 0.256502 34.1045 0.290082 34.1421 0.326217L39.9821 6.16627C40.4385 6.62216 40.4389 7.36169 39.9831 7.81809L39.9821 7.819L34.1421 13.6591C33.6853 14.1145 32.9458 14.1135 32.4903 13.6568C32.4544 13.6208 32.421 13.5826 32.3901 13.5423C32.0626 13.0538 32.1341 12.4007 32.5594 11.9946L35.7831 8.75925C35.9545 8.5877 36.1515 8.44385 36.3672 8.33293L36.7176 8.17525H1.24769C0.65102 8.1974 0.127533 7.7806 0.0154419 7.19412C-0.0878181 6.55737 0.344639 5.95749 0.981388 5.85419Z" fill="white"/>
                         </svg>
-                    </div>
+                    </span>
                 </a>
             </div>
             <div class="projects-wrapper">
