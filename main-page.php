@@ -52,6 +52,7 @@ Template Name: Home Page
         </div>
     </section>
 
+
     <section class="cat-menu">
         <div class="container">
             <div class="row">
@@ -98,6 +99,8 @@ Template Name: Home Page
             </div>
         </div>
     </section>
+
+
     <section class="about-us-container">
         <div class="about-us-wrapper">
             <div class="pipe-img col-xs-12 col-sm-12 col-xl-6 ">
@@ -119,6 +122,7 @@ Template Name: Home Page
             </div>
         </div>
     </section>
+
 
     <section class="advantages container-xl">
         <h2 class="advantages-title"><?php echo carbon_get_post_meta($page_id, 'advantages_title') ?></h2>
@@ -158,6 +162,7 @@ Template Name: Home Page
             </div>
         </div>
     </section>
+    
 
     <section class="our-projects">
         <div class="our-projects-wrapper">
@@ -177,19 +182,6 @@ Template Name: Home Page
             </div>
             <div class="projects-wrapper">
                 <div class="projects-list">
-                    <!-- <?php //foreach($projects_gallery as $gallery_id) :
-                        //$img_src = wp_get_attachment_image_url($gallery_id, 'full');
-                    ?>
-                        <div class="project-list-item">
-                            <div class="project-list-item-bg">
-                                <img src="<?php //echo $img_src; ?>" alt="">
-                            </div>
-                            <div class="title-wrapper">
-                                <h3 class="list-item-title">Consectetur adipiscing</h3>
-                                <div class="list-item-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget lectus ipsum. </div>
-                            </div>
-                        </div>
-                    <?php //endforeach; ?> -->
 
                     <?php if ( function_exists( 'wpsp_display' ) ) wpsp_display( 569 ); ?>
                 </div>
@@ -211,81 +203,12 @@ Template Name: Home Page
             </a>
         </div>
         <div class="news-secondary-title"><?php echo carbon_get_post_meta($page_id, 'news_text') ?></div>
-        <!-- <div class="news-wrapper row">
-            <div class="news-item col-lg-3">
-                <div class="news-item-img">
-                    <img src="<?php bloginfo('template_url'); ?>/assets/img/pipe3.png" alt="" style="width:100%;height:100%">
-                </div>
-                <p class="news-item-title">Consectetur adipiscing</p>
-                <div class="news-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget lectus ipsum.
-                    Praesent blandit egestas arcu luctus semper. Praesent ultricies orci ut viverra ...
-                </div>
-                <a href="" class="see-more-btn">
-                    <div class="see-more-btn-tezt">Читать больше</div>
-                    <div class="see-more-btn-svg">
-                        <svg width="22" height="10" viewBox="0 0 22 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0.66799 3.98432C0.713449 3.97694 0.759459 3.97353 0.80549 3.97413H19.5331L19.3622 3.89464C19.1951 3.81556 19.0431 3.70795 18.913 3.57666L16.715 1.37866C16.4255 1.10232 16.3769 0.657771 16.5998 0.325363C16.8591 -0.0288568 17.3565 -0.105767 17.7108 0.153606C17.7394 0.174573 17.7666 0.197427 17.7922 0.222021L21.7669 4.19671C22.0775 4.50699 22.0777 5.01031 21.7675 5.32093L21.7669 5.32155L17.7922 9.29624C17.4813 9.60624 16.978 9.60555 16.6679 9.29468C16.6435 9.27021 16.6208 9.24417 16.5998 9.21675C16.3769 8.88434 16.4255 8.4398 16.715 8.16346L18.909 5.96148C19.0257 5.84472 19.1598 5.74682 19.3065 5.67132L19.545 5.56401H0.849234C0.443144 5.57909 0.0868645 5.29542 0.0105743 4.89626C-0.0597038 4.46289 0.234625 4.05462 0.66799 3.98432Z" fill="#EB1C24"/>
-                        </svg>
-                    </div>
-                </a>
-            </div>
-            <div class="news-item col-lg-3">
-                <div class="news-item-img">
-                    <img src="<?php bloginfo('template_url'); ?>/assets/img/pipe3.png" alt="" style="width:100%;height:100%">
-                </div>
-                <p class="news-item-title">Consectetur adipiscing</p>
-                <div class="news-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget lectus ipsum.
-                    Praesent blandit egestas arcu luctus semper. Praesent ultricies orci ut viverra ...
-                </div>
-                <a href="" class="see-more-btn">
-                    <div class="see-more-btn-tezt">Читать больше</div>
-                    <div class="see-more-btn-svg">
-                        <svg width="22" height="10" viewBox="0 0 22 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0.66799 3.98432C0.713449 3.97694 0.759459 3.97353 0.80549 3.97413H19.5331L19.3622 3.89464C19.1951 3.81556 19.0431 3.70795 18.913 3.57666L16.715 1.37866C16.4255 1.10232 16.3769 0.657771 16.5998 0.325363C16.8591 -0.0288568 17.3565 -0.105767 17.7108 0.153606C17.7394 0.174573 17.7666 0.197427 17.7922 0.222021L21.7669 4.19671C22.0775 4.50699 22.0777 5.01031 21.7675 5.32093L21.7669 5.32155L17.7922 9.29624C17.4813 9.60624 16.978 9.60555 16.6679 9.29468C16.6435 9.27021 16.6208 9.24417 16.5998 9.21675C16.3769 8.88434 16.4255 8.4398 16.715 8.16346L18.909 5.96148C19.0257 5.84472 19.1598 5.74682 19.3065 5.67132L19.545 5.56401H0.849234C0.443144 5.57909 0.0868645 5.29542 0.0105743 4.89626C-0.0597038 4.46289 0.234625 4.05462 0.66799 3.98432Z" fill="#EB1C24"/>
-                        </svg>
-                    </div>
-                </a>
-            </div>
-            <div class="news-item col-lg-3">
-                <div class="news-item-img">
-                    <img src="<?php bloginfo('template_url'); ?>/assets/img/pipe3.png" alt="" style="width:100%;height:100%">
-                </div>
-                <p class="news-item-title">Consectetur adipiscing</p>
-                <div class="news-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget lectus ipsum.
-                    Praesent blandit egestas arcu luctus semper. Praesent ultricies orci ut viverra ...
-                </div>
-                <a href="" class="see-more-btn">
-                    <div class="see-more-btn-tezt">Читать больше</div>
-                    <div class="see-more-btn-svg">
-                        <svg width="22" height="10" viewBox="0 0 22 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0.66799 3.98432C0.713449 3.97694 0.759459 3.97353 0.80549 3.97413H19.5331L19.3622 3.89464C19.1951 3.81556 19.0431 3.70795 18.913 3.57666L16.715 1.37866C16.4255 1.10232 16.3769 0.657771 16.5998 0.325363C16.8591 -0.0288568 17.3565 -0.105767 17.7108 0.153606C17.7394 0.174573 17.7666 0.197427 17.7922 0.222021L21.7669 4.19671C22.0775 4.50699 22.0777 5.01031 21.7675 5.32093L21.7669 5.32155L17.7922 9.29624C17.4813 9.60624 16.978 9.60555 16.6679 9.29468C16.6435 9.27021 16.6208 9.24417 16.5998 9.21675C16.3769 8.88434 16.4255 8.4398 16.715 8.16346L18.909 5.96148C19.0257 5.84472 19.1598 5.74682 19.3065 5.67132L19.545 5.56401H0.849234C0.443144 5.57909 0.0868645 5.29542 0.0105743 4.89626C-0.0597038 4.46289 0.234625 4.05462 0.66799 3.98432Z" fill="#EB1C24"/>
-                        </svg>
-                    </div>
-                </a>
-            </div>
-            <div class="news-item col-lg-3">
-                <div class="news-item-img">
-                    <img src="<?php bloginfo('template_url'); ?>/assets/img/pipe3.png" alt="" style="width:100%;height:100%">
-                </div>
-                <p class="news-item-title">Consectetur adipiscing</p>
-                <div class="news-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget lectus ipsum.
-                    Praesent blandit egestas arcu luctus semper. Praesent ultricies orci ut viverra ...
-                </div>
-                <a href="" class="see-more-btn">
-                    <div class="see-more-btn-tezt">Читать больше</div>
-                    <div class="see-more-btn-svg">
-                        <svg width="22" height="10" viewBox="0 0 22 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0.66799 3.98432C0.713449 3.97694 0.759459 3.97353 0.80549 3.97413H19.5331L19.3622 3.89464C19.1951 3.81556 19.0431 3.70795 18.913 3.57666L16.715 1.37866C16.4255 1.10232 16.3769 0.657771 16.5998 0.325363C16.8591 -0.0288568 17.3565 -0.105767 17.7108 0.153606C17.7394 0.174573 17.7666 0.197427 17.7922 0.222021L21.7669 4.19671C22.0775 4.50699 22.0777 5.01031 21.7675 5.32093L21.7669 5.32155L17.7922 9.29624C17.4813 9.60624 16.978 9.60555 16.6679 9.29468C16.6435 9.27021 16.6208 9.24417 16.5998 9.21675C16.3769 8.88434 16.4255 8.4398 16.715 8.16346L18.909 5.96148C19.0257 5.84472 19.1598 5.74682 19.3065 5.67132L19.545 5.56401H0.849234C0.443144 5.57909 0.0868645 5.29542 0.0105743 4.89626C-0.0597038 4.46289 0.234625 4.05462 0.66799 3.98432Z" fill="#EB1C24"/>
-                        </svg>
-                    </div>
-                </a>
-            </div>
-        </div> -->
-
         
         <div class="news-wrapper">
             <?php if ( function_exists( 'wpsp_display' ) ) wpsp_display( 570 ); ?>
         </div>
     </section>
+
+
 </main>
 <?php get_footer(); ?>

@@ -32,9 +32,6 @@ Container::make( 'post_meta', 'Дополнительные поля' )
       Field::make( 'rich_text', 'projects_text', 'Текст' ),
       Field::make( 'text', 'projects_link', 'Ссылка' ),
       Field::make( 'text', 'projects_button', 'Текст ссылки' ),
-      Field::make( 'text', 'project_title1', 'Заголовок проекта' ),
-      Field::make( 'text', 'project_info1', 'Информация о проекте' ),
-      Field::make( 'media_gallery', 'projects', 'Изображение проектов' ),
     ])
     ->add_tab( 'Новости', [
       Field::make( 'text', 'news_title', 'Заголовок' ),
