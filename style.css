@@ -482,6 +482,12 @@ body header.header .nav-item.active {
         padding-top: 80px;
         padding-bottom: 80px;
     }
+        .news h2, .post-315 h1, .post-319 h1 {margin-bottom: 0;}
+        .news-wrapper,
+            .post-315 .entry-content,
+                .post-319 .entry-content {
+                    margin-top: 50px;
+        }
         .news-header {
             display: flex;
             align-items: center;
