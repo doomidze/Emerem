@@ -487,7 +487,8 @@ body header.header .nav-item.active {
                     margin-top: 50px;
         }
             .news-wrapper .wp-show-posts-inner, #post-315 .wp-show-posts-inner, #post-319 .wp-show-posts-inner {
-                max-width: 281px;       
+                max-width: 281px;
+                margin: 0;       
             }
                 .news-wrapper .wp-show-posts-inner a, #post-315 .wp-show-posts-inner a, #post-319 .wp-show-posts-inner a {
                     display: block;      
