@@ -13,7 +13,7 @@
 
             <?php
             if ( ! is_front_page() ) :
-                the_title( '<h1 class="entry-title">', '</h1>' );
+                //the_title( '<h1 class="entry-title">', '</h1>' );
             endif;
 
             /* Start the Loop */

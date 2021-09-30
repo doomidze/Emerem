@@ -38,9 +38,18 @@ Template Name: Product Subcategories
 
             <?php endwhile; // End of the loop. ?>
 
-            <style>
+            <style>                
+                h1.entry-title {
+                    margin-bottom: 48px;
+                    font-size: 35px;
+                    line-height: 1.2;
+                    font-weight: 700;
+                }
                 .subcategory-container section article {
 
+                }
+                .subcategory-page {
+                    flex-direction: column;
                 }
                 .subcategory-page section,
                 .subcategory-page .wp-block-column {
@@ -60,6 +69,9 @@ Template Name: Product Subcategories
                 }
                 .subcategory-page section article .wp-show-posts-inner {
                     cursor: pointer;
+                }
+                .subcategory-page section article .wp-show-posts-entry-header {
+                    margin-bottom: 0;
                 }
                 .subcategory-page .wp-show-posts-entry-title {
                     margin-top: 0.5em;
