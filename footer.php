@@ -1,5 +1,5 @@
 <footer class="footer">
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
             <div class="col-lg-4 mobile-footer">
                 <?php if ( has_nav_menu( 'footer' ) ) : ?>
