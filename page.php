@@ -13,6 +13,8 @@
 
     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
+    <div class="container">
+
         <?php
         if ( ! is_front_page() ) :
 		    the_title( '<h1 class="entry-title">', '</h1>' );
@@ -38,6 +40,8 @@
             </div><!-- .entry-content -->
 
         <?php endwhile; // End of the loop. ?>
+        
+    </div>
 
     </article><!-- #post-<?php the_ID(); ?> -->
 
