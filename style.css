@@ -478,7 +478,7 @@ body header.header .nav-item.active {
 
 
 /*News block*/
-    .news {
+    .news, .post-315, .post-319 {
         padding-top: 80px;
         padding-bottom: 80px;
     }
