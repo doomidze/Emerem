@@ -522,7 +522,7 @@ body header.header .nav-item.active {
                         background: none;
                     }
                     .news-wrapper .wpsp-read-more a:hover::after, #post-315 .wpsp-read-more a:hover::after, #post-319 .wpsp-read-more a:hover::after {
-                        right: 50px;
+                        right: -100px;
                     }
                     .news-wrapper .wpsp-read-more a::after, #post-315 .wpsp-read-more a::after, #post-319 .wpsp-read-more a::after {
                         content: '';
@@ -533,6 +533,7 @@ body header.header .nav-item.active {
                         position: absolute;
                         right: -45px;
                         bottom: 7px;
+                        transition: 0.5s;
                     }
         .news-header {
             display: flex;
