@@ -506,7 +506,9 @@ body header.header .nav-item.active {
                         font-weight: 600;
                         padding: 20px 0 0 0;
                         border: none; 
-                        border-top: 1px solid #E0E0E0;      
+                        border-top: 1px solid #E0E0E0;
+                        font-size: 14px;
+                        width: 100%;      
                     }
         .news-header {
             display: flex;
