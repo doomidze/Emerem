@@ -482,12 +482,16 @@ body header.header .nav-item.active {
         padding-top: 80px;
         padding-bottom: 80px;
     }
+    .news .wpsp-clear, .post-315 .wpsp-clear, .post-319 .wpsp-clear {
+        display: none;
+    }
         .news h2, #post-315 h1, #post-319 h1 {margin-bottom: 0;}
         .news-wrapper, .post-315 .entry-content, .post-319 .entry-content {
                     margin-top: 50px;
         }
         .news .wp-show-posts-columns, #post-315 .wp-show-posts-columns, #post-319 .wp-show-posts-columns {
             margin: 0!important;
+            justify-content: space-between;
         }
             .news-wrapper .wp-show-posts-inner, #post-315 .wp-show-posts-inner, #post-319 .wp-show-posts-inner {
                 max-width: 281px;
@@ -512,6 +516,9 @@ body header.header .nav-item.active {
                         border-top: 1px solid #E0E0E0;
                         font-size: 14px;
                         width: 100%;      
+                    }
+                    .news-wrapper .wpsp-read-more a::after, #post-315 .wpsp-read-more a::after, #post-319 .wpsp-read-more a::after {
+                        content: url("data:image/svg+xml; utf8, <path("M 0.981388 5.85419 C 1.04818 5.84335 1.11578 5.83835 1.18342 5.83923 H 28.7 L 28.4489 5.72242 C 28.2034 5.60624 27.9801 5.44812 27.789 5.25522 L 24.5594 2.02567 C 24.1341 1.61964 24.0626 0.966469 24.3901 0.478059 C 24.7712 -0.0423995 25.502 -0.155404 26.0225 0.225695 C 26.0646 0.256502 26.1045 0.290082 26.1421 0.326217 L 31.9821 6.16627 C 32.4385 6.62216 32.4389 7.36169 31.9831 7.81809 L 31.9821 7.819 L 26.1421 13.6591 C 25.6853 14.1145 24.9458 14.1135 24.4903 13.6568 C 24.4544 13.6208 24.421 13.5826 24.3901 13.5423 C 24.0626 13.0538 24.1341 12.4007 24.5594 11.9946 L 27.7831 8.75925 C 27.9545 8.5877 28.1515 8.44385 28.3672 8.33293 L 28.7176 8.17525 H 1.24769 C 0.651022 8.1974 0.127533 7.7806 0.0154419 7.19412 C -0.0878181 6.55737 0.344641 5.95749 0.981388 5.85419 Z");>");
                     }
         .news-header {
             display: flex;
