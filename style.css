@@ -493,13 +493,14 @@ body header.header .nav-item.active {
                 max-width: 281px;
                 margin: 0!important;       
             }
-                .news-wrapper .wp-show-posts-inner a, #post-315 .wp-show-posts-inner a, #post-319 .wp-show-posts-inner a {
+                .news-wrapper ..wp-show-posts-entry-title a, #post-315 .wp-show-posts-entry-title a, #post-319 .wp-show-posts-entry-title a {
                     display: block;
                     color: #000000;
-                    font-weight: 600;      
+                    margin-top: 20px;     
                 }
                     .news-wrapper .wpsp-read-more a, #post-315 .wpsp-read-more a, #post-319 .wpsp-read-more a {
-                        color: #EB1C24;       
+                        color: #EB1C24;
+                        font-weight: 600;       
                     }
         .news-header {
             display: flex;
