@@ -515,11 +515,24 @@ body header.header .nav-item.active {
                         border: none; 
                         border-top: 1px solid #E0E0E0;
                         font-size: 14px;
-                        width: 100%;      
+                        width: 100%;
+                        position: relative;      
+                    }
+                    .news-wrapper .wpsp-read-more a:hover, #post-315 .wpsp-read-more a:hover, #post-319 .wpsp-read-more a:hover {
+                        background: none;
+                    }
+                    .news-wrapper .wpsp-read-more a:hover a::after, #post-315 .wpsp-read-more a:hover a::after, #post-319 .wpsp-read-more a:hover a::after {
+                        right: 50px;
                     }
                     .news-wrapper .wpsp-read-more a::after, #post-315 .wpsp-read-more a::after, #post-319 .wpsp-read-more a::after {
                         content: '';
                         background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjIiIGhlaWdodD0iMTAiIHZpZXdCb3g9IjAgMCAyMiAxMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTAuNjY3OTkgMy45ODQzMkMwLjcxMzQ0OSAzLjk3Njk0IDAuNzU5NDU5IDMuOTczNTMgMC44MDU0OSAzLjk3NDEzSDE5LjUzMzFMMTkuMzYyMiAzLjg5NDY0QzE5LjE5NTEgMy44MTU1NiAxOS4wNDMxIDMuNzA3OTUgMTguOTEzIDMuNTc2NjZMMTYuNzE1IDEuMzc4NjZDMTYuNDI1NSAxLjEwMjMyIDE2LjM3NjkgMC42NTc3NzEgMTYuNTk5OCAwLjMyNTM2M0MxNi44NTkxIC0wLjAyODg1NjggMTcuMzU2NSAtMC4xMDU3NjcgMTcuNzEwOCAwLjE1MzYwNkMxNy43Mzk0IDAuMTc0NTczIDE3Ljc2NjYgMC4xOTc0MjcgMTcuNzkyMiAwLjIyMjAyMUwyMS43NjY5IDQuMTk2NzFDMjIuMDc3NSA0LjUwNjk5IDIyLjA3NzcgNS4wMTAzMSAyMS43Njc1IDUuMzIwOTNMMjEuNzY2OSA1LjMyMTU1TDE3Ljc5MjIgOS4yOTYyNEMxNy40ODEzIDkuNjA2MjQgMTYuOTc4IDkuNjA1NTUgMTYuNjY3OSA5LjI5NDY4QzE2LjY0MzUgOS4yNzAyMSAxNi42MjA4IDkuMjQ0MTcgMTYuNTk5OCA5LjIxNjc1QzE2LjM3NjkgOC44ODQzNCAxNi40MjU1IDguNDM5OCAxNi43MTUgOC4xNjM0NkwxOC45MDkgNS45NjE0OEMxOS4wMjU3IDUuODQ0NzIgMTkuMTU5OCA1Ljc0NjgyIDE5LjMwNjUgNS42NzEzMkwxOS41NDUgNS41NjQwMUgwLjg0OTIzNEMwLjQ0MzE0NCA1LjU3OTA5IDAuMDg2ODY0NSA1LjI5NTQyIDAuMDEwNTc0MyA0Ljg5NjI2Qy0wLjA1OTcwMzggNC40NjI4OSAwLjIzNDYyNSA0LjA1NDYyIDAuNjY3OTkgMy45ODQzMloiIGZpbGw9IiNFQjFDMjQiLz4KPC9zdmc+Cg==");
+                        width: 22px;
+                        height: 10px;
+                        display: block;
+                        position: absolute;
+                        right: 100px;
+                        bottom: 6px;
                     }
         .news-header {
             display: flex;
