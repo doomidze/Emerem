@@ -539,6 +539,7 @@ body header.header .nav-item.active {
                         right: -45px;
                         bottom: 2px;
                         transition: 0.5s;
+                        pointer-events: none;
                     }
         .news-header {
             display: flex;
