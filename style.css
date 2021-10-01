@@ -486,9 +486,12 @@ body header.header .nav-item.active {
         .news-wrapper, .post-315 .entry-content, .post-319 .entry-content {
                     margin-top: 50px;
         }
+        .news .wp-show-posts-columns, #post-315 .wp-show-posts-columns, #post-319 .wp-show-posts-columns {
+            margin: 0;
+        }
             .news-wrapper .wp-show-posts-inner, #post-315 .wp-show-posts-inner, #post-319 .wp-show-posts-inner {
                 max-width: 281px;
-                margin: 0;       
+                margin: 0!important;       
             }
                 .news-wrapper .wp-show-posts-inner a, #post-315 .wp-show-posts-inner a, #post-319 .wp-show-posts-inner a {
                     display: block;      
