@@ -507,13 +507,13 @@ body header.header .nav-item.active {
                 }
                 .news-wrapper .wpsp-read-more, #post-315 .wpsp-read-more, #post-319 .wpsp-read-more {
                     display: block;
+                    border-top: 1px solid #E0E0E0;
                 }
                     .news-wrapper .wpsp-read-more a, #post-315 .wpsp-read-more a, #post-319 .wpsp-read-more a {
                         color: #EB1C24;
                         font-weight: 600;
                         padding: 20px 0 0 0;
                         border: none; 
-                        border-top: 1px solid #E0E0E0;
                         font-size: 14px;
                         width: 100%;
                         position: relative;      
