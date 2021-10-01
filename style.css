@@ -498,6 +498,9 @@ body header.header .nav-item.active {
                     color: #000000;
                     margin-top: 20px;     
                 }
+                .news-wrapper .wp-show-posts-entry-summary, #post-315 .wp-show-posts-entry-summary, #post-319 .wp-show-posts-entry-summary {
+                    margin-bottom: 45px;
+                }
                     .news-wrapper .wpsp-read-more a, #post-315 .wpsp-read-more a, #post-319 .wpsp-read-more a {
                         color: #EB1C24;
                         font-weight: 600;       
