@@ -38,57 +38,6 @@ Template Name: Product Subcategories
 
             <?php endwhile; // End of the loop. ?>
 
-            <style>                
-                h1.entry-title {
-                    margin-bottom: 48px;
-                    font-size: 35px;
-                    line-height: 1.2;
-                    font-weight: 700;
-                }
-                .subcategory-container section article {
-
-                }
-                .subcategory-page {
-                    flex-direction: column;
-                }
-                .subcategory-page section,
-                .subcategory-page .wp-block-column {
-                    display: flex;
-                    flex-direction: row;
-                    flex-wrap: wrap;
-                    justify-content: space-between;
-                }
-                .subcategory-page section article {
-                    width: 250px;
-                    padding: 1em;
-                    text-align: center;
-                    border-radius: 5px;
-                    box-shadow: 0 0 5px 1px #bebaba;
-                    color: white;
-                    transition: 0.5s all;
-                }
-                .subcategory-page section article .wp-show-posts-inner {
-                    cursor: pointer;
-                }
-                .subcategory-page section article .wp-show-posts-entry-header {
-                    margin-bottom: 0;
-                }
-                .subcategory-page .wp-show-posts-entry-title {
-                    margin-top: 0.5em;
-                    font-size: 14px;
-                    line-height: 1.2;
-                    color: white;
-                }
-                .subcategory-page .wp-show-posts-entry-title a {
-                    font-weight: 600;
-                    color: #000;
-                }
-                .subcategory-page section article .wp-show-posts-image img {
-                    height: auto;
-                    max-width: 100%;
-                }
-            </style>
-
         </section>
 
     </article><!-- #post-<?php the_ID(); ?> -->

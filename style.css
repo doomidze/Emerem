@@ -16,7 +16,7 @@ h2 {
 	font-weight: 700;
 	font-size: 35px;
 	line-height: 35px;
-	margin: 0 0 25px 0;
+	margin: 0 0 36px 0;
 }
 h3 {
 	font-size: 18px;
@@ -25,6 +25,7 @@ h3 {
 }
 h6 {
     font-size: 14px;
+    line-height: 1.571;
     font-weight: 400;
 }
 div {
@@ -51,6 +52,14 @@ li {
     .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
         max-width: calc(1175px + var(--bs-gutter-x,.75rem) * 2);
     }
+}
+         
+
+h1.entry-title {
+    margin-bottom: 48px;
+    font-size: 35px;
+    line-height: 1.2;
+    font-weight: 700;
 }
 
 
@@ -332,10 +341,13 @@ body header.header .nav-item.active {
         align-items: flex-start;
         padding: 50px 0 0 4%;
     }
+        .about-us-info {
+            line-height: 1.786;
+        }
         .about-us p {
             max-width: 533px;
             font-size: 14px;
-            margin-bottom: 40px;
+            margin-bottom: 25px;
         }	
             .about-us p:last-child {
                 margin-bottom: 15px;
@@ -398,7 +410,7 @@ body header.header .nav-item.active {
             flex-direction: column;
         }
             .projects-info-wrapper h2 {
-                margin: 57px 0 29px;
+                margin-top: 57px;
             }
             .projects-info-wrapper p {
                 line-height: 25px;
@@ -406,14 +418,15 @@ body header.header .nav-item.active {
             .go-to-projects-btn {
                 width: 100%;
                 padding: 35px;
+                display: flex;
+                margin-top: auto;
+                line-height: 14px;
+                font-weight: 600;
+                text-transform: uppercase;
                 transition: 0.5s all;
                 border: 2px solid rgba(235,28,36,1);
                 background: rgba(235,28,36,1);
                 color: white;
-                display: flex;
-                text-transform: uppercase;
-                margin-top: auto;
-                line-height: 14px;
             }
             .projects-info-wrapper__inner,
             .go-to-projects-btn {
@@ -474,6 +487,31 @@ body header.header .nav-item.active {
     .projects-list .wp-show-posts-columns .wp-show-posts-inner:hover .wp-show-posts-entry-summary {
         max-height: 50px;
         font-weight: 500;
+    }    
+    .projects-list .wp-show-posts-single,
+    .projects-list .wp-show-posts-single {
+        border-bottom: 1px solid #fff;
+        border-left: 1px solid #fff;
+    }
+    @media (min-width: 640px) and (max-width: 991px), (min-width: 1200px) {
+        .projects-list .wp-show-posts-single:nth-child(3n+1) {
+            border-left: 0;
+            border-bottom: 0;
+        }
+    }
+    @media (min-width: 992px) and (max-width: 1199px) {
+        .projects-list .wp-show-posts-single:nth-child(2n+1) {
+            border-left: 0;
+            border-bottom: 0;
+        }
+    }
+    @media (min-width: 1200px) {
+        .projects-list .wp-show-posts-columns .wp-show-posts-inner:hover .wp-show-posts-entry-header {
+            bottom: 84px;
+        }
+        .projects-list .wp-show-posts-columns .wp-show-posts-inner .wp-show-posts-entry-summary {
+            bottom: 25px;
+        }
     }
 
 
@@ -555,7 +593,7 @@ body header.header .nav-item.active {
             display: flex;
             align-items: center;
             padding: 10px;
-            transition: 0.5s all;
+            transition: 0.4s color ease, 0.3s background-color ease;
             font-weight: 600;
         }
             .go-to-news-btn:hover, .go-to-about-us-btn:hover {
@@ -1075,7 +1113,7 @@ ul.products li.product {
 }
 .advantages-subtitle {
     max-width: 715px;
-	margin: 40px auto 45px auto;
+	margin: 35px auto 50px auto;
 	line-height: 23px;
 }
 
@@ -1083,7 +1121,6 @@ ul.products li.product {
     margin-top: 2em;
     display: inline-grid;
 }
-
 .category-item {
     width: 250px;
     background: black;
@@ -1092,6 +1129,59 @@ ul.products li.product {
     padding: 1em;
     transition: 0.5s all;
 }
+
+
+.product-page section {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    height: 300px;
+    padding-top: 4em;
+    padding-bottom: 4em;
+}
+.product-page section article {
+    width: 250px;
+    background: black;
+    text-align: center;
+    color: white;
+    padding: 1em;
+    transition: 0.5s all;
+}
+.product-page section article:hover {
+    background: red;
+}
+.product-page section article .wp-show-posts-inner {
+    cursor: pointer;
+    height: 180px;
+}
+.product-page .wp-show-posts-entry-title {
+    margin-top: 0.5em;
+    font-size: 14px;
+    line-height: 1.2;
+    color: white;
+}
+.product-page .wp-show-posts-entry-title a {
+    color: white;
+}
+.product-page section article .wp-show-posts-entry-summary {
+    margin-top: 2em;
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+.product-page section article:hover .wp-show-posts-inner,
+.product-page section article:focus .wp-show-posts-inner,
+.product-page section article:active .wp-show-posts-inner {
+    height: auto;
+}
+.product-page section article:hover .wp-show-posts-entry-summary,
+.product-page section article:focus .wp-show-posts-entry-summary,
+.product-page section article:active .wp-show-posts-entry-summary {
+    height: auto;
+    opacity: 1;
+    visibility: visible;
+}
+
 
 .subcategory-container {
     padding-top: 4em;
@@ -1102,7 +1192,6 @@ ul.products li.product {
     --count: 3;
     --spacing: 0.5rem;
 }
-
 .subcategory {
     flex: 0 1 calc(100%/var(--count) - (var(--count) - 1)*var(--spacing)/var(--count));
     margin-bottom: var(--spacing);
@@ -1112,6 +1201,46 @@ ul.products li.product {
 .subcategory:nth-child(3n) {
     margin-right: 0!important;
 }
+.subcategory-page {
+    flex-direction: column;
+}
+.subcategory-page section,
+.subcategory-page .wp-block-column {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.subcategory-page section article {
+    width: 250px;
+    padding: 1em;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 1px #bebaba;
+    color: white;
+    transition: 0.5s all;
+}
+.subcategory-page section article .wp-show-posts-inner {
+    cursor: pointer;
+}
+.subcategory-page section article .wp-show-posts-entry-header {
+    margin-bottom: 0;
+}
+.subcategory-page .wp-show-posts-entry-title {
+    margin-top: 0.5em;
+    font-size: 14px;
+    line-height: 1.2;
+    color: white;
+}
+.subcategory-page .wp-show-posts-entry-title a {
+    font-weight: 600;
+    color: #000;
+}
+.subcategory-page section article .wp-show-posts-image img {
+    height: auto;
+    max-width: 100%;
+}
+
 
 .category-item:hover {
     background: red;
@@ -1151,18 +1280,67 @@ ul.products li.product {
     padding-bottom: 1rem;
     flex-wrap: wrap;
 }
-
 .product-item-title, .product-item-more-info-title {
     font-weight: 500;
 }
-
 .product-main-info-img img, img.product-main-info-img-secondary {
     cursor: pointer;
 }
-
 .product-more-info {
     padding-top: 2rem;
 }
+
+
+.store-products article .wp-show-posts-inner {
+    position: relative;
+    padding-bottom: 15px;
+    color: black;
+    background: white;
+    -webkit-box-shadow: 0px 5px 10px 2px rgb(34 60 80 / 20%);
+    -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 5px 10px 2px rgb(34 60 80 / 20%);
+}
+.store-products article .wp-show-posts-entry-header,
+.store-products article .wp-show-posts-entry-summary,
+.store-products article .wpsp-read-more {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.store-products article .wp-show-posts-image {
+    height: 170px;
+}
+.store-products article .wp-show-posts-entry-title {
+    font-size: 20px;
+    line-height: 1.3;
+}
+.store-products article .wp-show-posts-entry-title a {
+    color: #000;
+}
+.store-products article .wp-show-posts-entry-title, 
+.store-products article .wpsp-read-more {
+    font-weight: 500;
+}
+.store-products article .wpsp-read-more {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    text-decoration: none !important;
+    color: black;
+    transition: 0.5s all;
+}
+.store-products article .wpsp-read-more a {
+    padding: 0;
+    border: none;
+    background: none;
+    color: #000;
+}
+.store-products article .wpsp-read-more:hover a {
+    color: red;
+}
+.product-item-more-info .product-item-more-info-svg {
+    margin-left: 80px;
+}
+
 
 .important-links, .pages-links {
     padding-left: 0;
@@ -1207,8 +1385,9 @@ ul.products li.product {
         margin-right: 0;
     }
     .request-call-btn {
-        padding: 5px;
-        font-size: 14px;
+        padding: 10px 21px;
+        font-size: 15px;
+        font-weight: 600;
     }
     .header .links-item .links-item__link a {
         font-size: 13px;

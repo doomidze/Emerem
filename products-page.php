@@ -41,58 +41,6 @@ Template Name: Products Page Промышленные насосы
 
         <?php endwhile; // End of the loop. ?>
 
-        <style>
-            .store-products article .wp-show-posts-inner {
-                position: relative;
-                padding-bottom: 15px;
-                color: black;
-                background: white;
-                -webkit-box-shadow: 0px 5px 10px 2px rgb(34 60 80 / 20%);
-                -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
-                box-shadow: 0px 5px 10px 2px rgb(34 60 80 / 20%);
-            }
-            .store-products article .wp-show-posts-entry-header,
-            .store-products article .wp-show-posts-entry-summary,
-            .store-products article .wpsp-read-more {
-                padding-left: 15px;
-                padding-right: 15px;
-            }
-            .store-products article .wp-show-posts-image {
-                height: 170px;
-            }
-            .store-products article .wp-show-posts-entry-title {
-                font-size: 20px;
-                line-height: 1.3;
-            }
-            .store-products article .wp-show-posts-entry-title a {
-                color: #000;
-            }
-            .store-products article .wp-show-posts-entry-title, 
-            .store-products article .wpsp-read-more {
-                font-weight: 500;
-            }
-            .store-products article .wpsp-read-more {
-                display: flex;
-                align-items: center;
-                font-size: 18px;
-                text-decoration: none !important;
-                color: black;
-                transition: 0.5s all;
-            }
-            .store-products article .wpsp-read-more a {
-                padding: 0;
-                border: none;
-                background: none;
-                color: #000;
-            }
-            .store-products article .wpsp-read-more:hover a {
-                color: red;
-            }
-            .product-item-more-info .product-item-more-info-svg {
-                margin-left: 80px;
-            }
-        </style>
-
     </section>
 
     <section class="interesting-products">
