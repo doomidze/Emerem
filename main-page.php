@@ -246,15 +246,22 @@ Template Name: Home Page
     .go-to-projects-btn {
         font-weight: 600;
     }
-    .projects-list .wp-show-posts-single::after,
-    .projects-list .wp-show-posts-single::after {
-        content: '';
-        display: block !important;
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        box-shadow: inset 1px 1px 0px 0px #fff;
-        z-index: 10;
+    .projects-list .wp-show-posts-single,
+    .projects-list .wp-show-posts-single {
+        border-bottom: 1px solid #fff;
+        border-left: 1px solid #fff;
+    }
+    @media (min-width: 640px) and (max-width: 991px), (min-width: 1200px) {
+        .projects-list .wp-show-posts-single:nth-child(3n+1) {
+            border-left: 0;
+            border-bottom: 0;
+        }
+    }
+    @media (min-width: 992px) and (max-width: 1199px) {
+        .projects-list .wp-show-posts-single:nth-child(2n+1) {
+            border-left: 0;
+            border-bottom: 0;
+        }
     }
     @media (min-width: 1200px) {
         .projects-list .wp-show-posts-columns .wp-show-posts-inner:hover .wp-show-posts-entry-header {
@@ -262,16 +269,6 @@ Template Name: Home Page
         }
         .projects-list .wp-show-posts-columns .wp-show-posts-inner .wp-show-posts-entry-summary {
             bottom: 25px;
-        }
-    }
-    @media (min-width: 640px) and (max-width: 991px), (min-width: 1200px) {
-        .projects-list .wp-show-posts-single:nth-child(3n+1)::after {
-            box-shadow: inset 0px 1px 0px 0px #fff;
-        }
-    }
-    @media (min-width: 992px) and (max-width: 1199px) {
-        .projects-list .wp-show-posts-single:nth-child(2n+1)::after {
-            box-shadow: inset 0px 1px 0px 0px #fff;
         }
     }
 </style>
