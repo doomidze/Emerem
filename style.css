@@ -516,6 +516,7 @@ body header.header .nav-item.active {
                         padding: 0;
                         border: none; 
                         font-size: 14px;
+                        line-height: 14px;
                         position: relative;      
                     }
                     .news-wrapper .wpsp-read-more a:hover, #post-315 .wpsp-read-more a:hover, #post-319 .wpsp-read-more a:hover {
@@ -532,7 +533,7 @@ body header.header .nav-item.active {
                         display: block;
                         position: absolute;
                         right: -45px;
-                        bottom: 7px;
+                        bottom: 2px;
                         transition: 0.5s;
                     }
         .news-header {
