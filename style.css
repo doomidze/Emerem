@@ -487,15 +487,20 @@ body header.header .nav-item.active {
                     margin-top: 50px;
         }
         .news .wp-show-posts-columns, #post-315 .wp-show-posts-columns, #post-319 .wp-show-posts-columns {
-            margin: 0;
+            margin: 0!important;
         }
             .news-wrapper .wp-show-posts-inner, #post-315 .wp-show-posts-inner, #post-319 .wp-show-posts-inner {
                 max-width: 281px;
                 margin: 0!important;       
             }
                 .news-wrapper .wp-show-posts-inner a, #post-315 .wp-show-posts-inner a, #post-319 .wp-show-posts-inner a {
-                    display: block;      
+                    display: block;
+                    color: #000000;
+                    font-weight: 600;      
                 }
+                    .news-wrapper .wpsp-read-more a, #post-315 .wpsp-read-more a, #post-319 .wpsp-read-more a {
+                        color: #EB1C24;       
+                    }
         .news-header {
             display: flex;
             align-items: center;
