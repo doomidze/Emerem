@@ -512,16 +512,16 @@ body header.header .nav-item.active {
                     .news-wrapper .wpsp-read-more a, #post-315 .wpsp-read-more a, #post-319 .wpsp-read-more a {
                         color: #EB1C24;
                         font-weight: 600;
-                        padding: 20px 0 0 0;
+                        margin: 20px 0 0 0;
+                        padding: 0;
                         border: none; 
                         font-size: 14px;
-                        width: 100%;
                         position: relative;      
                     }
                     .news-wrapper .wpsp-read-more a:hover, #post-315 .wpsp-read-more a:hover, #post-319 .wpsp-read-more a:hover {
                         background: none;
                     }
-                    .news-wrapper .wpsp-read-more a:hover a::after, #post-315 .wpsp-read-more a:hover a::after, #post-319 .wpsp-read-more a:hover a::after {
+                    .news-wrapper .wpsp-read-more a:hover::after, #post-315 .wpsp-read-more a:hover::after, #post-319 .wpsp-read-more a:hover::after {
                         right: 50px;
                     }
                     .news-wrapper .wpsp-read-more a::after, #post-315 .wpsp-read-more a::after, #post-319 .wpsp-read-more a::after {
@@ -531,8 +531,8 @@ body header.header .nav-item.active {
                         height: 10px;
                         display: block;
                         position: absolute;
-                        right: 100px;
-                        bottom: 6px;
+                        right: -45px;
+                        bottom: 7px;
                     }
         .news-header {
             display: flex;
