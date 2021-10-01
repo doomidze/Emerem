@@ -493,7 +493,7 @@ body header.header .nav-item.active {
                 max-width: 281px;
                 margin: 0!important;       
             }
-                .news-wrapper ..wp-show-posts-entry-title a, #post-315 .wp-show-posts-entry-title a, #post-319 .wp-show-posts-entry-title a {
+                .news-wrapper .wp-show-posts-entry-title a, #post-315 .wp-show-posts-entry-title a, #post-319 .wp-show-posts-entry-title a {
                     display: block;
                     color: #000000;
                     margin-top: 20px;     
