@@ -493,6 +493,10 @@ body header.header .nav-item.active {
             margin: 0!important;
             justify-content: space-between;
         }
+            .news-wrapper .wp-show-posts-single, #post-315 .wp-show-posts-single, #post-319 .wp-show-posts-single {
+                width: 281px;
+                margin-bottom: 50px;
+            }
             .news-wrapper .wp-show-posts-inner, #post-315 .wp-show-posts-inner, #post-319 .wp-show-posts-inner {
                 max-width: 281px;
                 margin: 0!important;       
@@ -503,7 +507,7 @@ body header.header .nav-item.active {
                     margin-top: 20px;     
                 }
                 .news-wrapper .wp-show-posts-entry-summary, #post-315 .wp-show-posts-entry-summary, #post-319 .wp-show-posts-entry-summary {
-                    margin-bottom: 45px;
+                    margin-bottom: 20px;
                 }
                 .news-wrapper .wpsp-read-more, #post-315 .wpsp-read-more, #post-319 .wpsp-read-more {
                     display: block;
