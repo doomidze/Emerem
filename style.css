@@ -1767,7 +1767,7 @@ img.hover-shadow {
     .projects-list .wp-show-posts-single {
         width: 33.333%;
     }
-    .news-wrapper .container, #post-315 .container, #post-319 .container {
+    .news.container, #post-315 .container, #post-319 .container {
         max-width: 100%;
     }
         .news .wp-show-posts-columns, #post-315 .wp-show-posts-columns, #post-319 .wp-show-posts-columns {
