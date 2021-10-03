@@ -533,12 +533,16 @@ body header.header .nav-item.active {
         }
         .news .wp-show-posts-columns, #post-315 .wp-show-posts-columns, #post-319 .wp-show-posts-columns {
             margin: 0!important;
-            justify-content: space-between;
+            justify-content: flex-start;
         }
             .news-wrapper .wp-show-posts-single, #post-315 .wp-show-posts-single, #post-319 .wp-show-posts-single {
                 width: 281px;
                 margin-bottom: 50px;
             }
+                .news-wrapper .wp-show-posts-single:nth-child(4n+4), #post-315 .wp-show-posts-single:nth-child(4n+4), #post-319 .wp-show-posts-single:nth-child(4n+4) {
+                    width: 281px;
+                    margin-bottom: 50px;
+                }
             .news-wrapper .wp-show-posts-inner, #post-315 .wp-show-posts-inner, #post-319 .wp-show-posts-inner {
                 max-width: 281px;
                 margin: 0!important;       
