@@ -539,7 +539,7 @@ body header.header .nav-item.active {
                 width: 281px;
                 margin-bottom: 50px;
             }
-                .news-wrapper .wp-show-posts-single:nth-child(4n+4), #post-315 .wp-show-posts-single:nth-child(4n+4), #post-319 .wp-show-posts-single:nth-child(4n+4) {
+                .news-wrapper .wp-show-posts-single:nth-child(4n), #post-315 .wp-show-posts-single:nth-child(4n), #post-319 .wp-show-posts-single:nth-child(4n) {
                     width: 281px;
                     margin-bottom: 50px;
                 }
