@@ -1718,7 +1718,11 @@ img.hover-shadow {
     }
 }
 
-
+@media (min-width: 320px) and (max-width: 639px) {
+    .news .wp-show-posts-columns, #post-315 .wp-show-posts-columns, #post-319 .wp-show-posts-columns {
+        justify-content: center;
+    }
+}
 @media (min-width: 640px) and (max-width: 1199px) {
 		.about-us p {
 			max-width: unset;
@@ -1770,8 +1774,6 @@ img.hover-shadow {
             justify-content: space-between;
         }
 }
-
-
 @media (min-width: 768px) and (max-width: 991px) {
             .go-to-projects-btn {
                 width: 100%;
@@ -1843,6 +1845,14 @@ img.hover-shadow {
     .go-to-projects-btn {
         padding-left: 22%;
     }
+}
+@media (min-width: 1400px) {
+    .news-wrapper .wp-show-posts-single, #post-315 .wp-show-posts-single, #post-319 .wp-show-posts-single {
+        margin-right: 15px;
+    }
+    .news-wrapper .wp-show-posts-single:nth-child(4n), #post-315 .wp-show-posts-single:nth-child(4n), #post-319 .wp-show-posts-single:nth-child(4n) {
+        margin-right: 0;
+    }    
 }
 @media (min-width: 1600px) {
     .projects-info-wrapper__inner, 
