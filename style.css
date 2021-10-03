@@ -1783,6 +1783,9 @@ img.hover-shadow {
     .projects-list .wp-show-posts-single {
         width: 50%;
     }
+    .news-wrapper .wp-show-posts-single:nth-child(3n+2), #post-315 .wp-show-posts-single:nth-child(3n+2), #post-319 .wp-show-posts-single:nth-child(3n+2) {
+        margin: 0px 46px 50px;
+    }
 }
 @media (min-width: 1200px) and (max-width: 1399px) {
     .projects-info-wrapper {
