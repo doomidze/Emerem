@@ -1494,13 +1494,22 @@ ul.products li.product {
     }
     .news {
         padding-top: 1em;
-        padding-bottom: 1em;
+        padding-bottom: 7em;
+        max-width: 320px;
+        position: relative;
     }
     .news-header {
         display: block;
+        text-align: center;
     }
     .news-secondary-title {
         width: 100%;
+        text-align: center;
+    }
+    .go-to-news-btn {
+        position: absolute;
+        bottom: 5em;
+        width: 296px
     }
     ul.products li.product {
         width: 345px!important;
