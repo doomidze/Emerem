@@ -1848,7 +1848,7 @@ img.hover-shadow {
 }
 @media (min-width: 1400px) {
     .news-wrapper .wp-show-posts-single, #post-315 .wp-show-posts-single, #post-319 .wp-show-posts-single {
-        margin-right: 15px;
+        margin-right: 17px;
     }
     .news-wrapper .wp-show-posts-single:nth-child(4n), #post-315 .wp-show-posts-single:nth-child(4n), #post-319 .wp-show-posts-single:nth-child(4n) {
         margin-right: 0;
