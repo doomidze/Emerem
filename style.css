@@ -1763,6 +1763,12 @@ img.hover-shadow {
     .projects-list .wp-show-posts-single {
         width: 33.333%;
     }
+    .news-wrapper .container, #post-315 .container, #post-319 .container {
+        width: 100%;
+    }
+        .news-wrapper .wp-show-posts-single:nth-child(odd), #post-315 .wp-show-posts-single:nth-child(odd), #post-319 .wp-show-posts-single:nth-child(odd) {
+            margin: 0px 134px 50px 0;
+        }
 }
 
 
