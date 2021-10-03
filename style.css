@@ -539,9 +539,6 @@ body header.header .nav-item.active {
                 width: 281px;
                 margin-bottom: 50px;
             }
-                .news-wrapper .wp-show-posts-single:nth-child(4n), #post-315 .wp-show-posts-single:nth-child(4n), #post-319 .wp-show-posts-single:nth-child(4n) {
-                    margin-right: 15px;
-                }
             .news-wrapper .wp-show-posts-inner, #post-315 .wp-show-posts-inner, #post-319 .wp-show-posts-inner {
                 max-width: 281px;
                 margin: 0!important;       
@@ -1791,7 +1788,7 @@ img.hover-shadow {
     .projects-info-wrapper {
         max-width: 40%;
     }
-    .news-wrapper .wp-show-posts-single:nth-child(2n+3), #post-315 .wp-show-posts-single:nth-child(3n), #post-319 .wp-show-posts-single:nth-child(3n) {
+    .news-wrapper .wp-show-posts-single:nth-child(3n+2), #post-315 .wp-show-posts-single:nth-child(3n+2), #post-319 .wp-show-posts-single:nth-child(3n+2) {
         margin: 0 136px 50px;
     }
 }
