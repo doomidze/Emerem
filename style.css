@@ -1766,8 +1766,8 @@ img.hover-shadow {
     .news-wrapper .container, #post-315 .container, #post-319 .container {
         max-width: 100%;
     }
-        .news-wrapper .wp-show-posts-single:nth-child(odd), #post-315 .wp-show-posts-single:nth-child(odd), #post-319 .wp-show-posts-single:nth-child(odd) {
-            margin: 0px 54px 50px 0;
+        .news-wrapper, #post-315, #post-319 {
+            justify-content: space-between;
         }
 }
 
