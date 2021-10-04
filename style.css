@@ -1777,6 +1777,9 @@ img.hover-shadow {
             .news-wrapper .wp-show-posts-single:nth-child(odd), #post-315 .wp-show-posts-single:nth-child(odd), #post-319 .wp-show-posts-single:nth-child(odd) {
                 margin: 0px 134px 50px 0;
             }
+            .subcategory-page section article {
+                width: 358px;
+            }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
     .advantages-list-item {
