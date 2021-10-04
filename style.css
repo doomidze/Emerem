@@ -1217,36 +1217,36 @@ ul.products li.product {
     justify-content: space-between;
 }
 .subcategory-page section article {
-    width: 250px;
-    padding: 1em;
-    text-align: center;
+    width: 378px;
+    height: 360px;
+    padding: 20px 15px 30px;
     border-radius: 5px;
-    box-shadow: 0 0 5px 1px #bebaba;
-    color: white;
+    box-shadow: 0px 0px 15px rgb(0 0 0 / 20%);
     transition: 0.5s all;
-}
-.subcategory-page section article .wp-show-posts-inner {
-    cursor: pointer;
+    position: relative;
 }
 .subcategory-page section article .wp-show-posts-entry-header {
-    margin-bottom: 0;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 35px;
+    margin: 0 -15px 0;
 }
 .subcategory-page .wp-show-posts-entry-title {
-    margin-top: 0.5em;
-    font-size: 14px;
-    line-height: 1.2;
+    font-size: 20px;
+    line-height: 25px;
     color: white;
+    max-width: 305px;
+    margin: 0 auto;
+    letter-spacing: -1px;
 }
 .subcategory-page .wp-show-posts-entry-title a {
-    font-weight: 600;
-    color: #000;
+    color: #000000;
 }
 .subcategory-page section article .wp-show-posts-image img {
     height: auto;
     max-width: 100%;
 }
-
-
 .category-item:hover {
     background: red;
 }
