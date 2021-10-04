@@ -1191,8 +1191,15 @@ ul.products li.product {
     margin-bottom: var(--spacing);
     margin-right: var(--spacing);
 }
+.subcategory-page .entry-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 .subcategory-page section, .subcategory-page .wp-block-column {
     max-width: 378px;
+    margin-bottom: 25px;
 }
 .subcategory-page .wp-block-column {
     margin: 0!important;
@@ -1683,9 +1690,10 @@ img.hover-shadow {
         .projects-info-wrapper {
             max-width: 100%;
         }
+        .subcategory-page {
+            max-width: 100%;
+        }
 }
-
-
 @media (max-width: 1199px) {
 	.about-us-wrapper {
 		flex-direction: column-reverse;
@@ -1709,7 +1717,6 @@ img.hover-shadow {
         left: 15px;
     }
 }
-
 @media (min-width: 320px) and (max-width: 639px) {
     .news .wp-show-posts-columns, #post-315 .wp-show-posts-columns, #post-319 .wp-show-posts-columns {
         justify-content: center;
@@ -1720,8 +1727,6 @@ img.hover-shadow {
 			max-width: unset;
 		}
 }
-
-
 @media (min-width: 1200px) and (max-width: 1799px) {
 	.about-us {
 		padding: 25px 4% 0 4%
@@ -1730,8 +1735,6 @@ img.hover-shadow {
 			max-width: unset;
 		}
 }
-
-
 @media (min-width: 320px) and (max-width: 767px) {
     .projects-list {
         font-size: 12px;
@@ -1753,8 +1756,6 @@ img.hover-shadow {
                 justify-content: center;
             }
 }
-
-
 @media (min-width: 640px) and (max-width: 767px) {
     .projects-list .wp-show-posts-single {
         width: 33.333%;
@@ -1777,8 +1778,6 @@ img.hover-shadow {
                 margin: 0px 134px 50px 0;
             }
 }
-
-
 @media (min-width: 992px) and (max-width: 1199px) {
     .advantages-list-item {
         padding: 0;
@@ -1796,6 +1795,9 @@ img.hover-shadow {
     }
     .news-wrapper .wp-show-posts-single:nth-child(3n+2), #post-315 .wp-show-posts-single:nth-child(3n+2), #post-319 .wp-show-posts-single:nth-child(3n+2) {
         margin: 0 136px 50px;
+    }
+    .subcategory-page .entry-content {
+        justify-content: space-around;
     }
 }
 @media (min-width: 1400px) and (max-width: 1919px) {
