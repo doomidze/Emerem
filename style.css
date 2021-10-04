@@ -1203,6 +1203,10 @@ ul.products li.product {
     transition: 0.5s all;
     position: relative;
 }
+.subcategory-page section article a {
+    color: #000000;
+    display: inline-block;
+}
 .subcategory-page section article .wp-show-posts-entry-header {
     position: absolute;
     width: 100%;
@@ -1218,9 +1222,7 @@ ul.products li.product {
     margin: 0 auto;
     letter-spacing: -1px;
 }
-.subcategory-page .wp-show-posts-entry-title a {
-    color: #000000;
-}
+
 .subcategory-page section article .wp-show-posts-image img {
     height: auto;
     width: 100%;
