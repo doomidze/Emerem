@@ -1194,6 +1194,9 @@ ul.products li.product {
 .subcategory-page section, .subcategory-page .wp-block-column {
     max-width: 378px;
 }
+.subcategory-page .wp-block-column {
+    margin: 0!important;
+}
 .subcategory-page section article {
     width: 378px;
     height: 360px;
