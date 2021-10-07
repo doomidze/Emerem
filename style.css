@@ -647,7 +647,7 @@ body header.header .nav-item.active {
     .post-317 .wp-show-posts-entry-summary {
         margin-bottom: 30px;
     }
-    .post-317 .wp-show-posts a, .wp-show-posts-entry-summary {
+    .post-317 .wp-show-posts-entry-title, .post-317 .wp-show-posts-entry-summary p {
         padding: 0px 55px 0px 30px;
     }
     
