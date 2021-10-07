@@ -625,6 +625,9 @@ body header.header .nav-item.active {
         margin-top: 40px;
         margin-left: 0px!important;
     }
+    .post-317 .entry-content .wp-show-posts-columns .wp-show-posts-single {
+        max-width: 378px;
+    }
     .post-317 .entry-content .wp-show-posts-columns .wp-show-posts-inner {
         margin: 0;
     }
