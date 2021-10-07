@@ -621,8 +621,12 @@ body header.header .nav-item.active {
     .post-317 .entry-content p {
         margin: 0;
     }
-    .post-317 .entry-content .wp-show-posts-columns{
-        margin: 40px 0 0 0;
+    .post-317 .entry-content .wp-show-posts-columns {
+        margin-top: 40px;
+        margin-left: 0px!important;
+    }
+    .post-317 .entry-content .wp-show-posts-columns .wp-show-posts-inner {
+        margin: 0;
     }
 .interesting-products {
     background: #F6F6F6;
