@@ -635,12 +635,17 @@ body header.header .nav-item.active {
     .post-317 .wp-show-posts a {
         color: #000000;
     }
+    .post-317 .wp-show-posts-image {
+        margin-bottom: 22px;
+    }
     .post-317 .wp-show-posts-entry-header {
+        margin-bottom: 30px;
+    }
+    .post-317 .wp-show-posts-entry-title {
         font-size: 16px;
-        margin-top: 22px;
     }
     .post-317 .wp-show-posts-entry-summary {
-        margin-top: 30px;
+        margin-bottom: 30px;
     }
     
 .interesting-products {
