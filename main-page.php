@@ -8,7 +8,6 @@ Template Name: Home Page
 <?php $projects_gallery = carbon_get_post_meta($page_id, 'projects'); ?>
 <?php get_header(); ?>
 <main class="main main-page">
-        /*
         <?php
         /* Start the Loop */
         while ( have_posts() ) :
@@ -20,10 +19,7 @@ Template Name: Home Page
             ?>
             </div><!-- .entry-content -->
 
-        <?php endwhile; // End of the loop. ?>
-        */
-
-
+        <?php endwhile; // End of the loop. ?>   
     <section class="container-fluid slider-section">
         <div class="bg-fon"><img style="width:100%;height:100%" src="<?php bloginfo('template_url'); ?>/assets/img/slider.png" alt=""></div>
         <div class="slider main-slider">
