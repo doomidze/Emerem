@@ -356,7 +356,7 @@ body header.header .nav-item.active {
     max-width: 535px;
     background: none;
     top: 23%;
-    left: 20%;
+    left: 19%;
     opacity: 1;
     transition: none;
 }
@@ -2015,7 +2015,7 @@ img.hover-shadow {
     }
     .entry-content .mainmetaslider .caption-wrap {
         top: 7%;
-        left: 15%;
+        left: 2%;
     }
 }
 @media (min-width: 1200px) and (max-width: 1399px) {
@@ -2052,6 +2052,7 @@ img.hover-shadow {
     }
     .entry-content .mainmetaslider .caption-wrap {
         top: 9%;
+        left: 7%;
     }
 }
 .content {
@@ -2094,6 +2095,11 @@ img.hover-shadow {
     .projects-info-wrapper__inner, 
     .go-to-projects-btn {
         padding-left: 27%;
+    }
+}
+@media (min-width: 1600px) and (max-width: 1919px) {
+    .entry-content .mainmetaslider .caption-wrap {
+        left: 13%;
     }
 }
 @media (min-width: 1920px) {
