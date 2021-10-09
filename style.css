@@ -353,12 +353,14 @@ body header.header .nav-item.active {
 
 /*MetaSlider*//*MetaSlider*//*MetaSlider*/
 .entry-content .mainmetaslider .caption-wrap {
-    max-width: 535px;
     background: none;
-    top: 23%;
-    left: 19%;
+    top: 15%;
     opacity: 1;
     transition: none;
+}
+.entry-content .mainmetaslider .caption-wrap .caption {
+    max-width: 515px;
+    padding: 0;
 }
 .entry-content .mainmetaslider .caption-wrap p {
     font-size: 16px;
@@ -2014,8 +2016,9 @@ img.hover-shadow {
         min-height: 400px;
     }
     .entry-content .mainmetaslider .caption-wrap {
+        max-width: 960px;
         top: 7%;
-        left: 2%;
+
     }
 }
 @media (min-width: 1200px) and (max-width: 1399px) {
@@ -2035,8 +2038,8 @@ img.hover-shadow {
         width: 358px;
     }
     .entry-content .mainmetaslider .caption-wrap {
-        top: 3%;
-        left: 2%;
+        max-width: 1140px;
+        top: 7%;
     }
 }
 @media (min-width: 1400px) and (max-width: 1919px) {
@@ -2052,7 +2055,6 @@ img.hover-shadow {
     }
     .entry-content .mainmetaslider .caption-wrap {
         top: 9%;
-        left: 7%;
     }
 }
 .content {
@@ -2068,6 +2070,13 @@ img.hover-shadow {
 @media (min-width: 992px) {
     .content {
         max-width: 880px;
+    }
+    .entry-content .mainmetaslider .caption-wrap {
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        padding-right: var(--bs-gutter-x,.75rem);
+        padding-left: var(--bs-gutter-x,.75rem);
     }
 }
 @media (min-width: 1024px) {
@@ -2089,17 +2098,15 @@ img.hover-shadow {
     }
     .news-wrapper .wp-show-posts-single:nth-child(4n), #post-315 .wp-show-posts-single:nth-child(4n), #post-319 .wp-show-posts-single:nth-child(4n) {
         margin-right: 0;
-    }    
+    }
+    .entry-content .mainmetaslider .caption-wrap {
+        max-width: calc(1175px + var(--bs-gutter-x,.75rem) * 2);
+    }
 }
 @media (min-width: 1600px) {
     .projects-info-wrapper__inner, 
     .go-to-projects-btn {
         padding-left: 27%;
-    }
-}
-@media (min-width: 1600px) and (max-width: 1919px) {
-    .entry-content .mainmetaslider .caption-wrap {
-        left: 13%;
     }
 }
 @media (min-width: 1920px) {
