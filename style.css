@@ -371,14 +371,14 @@ body header.header .nav-item.active {
     padding: 16px 35px 16px 25px;
     background-color: #EB1C24;
     color: #ffffff;
-    border: 2px solid #EB1C24;
+    border: none;
     transition: 0.5s all;
     font-size: 16px;
     font-weight: 600;
     letter-spacing: 1px;
 }
 .entry-content .mainmetaslider .caption-wrap a:hover {
-    background: rgb(255 255 255 / 60%);
+    background-color: #ffffff;
     color:#EB1C24;
 }
 .entry-content .mainmetaslider .flexslider {
