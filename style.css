@@ -2036,6 +2036,7 @@ img.hover-shadow {
     }
     .entry-content .mainmetaslider .caption-wrap {
         top: 3%;
+        left: 2%;
     }
 }
 @media (min-width: 1400px) and (max-width: 1919px) {
