@@ -1848,6 +1848,9 @@ img.hover-shadow {
     .go-to-projects-btn:hover span svg {
         margin-left: 10px;
     }
+    .projects-info-wrapper h2 {
+        font-size: 30px;
+    }
 }
 @media (min-width: 480px) and (max-width: 639px) {
     .subcategory-page section article {
