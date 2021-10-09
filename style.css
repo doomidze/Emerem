@@ -1839,6 +1839,15 @@ img.hover-shadow {
     #metaslider-id-576 .caption-wrap {
         left: 0;
     }
+    .go-to-projects-btn {
+        font-size: 12px;
+    }
+    .go-to-projects-btn span svg {
+        margin-left: 10px;
+    }
+    .go-to-projects-btn:hover span svg {
+        margin-left: 10px;
+    }
 }
 @media (min-width: 480px) and (max-width: 639px) {
     .subcategory-page section article {
