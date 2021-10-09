@@ -352,8 +352,25 @@ body header.header .nav-item.active {
 }
 
 /*MetaSlider*//*MetaSlider*//*MetaSlider*/
-.metaslider .caption-wrap {
-    max-width: 515px;
+#metaslider-id-576 .caption-wrap {
+    max-width: 535px;
+    background: none;
+    top: 20%;
+    left: 15%;
+    opacity: 1;
+    transition: none;
+}
+#metaslider-id-576 .caption-wrap p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    max-width: 330px;
+    margin-bottom: 55px;
+}
+#metaslider-id-576 .caption-wrap a {
+    padding: 16px 35px 16px 25px;
+    background-color: #EB1C24;
+    color: #ffffff;
 }
 /*AboutUs block*/
 .about-us-wrapper {
