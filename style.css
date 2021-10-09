@@ -1836,6 +1836,9 @@ img.hover-shadow {
     .post-317 .entry-content .wp-show-posts-columns .wp-show-posts-single {
         width: 300px;
     }
+    #metaslider-id-576 .caption-wrap {
+        left: 0;
+    }
 }
 @media (min-width: 480px) and (max-width: 639px) {
     .subcategory-page section article {
@@ -1844,6 +1847,9 @@ img.hover-shadow {
     }
     .subcategory-page .wp-show-posts-entry-title {
         font-size: 18px;
+    }
+    #metaslider-id-576 .caption-wrap {
+        left: 5%;
     }
 }
 @media (max-width: 991px) {
@@ -1856,6 +1862,21 @@ img.hover-shadow {
         }
         .subcategory-page {
             max-width: 100%;
+        }
+        #metaslider-id-576 .caption-wrap {
+            top: 5%;
+            max-width: 320px;
+        }
+        #metaslider-id-576 .caption-wrap h1 {
+            font-size: 25px;
+            line-height: 30px;
+            margin-bottom: 10px;
+        }
+        #metaslider-id-576 .caption-wrap p {
+            margin-bottom: 35px;
+        }
+        #metaslider-id-576 .flexslider li img {
+            min-height: 300px;
         }
 }
 @media (max-width: 1199px) {
@@ -1889,6 +1910,7 @@ img.hover-shadow {
     .news .wp-show-posts-columns, #post-315 .wp-show-posts-columns, #post-319 .wp-show-posts-columns {
         justify-content: center;
     }
+    
 }
 @media (min-width: 640px) and (max-width: 1199px) {
 		.about-us p {
@@ -1942,6 +1964,9 @@ img.hover-shadow {
             width: 298px;
             height: 300px;
         }
+        #metaslider-id-576 .caption-wrap {
+            left: 10%;
+        }
 }
 @media (min-width: 768px) and (max-width: 991px) {
             .go-to-projects-btn {
@@ -1959,6 +1984,9 @@ img.hover-shadow {
             .post-317 .entry-content .wp-show-posts-columns .wp-show-posts-single {
                 width: 338px;
             }
+            #metaslider-id-576 .caption-wrap {
+                left: 10%;
+            }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
     .advantages-list-item {
@@ -1969,6 +1997,13 @@ img.hover-shadow {
     }
     .news-wrapper .wp-show-posts-single:nth-child(3n+2), #post-315 .wp-show-posts-single:nth-child(3n+2), #post-319 .wp-show-posts-single:nth-child(3n+2) {
         margin: 0px 46px 50px;
+    }
+    #metaslider-id-576 .flexslider li img {
+        min-height: 400px;
+    }
+    #metaslider-id-576 .caption-wrap {
+        top: 7%;
+        left: 15%;
     }
 }
 @media (min-width: 1200px) and (max-width: 1399px) {
