@@ -352,8 +352,8 @@ body header.header .nav-item.active {
 }
 
 /*MetaSlider*//*MetaSlider*//*MetaSlider*/
-.metaslider .caption-wrap{
- max-width: 515px;
+.metaslider .caption-wrap {
+    max-width: 515px;
 }
 /*AboutUs block*/
 .about-us-wrapper {
