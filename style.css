@@ -10,7 +10,10 @@ body {
     color: #000000;
 }
 h1 {
+    font-size: 43px;
 	font-weight: 700;
+    line-height: 46px;
+    margin-bottom: 28px;
 }
 h2 {
 	font-weight: 700;
@@ -348,7 +351,10 @@ body header.header .nav-item.active {
     color: rgba(235,28,36,1)!important;
 }
 
-
+/*MetaSlider*//*MetaSlider*//*MetaSlider*/
+.metaslider .caption-wrap{
+ max-width: 515px;
+}
 /*AboutUs block*/
 .about-us-wrapper {
     display: flex;  
