@@ -624,9 +624,12 @@ body header.header .nav-item.active {
                 margin: 0!important;       
             }
                 .news-wrapper .wp-show-posts-entry-title a, #post-315 .wp-show-posts-entry-title a, #post-319 .wp-show-posts-entry-title a {
-                    display: block;
+                    display: inline-block;
                     color: #000000;
                     margin-top: 20px;     
+                }
+                .news-wrapper .wp-show-posts-entry-title a:hover, #post-315 .wp-show-posts-entry-title a:hover, #post-319 .wp-show-posts-entry-title a:hover {
+                    color: #EB1C24; 
                 }
                 .news-wrapper .wp-show-posts-entry-summary, #post-315 .wp-show-posts-entry-summary, #post-319 .wp-show-posts-entry-summary {
                     margin-bottom: 20px;
@@ -721,7 +724,10 @@ body header.header .nav-item.active {
     .post-317 .wp-show-posts a {
         color: #000000;
         padding: 0px;
-        display: block;
+        display: inline-block;
+    }
+    .post-317 .wp-show-posts a:hover {
+        color: #EB1C24;
     }
     .post-317 .wp-show-posts-image {
         margin-bottom: 22px;
