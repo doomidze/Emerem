@@ -1319,7 +1319,6 @@ ul.products li.product {
 }
 .product-page section article .wp-show-posts-inner {
     cursor: pointer;
-    height: 180px;
 }
 .product-page .wp-show-posts-entry-title {
     margin-top: 0.5em;
