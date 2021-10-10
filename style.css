@@ -357,6 +357,11 @@ body header.header .nav-item.active {
     top: 15%;
     opacity: 1;
     transition: none;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    padding-right: var(--bs-gutter-x,.75rem);
+    padding-left: var(--bs-gutter-x,.75rem);
 }
 .entry-content .mainmetaslider .caption-wrap .caption {
     max-width: 515px;
@@ -1862,9 +1867,6 @@ img.hover-shadow {
     .subcategory-page .wp-show-posts-entry-title {
         font-size: 18px;
     }
-    .entry-content .mainmetaslider .caption-wrap {
-        left: 5%;
-    }
 }
 @media (max-width: 991px) {
     .our-projects-wrapper {
@@ -1877,16 +1879,16 @@ img.hover-shadow {
         .subcategory-page {
             max-width: 100%;
         }
-        .entry-content .mainmetaslider .caption-wrap {
+        .entry-content .mainmetaslider .caption-wrap .caption {
             top: 5%;
             max-width: 320px;
         }
-        .entry-content .mainmetaslider .caption-wrap h1 {
+        .entry-content .mainmetaslider .caption-wrap .caption h1 {
             font-size: 25px;
             line-height: 30px;
             margin-bottom: 10px;
         }
-        .entry-content .mainmetaslider .caption-wrap p {
+        .entry-content .mainmetaslider .caption-wrap .caption p {
             margin-bottom: 35px!important;
         }
         .entry-content .mainmetaslider .flexslider li img {
@@ -1978,9 +1980,18 @@ img.hover-shadow {
             width: 298px;
             height: 300px;
         }
-        .entry-content .mainmetaslider .caption-wrap {
-            left: 10%;
-        }
+}
+@media (min-width: 320px) and (max-width: 575px) {
+    .entry-content .mainmetaslider .caption-wrap {
+        max-width: 100%;
+        top: 10%;
+    }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+    .entry-content .mainmetaslider .caption-wrap {
+        max-width: 540px;
+        top: 10%;
+    }
 }
 @media (min-width: 768px) and (max-width: 991px) {
             .go-to-projects-btn {
@@ -1999,7 +2010,7 @@ img.hover-shadow {
                 width: 338px;
             }
             .entry-content .mainmetaslider .caption-wrap {
-                left: 10%;
+                max-width: 720px;
             }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -2070,13 +2081,6 @@ img.hover-shadow {
 @media (min-width: 992px) {
     .content {
         max-width: 880px;
-    }
-    .entry-content .mainmetaslider .caption-wrap {
-        left: 0;
-        right: 0;
-        margin: 0 auto;
-        padding-right: var(--bs-gutter-x,.75rem);
-        padding-left: var(--bs-gutter-x,.75rem);
     }
 }
 @media (min-width: 1024px) {
