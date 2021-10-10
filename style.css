@@ -504,7 +504,6 @@ body header.header .nav-item.active {
                 line-height: 14px;
                 font-weight: 600;
                 text-transform: uppercase;
-                transition: 0.5s all;
                 border: 2px solid rgba(235,28,36,1);
                 background: rgba(235,28,36,1);
                 color: white;
@@ -524,6 +523,10 @@ body header.header .nav-item.active {
                 }
                 .go-to-projects-btn:hover span svg {
                     margin-left: 140px;
+                }
+                .go-to-projects-btn span svg {
+                    transition: 0.5s all;
+                    margin-left: 50px;
                 }
         .projects-list .wp-show-posts-columns { /*блок картинок*/
             margin: 0!important;
@@ -562,11 +565,11 @@ body header.header .nav-item.active {
                             display: block;
                         }
     .projects-list .wp-show-posts-columns .wp-show-posts-inner:hover .wp-show-posts-entry-header {
-        bottom: 60px; 
+        bottom: 80px; 
         transition: all 1s;   
     }
     .projects-list .wp-show-posts-columns .wp-show-posts-inner:hover .wp-show-posts-entry-summary {
-        max-height: 50px;
+        max-height: 70px;
         font-weight: 500;
     }    
     .projects-list .wp-show-posts-single,
@@ -753,12 +756,19 @@ body header.header .nav-item.active {
         height: 15px;
         bottom: 3px;
         right: -85px;
-        transition: 0.5s all;
+        transition: 0.1s;
         position: absolute;
         pointer-events: none;
     }
+    .post-317 .wpsp-read-more a:hover {
+        color: #EB1C24;
+    }
     .post-317 .wpsp-read-more a:hover::after {
         right: -150px;
+        background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjIiIGhlaWdodD0iMTAiIHZpZXdCb3g9IjAgMCAyMiAxMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTAuNjY3OTkgMy45ODQzMkMwLjcxMzQ0OSAzLjk3Njk0IDAuNzU5NDU5IDMuOTczNTMgMC44MDU0OSAzLjk3NDEzSDE5LjUzMzFMMTkuMzYyMiAzLjg5NDY0QzE5LjE5NTEgMy44MTU1NiAxOS4wNDMxIDMuNzA3OTUgMTguOTEzIDMuNTc2NjZMMTYuNzE1IDEuMzc4NjZDMTYuNDI1NSAxLjEwMjMyIDE2LjM3NjkgMC42NTc3NzEgMTYuNTk5OCAwLjMyNTM2M0MxNi44NTkxIC0wLjAyODg1NjggMTcuMzU2NSAtMC4xMDU3NjcgMTcuNzEwOCAwLjE1MzYwNkMxNy43Mzk0IDAuMTc0NTczIDE3Ljc2NjYgMC4xOTc0MjcgMTcuNzkyMiAwLjIyMjAyMUwyMS43NjY5IDQuMTk2NzFDMjIuMDc3NSA0LjUwNjk5IDIyLjA3NzcgNS4wMTAzMSAyMS43Njc1IDUuMzIwOTNMMjEuNzY2OSA1LjMyMTU1TDE3Ljc5MjIgOS4yOTYyNEMxNy40ODEzIDkuNjA2MjQgMTYuOTc4IDkuNjA1NTUgMTYuNjY3OSA5LjI5NDY4QzE2LjY0MzUgOS4yNzAyMSAxNi42MjA4IDkuMjQ0MTcgMTYuNTk5OCA5LjIxNjc1QzE2LjM3NjkgOC44ODQzNCAxNi40MjU1IDguNDM5OCAxNi43MTUgOC4xNjM0NkwxOC45MDkgNS45NjE0OEMxOS4wMjU3IDUuODQ0NzIgMTkuMTU5OCA1Ljc0NjgyIDE5LjMwNjUgNS42NzEzMkwxOS41NDUgNS41NjQwMUgwLjg0OTIzNEMwLjQ0MzE0NCA1LjU3OTA5IDAuMDg2ODY0NSA1LjI5NTQyIDAuMDEwNTc0MyA0Ljg5NjI2Qy0wLjA1OTcwMzggNC40NjI4OSAwLjIzNDYyNSA0LjA1NDYyIDAuNjY3OTkgMy45ODQzMloiIGZpbGw9IiNFQjFDMjQiLz4KPC9zdmc+Cg==");
+        background-repeat: no-repeat;
+        background-size: contain;
+        transition: 0.5s;
     }
     
 .interesting-products {
@@ -1915,7 +1925,6 @@ img.hover-shadow {
     }
     .projects-list .wp-show-posts-columns .wp-show-posts-inner .wp-show-posts-entry-header {
         bottom: 5px;
-        left: 15px;
     }
     .post-317 .entry-content .wp-show-posts-columns {
         display: flex;
