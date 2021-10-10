@@ -7,62 +7,21 @@ Template Name: Home Page
 <?php $page_id = get_the_ID(); ?>
 <?php $projects_gallery = carbon_get_post_meta($page_id, 'projects'); ?>
 <?php get_header(); ?>
-<main class="main main-page">
-        <?php
-        /* Start the Loop */
-        while ( have_posts() ) :
-            the_post();
-        ?>
-            <div class="entry-content">
-            <?php
-                the_content();
-            ?>
-            </div><!-- .entry-content -->
 
-        <?php endwhile; // End of the loop. ?>   
-    <section class="container-fluid slider-section">
-        <div class="bg-fon"><img style="width:100%;height:100%" src="<?php bloginfo('template_url'); ?>/assets/img/slider.png" alt=""></div>
-        <div class="slider main-slider">
-            <div class="slide">
-                <div class="swiper-text-field">
-                    <div class="container">
-                        <div class="wrapper-absolute">
-                            <h1 class="title-swiper">Доверьте подбор вашего насоса<br> нашим специалистам</h1>
-                            <p class="swiper-main-text">Поможем подобрать насосное<br> оборудование быстро и эффективно!
-                            </p>
-                            <div class="swiper-learn-more" onclick="openModal()">
-                                Заказать подбор
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="slide">
-                <div class="swiper-text-field">
-                    <div class="container">
-                        <h1 class="title-swiper">Доверьте подбор вашего насоса<br> нашим специалистам</h1>
-                        <p class="swiper-main-text">Поможем подобрать насосное<br> оборудование быстро и эффективно!
-                        </p>
-                        <div class="swiper-learn-more" onclick="openModal()">
-                            Заказать подбор
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="slide">
-                <div class="swiper-text-field">
-                    <div class="container">
-                        <h1 class="title-swiper">Доверьте подбор вашего насоса<br> нашим специалистам</h1>
-                        <p class="swiper-main-text">Поможем подобрать насосное<br> оборудование быстро и эффективно!
-                        </p>
-                        <div class="swiper-learn-more" onclick="openModal()">
-                            Заказать подбор
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<main class="main main-page">
+    
+    <?php
+    /* Start the Loop */
+    while ( have_posts() ) :
+        the_post();
+    ?>
+        <div class="entry-content">
+        <?php
+            the_content();
+        ?>
+        </div><!-- .entry-content -->
+
+    <?php endwhile; // End of the loop. ?> 
 
 
     <section class="cat-menu">
