@@ -1367,36 +1367,44 @@ ul.products li.product {
 .subcategory-page section article {
     width: 378px;
     height: 360px;
-    padding: 20px 15px 30px;
+    /*padding: 20px 15px 30px;*/
     border-radius: 5px;
     box-shadow: 0px 0px 15px rgb(0 0 0 / 20%);
     transition: 0.5s all;
     position: relative;
 }
+.subcategory-page section article .wp-show-posts-inner {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
 .subcategory-page section article a {
     color: #000000;
-    display: inline-block;
+    display: block;
+    padding: 20px 15px 30px;
+}
+.wp-show-posts-image {
+    margin-bottom: 0px;
 }
 .subcategory-page section article .wp-show-posts-entry-header {
-    position: absolute;
-    width: 100%;
-    text-align: center;
-    bottom: 35px;
-    margin: 0 -15px 0;
-    padding: 0 15px;
+    height: inherit;
+    margin: 0px;
 }
 .subcategory-page .wp-show-posts-entry-title {
+    height: inherit;
     font-size: 20px;
     line-height: 25px;
     color: white;
-    max-width: 305px;
     margin: 0 auto;
     letter-spacing: -1px;
 }
-
-.subcategory-page section article .wp-show-posts-image img {
-    height: auto;
-    width: 100%;
+.subcategory-page .wp-show-posts-entry-title a {
+    height: inherit;
+    display: block;
+    /* align-items: flex-end; */
+    text-align: center;
+    padding: 20px 10px 10px;
 }
 .category-item:hover {
     background: red;
@@ -1903,6 +1911,10 @@ img.hover-shadow {
         }
         .entry-content .mainmetaslider .flexslider li img {
             min-height: 300px;
+        }
+        .entry-content .mainmetaslider .caption-wrap a {
+            padding: 10px 20px 10px 15px;
+            font-size: 15px;
         }
 }
 @media (max-width: 1199px) {
