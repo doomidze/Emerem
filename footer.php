@@ -54,7 +54,7 @@
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M1.18323 0H17.7485C18.4016 0 18.9317 0.530088 18.9317 1.18323V1.85531L9.46587 5.86529L0 1.85649V1.18323C0 0.530088 0.530088 0 1.18323 0ZM9.46587 7.09935C9.54396 7.09935 9.62323 7.08396 9.6966 7.05202L18.9317 3.14143V11.8323C18.9317 12.4854 18.4016 13.0155 17.7485 13.0155H1.18323C0.530088 13.0155 0 12.4854 0 11.8323V3.14143L9.23513 7.05202C9.30849 7.08396 9.38777 7.09935 9.46587 7.09935Z" fill="#EB1C24"/>
                             </svg>
                         </div>
-                        <div class="links-item__link underline"><a href="mailto:<?php echo $GLOBALS['emerem']['email']; ?>"><?php echo $GLOBALS['emerem']['email']; ?></a></div>
+                        <div class="links-item__link mail"><a href="mailto:<?php echo $GLOBALS['emerem']['email']; ?>"><?php echo $GLOBALS['emerem']['email']; ?></a></div>
                     </div>
                 </div>
                 <div class="copyright"><?php echo $GLOBALS['emerem']['copyright']; ?></div>
