@@ -187,8 +187,8 @@ h1.entry-title {
 }
 .header .nav {
     background: black;
-    padding: 20px;
-    height: 61px;
+    align-items: center;
+    height: 60px;
 }
 .header .nav ul.nav-wrapper {
     display: flex;
@@ -206,7 +206,7 @@ h1.entry-title {
     flex-direction: column;
 }
 li.current-menu-item a {
-    color: red!important;
+    color: #EB1C24!important;
 }
 .header .nav .nav-item-header {
     position: relative;
@@ -250,11 +250,10 @@ body header.header .nav-item.active {
     color: white;
     text-decoration: none!important;
     transition: 0.5s all;
-    padding: 20px 0 18px;
+    padding: 20px 0 17px;
     border-bottom: 3px solid #000000;
 }
 .header .nav .nav-wrapper a:hover {
-    color: #EB1C24;
     border-bottom: 3px solid #EB1C24;
 }
 
