@@ -719,6 +719,9 @@ body header.header .nav-item.active {
         padding: 0px 0 80px;
         position: relative;
     }
+    .post-317 .wpsp-clear {
+        display: none;
+    }
     .post-317 h1.entry-title {
         margin-bottom: 35px;
     }
