@@ -1304,6 +1304,7 @@ ul.products li.product {
 .product-page section article:hover {
     background: red;
     height: 277px;
+    transition: 0.7s all;
 }
 .product-page section article:hover .wp-show-posts-entry-summary {
     bottom: 10px;
