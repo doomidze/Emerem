@@ -7,12 +7,16 @@
 <?php $page_id = get_the_ID(); ?>
 <?php get_header(); ?>
 <main class="main">
-    <section class="link container">
-        <a href="/" class="main-link">Главная </a>
-        <a href="" class="secondary-link"> / Контакты</a>
-    </section>
+
     <section class="map">
-        <h1 class="map-title container">Наши контакты</h1>
+        <div class="map-title container">
+        <?php
+        if ( function_exists('yoast_breadcrumb') ) {
+        yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
+        }
+        ?>
+            <h1 class="">Наши контакты</h1>
+        </div>
         <div id="map"></div>
         <script>
             function initMap() {

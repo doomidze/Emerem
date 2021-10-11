@@ -7,14 +7,12 @@ Template Name: Products Page Промышленные насосы
 <?php get_header(); ?>
 
 <main class="main">
-
-    <section class="link container">
-        <a href="/" class="main-link">Главная </a>
-        <a href="https://emerem.com.ua/product-categories/" class="secondary-link"> / Продукция</a>
-    </section>
-
     <section class="store-products container">        
-
+        <?php
+		if ( function_exists('yoast_breadcrumb') ) {
+		yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
+		}
+		?>
         <?php
         if ( ! is_front_page() ) :
             the_title( '<h1 class="entry-title">', '</h1>' );

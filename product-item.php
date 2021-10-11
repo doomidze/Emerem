@@ -6,12 +6,12 @@ Template Name: Product Item
 
 <?php get_header(); ?>
 <main class="main">
-    <section class="link container">
-        <a href="/" class="main-link">Главная </a>
-        <a href="/product-categories/pipes/" class="main-link"> / Продукция</a>
-        <a href="" class="secondary-link"> / Насос</a>
-    </section>
     <section class="product-main-info container">
+        <?php
+		if ( function_exists('yoast_breadcrumb') ) {
+		yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
+		}
+		?>
         <h1 class="product-main-info-title">Насос промышленный RD (RD-RDL-RDM)</h1>
         <div class="row">
             <div class="col-md-6">

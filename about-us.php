@@ -8,11 +8,12 @@
 <?php get_header(); ?>
 
 <main class="main">
-    <section class="link container">
-        <a href="/" class="main-link">Главная </a>
-        <a href="" class="secondary-link"> / О Компании</a>
-    </section>
     <section class="about-us-page-wrapper container">
+    <?php
+        if ( function_exists('yoast_breadcrumb') ) {
+        yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
+        }
+    ?>
         <h2><?php echo carbon_get_post_meta($page_id, 'about_us_title_page') ?></h2>
         <p>
             <?php echo carbon_get_post_meta($page_id, 'about_us_text') ?>

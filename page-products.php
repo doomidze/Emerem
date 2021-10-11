@@ -10,6 +10,11 @@
     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
         <section class="container product-page">
+            <?php
+			if ( function_exists('yoast_breadcrumb') ) {
+			yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
+			}
+			?>
 
             <?php
             if ( ! is_front_page() ) :

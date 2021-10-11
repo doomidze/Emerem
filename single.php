@@ -13,12 +13,11 @@
     <div class="">
 
         <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
-            <section class="link container">
-                <a href="/" class="main-link post">Главная /</a>
-                <?php the_category(' / ', 'multiple'); ?>
-                <a href="" class="secondary-link"> / <?php the_title()?></a>
-            </section>
+            <?php
+            if ( function_exists('yoast_breadcrumb') ) {
+            yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
+            }
+            ?>
             <?php
                 if (have_posts()) {
                     while (have_posts()) {

@@ -38,18 +38,18 @@ a {
     outline: none!important;
     text-decoration: none!important;
 }
-.yoast-breadcrumbs {
-    position: absolute;
-    top: 30px;
+#breadcrumbs {
+    padding-left: 2px;
+    margin-bottom: 20px;
 }
-.yoast-breadcrumbs, .yoast-breadcrumbs a {
+#breadcrumbs, #breadcrumbs a {
     font-size: 13px;
 }
-    .yoast-breadcrumbs a {
+    #breadcrumbs a {
         font-weight: 500;
         color: #A5A5A5;
     }
-    .yoast-breadcrumbs { 
+    #breadcrumbs { 
         color: #ff0000;
         font-weight: 600;
     }
@@ -600,9 +600,12 @@ body header.header .nav-item.active {
 
 
 /*NewsBlock//UsefullInfoPage//NewsPage*//*NewsBlock//UsefullInfoPage//NewsPage*//*NewsBlock//UsefullInfoPage//NewsPage*/
-    .news, .post-315, .post-319 {
+    .news {
         padding-top: 80px;
         padding-bottom: 80px;
+    }
+    .post-315, .post-319 {
+        padding: 30px 0 80px;
     }
     .news .wpsp-clear, .post-315 .wpsp-clear, .post-319 .wpsp-clear {
         display: none;
@@ -698,7 +701,7 @@ body header.header .nav-item.active {
                 }
 /*RealisedProjectsPage*//*RealisedProjectsPage*//*RealisedProjectsPage*//*RealisedProjectsPage*//*RealisedProjectsPage*/
     .post-317 {
-        padding: 80px 0;
+        padding: 30px 0 80px;
         position: relative;
     }
     .post-317 h1.entry-title {
@@ -987,7 +990,7 @@ body header.header .nav-item.active {
     height: 460px;
 }
 .map-title {
-    padding-bottom: 20px;
+    padding: 30px 0 80px;
 }
 
 
@@ -1516,7 +1519,9 @@ ul.products li.product {
     padding-top: 0.5rem;
     margin-bottom: 0;
 }
-
+.about-us-page-wrapper {
+    padding: 30px 0 80px;
+}
 .about-us-page-wrapper h2 {
     padding-top: 0.5rem;
 }

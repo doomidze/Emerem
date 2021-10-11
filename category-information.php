@@ -6,11 +6,12 @@ Template Name: Blog Page
 
 <?php get_header(); ?>
 <main class="main">
-    <section class="link container">
-        <a href="/" class="main-link">Главная </a>
-        <a href="" class="secondary-link"> / <?php single_cat_title()?></a>
-    </section>
     <section class="projects container">
+        <?php
+        if ( function_exists('yoast_breadcrumb') ) {
+        yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
+        }
+        ?>
         <h1 class="projects-title"><?php single_cat_title()?></h1>
         <div class="projects-wrapper row">
             <?php
