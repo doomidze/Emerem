@@ -43,6 +43,7 @@ div {
 a {
     outline: none!important;
     text-decoration: none!important;
+    transition: 0.5s all;
 }
 #breadcrumbs {
     padding-left: 2px;
@@ -1389,7 +1390,7 @@ ul.products li.product {
     flex-direction: column;
     align-items: stretch;
 }
-.subcategory-page section:hover article a {
+.subcategory-page section:hover a {
     color: #EB1C24;
 }
 .subcategory-page section article a {
