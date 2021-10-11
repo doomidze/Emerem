@@ -54,7 +54,7 @@
         </div>
         <div class="header-info-mobile">
             <div class="logo">
-                <a href="<?php echo get_home_url(); ?>"><img src="<?php echo wp_get_attachment_image_url(carbon_get_theme_option( 'site_logo' ), 'full'); ?>" style="width: 80px;" alt=""></a>
+                <a href="<?php echo get_home_url(); ?>"><img src="<?php echo wp_get_attachment_image_url(carbon_get_theme_option( 'site_logo' ), 'full'); ?>" alt=""></a>
             </div>
             <div class="request-call-btn" onclick="openModal()"><?php echo $GLOBALS['emerem']['call']; ?></div>
             <div class="toggle-menu"><i class="fa fa-bars" style="color: black" id="MobileToggle"></i></div>
