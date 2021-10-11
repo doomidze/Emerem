@@ -237,25 +237,25 @@ ul.nav-item-body li:first-child {
     cursor: pointer;
 }
 body header.header .nav-item.active {
-    color: rgba(235,28,36,1);
+    color: #EB1C24;
 }
 .link-wrapper {
     height: 100%;
     width: 100%;
 }
 .header .nav .nav-item-header:hover .nav-item-header-title {
-    color: rgba(235,28,36,1);
+    color: #EB1C24;
 }
 .header .nav .nav-wrapper a {
     color: white;
     text-decoration: none!important;
     transition: 0.5s all;
     padding: 20px 0 18px;
-    border-bottom: 2px solid #000000;
+    border-bottom: 3px solid #000000;
 }
 .header .nav .nav-wrapper a:hover {
     color: #EB1C24;
-    border-bottom: 2px solid #EB1C24;
+    border-bottom: 3px solid #EB1C24;
 }
 
 
