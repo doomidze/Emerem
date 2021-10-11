@@ -37,9 +37,6 @@ h6 {
     line-height: 1.571;
     font-weight: 400;
 }
-div {
-	transition: .5s;
-}
 a {
     outline: none!important;
     text-decoration: none!important;
@@ -57,7 +54,10 @@ a {
         font-weight: 500;
         color: #A5A5A5;
     }
-    .breadcrumb_last, #breadcrums a:last-child { 
+    #breadcrumbs a:hover {
+        color: #EB1C24;
+    }
+    .breadcrumb_last { 
         color: #EB1C24;
         font-weight: 600;
     }
@@ -188,6 +188,7 @@ h1.entry-title {
 .header .nav {
     background: black;
     padding: 20px;
+    height: 61px;
 }
 .header .nav ul.nav-wrapper {
     display: flex;
@@ -249,9 +250,12 @@ body header.header .nav-item.active {
     color: white;
     text-decoration: none!important;
     transition: 0.5s all;
+    padding: 20px 0 18px;
+    border-bottom: 2px solid #000000;
 }
 .header .nav .nav-wrapper a:hover {
-    color: rgba(235,28,36,1);
+    color: #EB1C24;
+    border-bottom: 2px solid #EB1C24;
 }
 
 
@@ -577,11 +581,12 @@ body header.header .nav-item.active {
                         }
     .projects-list .wp-show-posts-columns .wp-show-posts-inner:hover .wp-show-posts-entry-header {
         bottom: 80px; 
-        transition: all 1s;   
+        transition: 0.4s all;   
     }
     .projects-list .wp-show-posts-columns .wp-show-posts-inner:hover .wp-show-posts-entry-summary {
         max-height: 70px;
         font-weight: 500;
+        transition: 0.6s all;
     }    
     .projects-list .wp-show-posts-single,
     .projects-list .wp-show-posts-single {
@@ -776,19 +781,18 @@ body header.header .nav-item.active {
         height: 15px;
         bottom: 3px;
         right: -85px;
-        transition: 0.1s;
         position: absolute;
         pointer-events: none;
+        transition: 0.5s all;
     }
     .post-317 .wpsp-read-more a:hover {
         color: #EB1C24;
     }
     .post-317 .wpsp-read-more a:hover::after {
         right: -150px;
-        background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjIiIGhlaWdodD0iMTAiIHZpZXdCb3g9IjAgMCAyMiAxMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTAuNjY3OTkgMy45ODQzMkMwLjcxMzQ0OSAzLjk3Njk0IDAuNzU5NDU5IDMuOTczNTMgMC44MDU0OSAzLjk3NDEzSDE5LjUzMzFMMTkuMzYyMiAzLjg5NDY0QzE5LjE5NTEgMy44MTU1NiAxOS4wNDMxIDMuNzA3OTUgMTguOTEzIDMuNTc2NjZMMTYuNzE1IDEuMzc4NjZDMTYuNDI1NSAxLjEwMjMyIDE2LjM3NjkgMC42NTc3NzEgMTYuNTk5OCAwLjMyNTM2M0MxNi44NTkxIC0wLjAyODg1NjggMTcuMzU2NSAtMC4xMDU3NjcgMTcuNzEwOCAwLjE1MzYwNkMxNy43Mzk0IDAuMTc0NTczIDE3Ljc2NjYgMC4xOTc0MjcgMTcuNzkyMiAwLjIyMjAyMUwyMS43NjY5IDQuMTk2NzFDMjIuMDc3NSA0LjUwNjk5IDIyLjA3NzcgNS4wMTAzMSAyMS43Njc1IDUuMzIwOTNMMjEuNzY2OSA1LjMyMTU1TDE3Ljc5MjIgOS4yOTYyNEMxNy40ODEzIDkuNjA2MjQgMTYuOTc4IDkuNjA1NTUgMTYuNjY3OSA5LjI5NDY4QzE2LjY0MzUgOS4yNzAyMSAxNi42MjA4IDkuMjQ0MTcgMTYuNTk5OCA5LjIxNjc1QzE2LjM3NjkgOC44ODQzNCAxNi40MjU1IDguNDM5OCAxNi43MTUgOC4xNjM0NkwxOC45MDkgNS45NjE0OEMxOS4wMjU3IDUuODQ0NzIgMTkuMTU5OCA1Ljc0NjgyIDE5LjMwNjUgNS42NzEzMkwxOS41NDUgNS41NjQwMUgwLjg0OTIzNEMwLjQ0MzE0NCA1LjU3OTA5IDAuMDg2ODY0NSA1LjI5NTQyIDAuMDEwNTc0MyA0Ljg5NjI2Qy0wLjA1OTcwMzggNC40NjI4OSAwLjIzNDYyNSA0LjA1NDYyIDAuNjY3OTkgMy45ODQzMloiIGZpbGw9IiNFQjFDMjQiLz4KPC9zdmc+Cg==");
+        background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDIiIGhlaWdodD0iMTUiIHZpZXdCb3g9IjAgMCA0MiAxNSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEuMDkzMTMgNi4xNzAxN0MxLjE2MTE5IDYuMTU5MTMgMS4yMzAwNiA2LjE1NDA0IDEuMjk4OTcgNi4xNTQ5M0gzNy40ODU3TDM3LjIyOTggNi4wMzZDMzYuOTc5NyA1LjkxNzY5IDM2Ljc1MjIgNS43NTY2OCAzNi41NTc0IDUuNTYwMjVMMzMuMjY2OSAyLjI3MTY4QzMyLjgzMzYgMS44NTgyMyAzMi43NjA4IDEuMTkzMTIgMzMuMDk0NCAwLjY5NTc4QzMzLjQ4MjcgMC4xNjU4MSAzNC4yMjczIDAuMDUwNzM5NiAzNC43NTc2IDAuNDM4ODA1QzM0LjgwMDUgMC40NzAxNzQgMzQuODQxMiAwLjUwNDM2OCAzNC44Nzk1IDAuNTQxMTY0TDQwLjgyOTcgNi40ODc5NUM0MS4yOTQ3IDYuOTUyMTcgNDEuMjk1MSA3LjcwNTIyIDQwLjgzMDYgOC4xNjk5Nkw0MC44Mjk3IDguMTcwODlMMzQuODc5NSAxNC4xMTc3QzM0LjQxNDEgMTQuNTgxNSAzMy42NjA2IDE0LjU4MDUgMzMuMTk2NSAxNC4xMTUzQzMzLjE1OTkgMTQuMDc4NyAzMy4xMjU4IDE0LjAzOTggMzMuMDk0NCAxMy45OTg3QzMyLjc2MDggMTMuNTAxNCAzMi44MzM2IDEyLjgzNjMgMzMuMjY2OSAxMi40MjI4TDM2LjU1MTUgOS4xMjgzM0MzNi43MjYxIDguOTUzNjQgMzYuOTI2OCA4LjgwNzE2IDM3LjE0NjUgOC42OTQyMUwzNy41MDM1IDguNTMzNjVIMS4zNjQ0NkMwLjc1NjUzMSA4LjU1NjIxIDAuMjIzMTY3IDguMTMxNzkgMC4xMDg5NTkgNy41MzQ1OUMwLjAwMzc0OTg1IDYuODg2MiAwLjQ0NDM2NiA2LjI3NTM1IDEuMDkzMTMgNi4xNzAxN1oiIGZpbGw9IiNFQjFDMjQiLz4KPC9zdmc+Cg==");
         background-repeat: no-repeat;
         background-size: contain;
-        transition: 0.5s;
     }
     
 .interesting-products {
@@ -1268,12 +1272,6 @@ ul.products li.product {
 	margin-left: -25px;
 	margin-right: -25px;
 }
-.advantages-subtitle {
-    max-width: 715px;
-	margin: 35px auto 50px auto;
-	line-height: 23px;
-}
-
 .category-body {
     margin-top: 2em;
     display: inline-grid;

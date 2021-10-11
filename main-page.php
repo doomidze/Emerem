@@ -97,7 +97,6 @@ Template Name: Home Page
 
     <section class="advantages container">
         <h2 class="advantages-title"><?php echo carbon_get_post_meta($page_id, 'advantages_title') ?></h2>
-		<p class="advantages-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget lectus ipsum. Praesent blandit egestas arcu luctus semper. Praesent ultricies orci ut viverra consequat. </p>
         <div class="advantages-list row">
             <div class="advantages-list-item col-sm-6 col-xl-3">
                 <div class="advantages-list-item-circle">
