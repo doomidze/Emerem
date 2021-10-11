@@ -719,7 +719,7 @@ body header.header .nav-item.active {
         padding: 0px 0 80px;
         position: relative;
     }
-    .post-317 .wpsp-clear {
+    .post-317 .wpsp-clear, .store-products .wpsp-clear {
         display: none;
     }
     .post-317 h1.entry-title {
