@@ -253,6 +253,7 @@ body header.header .nav-item.active {
     transition: 0.5s all;
     padding: 31px 0 28px;
     border-bottom: 3px solid #00000000;
+    font-weight: 600;
 }
 .header .nav .nav-wrapper > .menu-item > a:hover {
     border-bottom: 3px solid #EB1C24;
