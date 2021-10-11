@@ -40,7 +40,8 @@ a {
 }
 #breadcrumbs {
     padding-left: 2px;
-    margin-bottom: 20px;
+    margin-top: 30px;
+    margin-bottom: 25px;
 }
 #breadcrumbs, #breadcrumbs a {
     font-size: 13px;
@@ -605,7 +606,7 @@ body header.header .nav-item.active {
         padding-bottom: 80px;
     }
     .post-315, .post-319 {
-        padding: 30px 0 80px;
+        padding: 0px 0 80px;
     }
     .news .wpsp-clear, .post-315 .wpsp-clear, .post-319 .wpsp-clear {
         display: none;
@@ -701,7 +702,7 @@ body header.header .nav-item.active {
                 }
 /*RealisedProjectsPage*//*RealisedProjectsPage*//*RealisedProjectsPage*//*RealisedProjectsPage*//*RealisedProjectsPage*/
     .post-317 {
-        padding: 30px 0 80px;
+        padding: 0px 0 80px;
         position: relative;
     }
     .post-317 h1.entry-title {
@@ -988,9 +989,6 @@ body header.header .nav-item.active {
 
 #map {
     height: 460px;
-}
-.map-title {
-    padding: 30px 0 80px;
 }
 
 
@@ -1357,7 +1355,7 @@ ul.products li.product {
 }
 /*IndustrialPumps*//*IndustrialPumps*//*IndustrialPumps*/
 .post-323 {
-    padding: 80px;
+    padding: 0 0 80px;
 }
 .subcategory-page .entry-content {
     display: flex;
@@ -1520,7 +1518,7 @@ ul.products li.product {
     margin-bottom: 0;
 }
 .about-us-page-wrapper {
-    padding: 30px 0 80px;
+    padding: 0px 0 80px;
 }
 .about-us-page-wrapper h2 {
     padding-top: 0.5rem;
