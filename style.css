@@ -250,8 +250,8 @@ body header.header .nav-item.active {
     color: white;
     text-decoration: none!important;
     transition: 0.5s all;
-    padding: 20px 0 17px;
-    border-bottom: 3px solid #000000;
+    padding: 20px 0 18px;
+    border-bottom: 2px solid #00000000;
 }
 .header .nav .nav-wrapper a:hover {
     border-bottom: 3px solid #EB1C24;
