@@ -49,11 +49,10 @@ a {
 }
 #breadcrumbs, #breadcrumbs a {
     font-size: 13px;
+    font-weight: 500;
+    color: #A5A5A5;
 }
-    #breadcrumbs a {
-        font-weight: 500;
-        color: #A5A5A5;
-    }
+    
     #breadcrumbs a:hover {
         color: #EB1C24;
     }
@@ -188,7 +187,7 @@ h1.entry-title {
 .header .nav {
     background: black;
     align-items: center;
-    height: 60px;
+    height: 80px;
 }
 .header .nav ul.nav-wrapper {
     display: flex;
@@ -250,7 +249,7 @@ body header.header .nav-item.active {
     color: white;
     text-decoration: none!important;
     transition: 0.5s all;
-    padding: 21px 0 18px;
+    padding: 31px 0 28px;
     border-bottom: 3px solid #00000000;
 }
 .header .nav .nav-wrapper > .menu-item > a:hover {
@@ -758,7 +757,6 @@ header .nav .menu-item .menu-item a {
     .post-317 .entry-content .wp-show-posts-columns, .store-products .wp-show-posts-columns {
         margin-top: 40px;
         margin-left: 0px!important;
-        display: block;
     }
     .post-317 .entry-content .wp-show-posts-columns .wp-show-posts-single, .store-products .wp-show-posts-columns .wp-show-posts-single {
         width: 378px;
@@ -824,6 +822,35 @@ header .nav .menu-item .menu-item a {
         background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDIiIGhlaWdodD0iMTUiIHZpZXdCb3g9IjAgMCA0MiAxNSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEuMDkzMTMgNi4xNzAxN0MxLjE2MTE5IDYuMTU5MTMgMS4yMzAwNiA2LjE1NDA0IDEuMjk4OTcgNi4xNTQ5M0gzNy40ODU3TDM3LjIyOTggNi4wMzZDMzYuOTc5NyA1LjkxNzY5IDM2Ljc1MjIgNS43NTY2OCAzNi41NTc0IDUuNTYwMjVMMzMuMjY2OSAyLjI3MTY4QzMyLjgzMzYgMS44NTgyMyAzMi43NjA4IDEuMTkzMTIgMzMuMDk0NCAwLjY5NTc4QzMzLjQ4MjcgMC4xNjU4MSAzNC4yMjczIDAuMDUwNzM5NiAzNC43NTc2IDAuNDM4ODA1QzM0LjgwMDUgMC40NzAxNzQgMzQuODQxMiAwLjUwNDM2OCAzNC44Nzk1IDAuNTQxMTY0TDQwLjgyOTcgNi40ODc5NUM0MS4yOTQ3IDYuOTUyMTcgNDEuMjk1MSA3LjcwNTIyIDQwLjgzMDYgOC4xNjk5Nkw0MC44Mjk3IDguMTcwODlMMzQuODc5NSAxNC4xMTc3QzM0LjQxNDEgMTQuNTgxNSAzMy42NjA2IDE0LjU4MDUgMzMuMTk2NSAxNC4xMTUzQzMzLjE1OTkgMTQuMDc4NyAzMy4xMjU4IDE0LjAzOTggMzMuMDk0NCAxMy45OTg3QzMyLjc2MDggMTMuNTAxNCAzMi44MzM2IDEyLjgzNjMgMzMuMjY2OSAxMi40MjI4TDM2LjU1MTUgOS4xMjgzM0MzNi43MjYxIDguOTUzNjQgMzYuOTI2OCA4LjgwNzE2IDM3LjE0NjUgOC42OTQyMUwzNy41MDM1IDguNTMzNjVIMS4zNjQ0NkMwLjc1NjUzMSA4LjU1NjIxIDAuMjIzMTY3IDguMTMxNzkgMC4xMDg5NTkgNy41MzQ1OUMwLjAwMzc0OTg1IDYuODg2MiAwLjQ0NDM2NiA2LjI3NTM1IDEuMDkzMTMgNi4xNzAxN1oiIGZpbGw9IiNFQjFDMjQiLz4KPC9zdmc+Cg==");
         background-repeat: no-repeat;
         background-size: contain;
+    }
+    .store-products .entry-content {
+        display: flex;
+        flex-direction: column;
+    }
+    .wpsp-load-more {
+        display: inline-block;
+        max-width: 565px;
+        margin: 0 auto;
+        font-weight: 400;
+        font-size: 18px;
+        margin-top: 60px;
+    }
+    .wpsp-load-more a {
+        color: #000000;
+    }
+    .wpsp-load-more a:hover {
+        color: #EB1C24;
+    }
+    .wpsp-load-more .page-numbers {
+        padding: 6px;
+    }
+    .wpsp-load-more .prev, .wpsp-load-more .next {
+        font-size: 14px;
+        padding: 0 20px;
+    }
+    .wpsp-load-more .current {
+        font-weight: 600;
+        border-bottom: 3px solid #EB1C24;
     }
     
 .interesting-products {
@@ -1765,34 +1792,6 @@ ul.products li.product {
     cursor: pointer;
 }
 
-/* Next & previous buttons */
-.prev,
-.next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -50px;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    -webkit-user-select: none;
-}
-/* Position the "next button" to the right */
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-    background-color: black;
-    color: white!important;
-}
 
 /* Number text (1/3 etc) */
 .numbertext {
