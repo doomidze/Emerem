@@ -2,7 +2,9 @@
 /*
 Theme Name: Emerem
 */
-
+.footer .sub-menu {
+    display: none;
+}
 body {
     font-family: 'Montserrat', sans-serif!important;
     scroll-behavior: smooth;
