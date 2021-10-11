@@ -8,6 +8,12 @@ body {
     scroll-behavior: smooth;
 	font-size: 14px;
     color: #000000;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+main {
+    flex: 1;
 }
 h1 {
     font-size: 43px;
@@ -88,6 +94,7 @@ h1.entry-title {
     background: black;
     padding-top: 30px;
     padding-bottom: 30px;
+    flex-shrink: 0;
 }
 .footer-logo {
     padding-bottom: 40px;
@@ -850,27 +857,6 @@ body header.header .nav-item.active {
     padding-bottom: 30px;
 }
 
-
-.link {
-    padding-top: 20px;
-    display: flex;
-    align-items: center;
-}
-.main-link {
-    color: #A5A5A5;
-    transition: 0.5s all;
-}
-.main-link:hover {
-    text-decoration: none;
-    color: rgba(235,28,36,1);
-}
-.secondary-link {
-    color: rgba(235,28,36,1)!important;
-    padding: 0 5px;
-}
-.secondary-link:hover {
-    text-decoration: none;
-}
 
 .store-products {
     padding-bottom: 80px;
