@@ -253,7 +253,7 @@ body header.header .nav-item.active {
     padding: 20px 0 18px;
     border-bottom: 2px solid #00000000;
 }
-.header .nav .nav-wrapper a:hover {
+.header .nav .nav-wrapper > .menu-item > a:hover {
     border-bottom: 3px solid #EB1C24;
 }
 
