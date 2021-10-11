@@ -1332,11 +1332,7 @@ ul.products li.product {
 }
 .product-page section article .wp-show-posts-entry-title {
     height: inherit;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 22px;
-    margin: 0 auto;
-    letter-spacing: -1px
+    margin: 0 auto; 
 }
 .product-page section article .wp-show-posts-entry-title a {
     height: inherit;
@@ -1344,6 +1340,9 @@ ul.products li.product {
     text-align: center;
     padding: 0px 50px 10px;
     color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
 }
 .product-page section article .wp-show-posts-entry-summary {
    position: absolute;
@@ -1389,6 +1388,9 @@ ul.products li.product {
     display: flex;
     flex-direction: column;
     align-items: stretch;
+}
+.subcategory-page section:hover article a {
+    color: #EB1C24;
 }
 .subcategory-page section article a {
     color: #000000;

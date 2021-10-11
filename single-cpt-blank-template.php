@@ -6,11 +6,7 @@ Template Name: Blog Item
 
 <?php get_header(); ?>
 <main class="main">
-    <section class="link container">
-        <a href="/" class="main-link post">Главная /</a>
-        <?php the_category(' > ', 'multiple'); ?>
-        <a href="" class="secondary-link"> / <?php the_title()?></a>
-    </section>
+        
     <?php
         if (have_posts()) {
             custom_post_types_get_custom_template();}
@@ -18,6 +14,11 @@ Template Name: Blog Item
     ?>
     <section class="interesting-products">
         <div class="container">
+        <?php
+		if ( function_exists('yoast_breadcrumb') ) {
+		yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
+		}
+		?>
             <h1 class="interesting-products-title">Также может заинтересовать</h1>
             <div class="products-slider">
                 <div class="slide">

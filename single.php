@@ -10,7 +10,7 @@
 
 <main class="main">
 
-    <div class="">
+    <div class="container">
 
         <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
             <?php
