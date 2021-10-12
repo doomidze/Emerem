@@ -227,7 +227,7 @@ h1.entry-title {
     display: flex;
     flex-direction: column;
 }
-li.current-menu-item a {
+li.current-menu-item > a {
     color: #EB1C24!important;
 }
 .header .nav .nav-item-header {
@@ -294,6 +294,11 @@ header .menu-item .sub-menu {
     opacity: 0;
     visibility: hidden;
     box-shadow: 0px -3px 0 0 #eb1c24;
+}
+@media (max-width: 991px) {
+    header .menu-item .sub-menu {
+        display: none !important
+    }
 }
 .header .nav .nav-wrapper li:hover a + .sub-menu {
     opacity: 1;
@@ -1536,6 +1541,7 @@ ul.products li.product {
 
 .close-responsive {
     display: none;
+    cursor: pointer;
 }
 
 .store-products-list {
@@ -1784,11 +1790,11 @@ ul.products li.product {
     }
 }
 .sub-menu a {
-    border-bottom: 3px solid #00000000;
-    padding-bottom: 3px!important;
+    /* border-bottom: 3px solid #00000000;
+    padding-bottom: 3px!important; */
 }
-.sub-menu a:hover {
-    border-bottom: 3px solid #EB1C24;
+.header .nav .sub-menu a:hover {
+    color: #EB1C24;
 }
 
 /* Modal Products Images */
