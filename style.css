@@ -138,6 +138,9 @@ h1.entry-title {
     flex-direction: column;
     height: max-content;
 }
+.header-info-mobile .phone .links-item__link a:first-child {
+    margin-bottom: 10px;
+}
 .links-item__link a {
     color: white!important;
     text-decoration: none!important;
@@ -1613,6 +1616,7 @@ ul.products li.product {
     }
     .header .links-item .links-item__link a {
         font-size: 13px;
+        line-height: 13px;
     }
     .logo a img {
         height: 50px!important;
