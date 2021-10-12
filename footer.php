@@ -1,6 +1,29 @@
 <footer class="footer">
     <div class="container">
         <div class="row">
+            <?php if ( is_active_sidebar( 'footer-1' ) ) : ?>
+                <div class="widget-area" role="complementary">
+                    <?php dynamic_sidebar( 'footer-1' ); ?>
+                </div>
+            <?php endif; ?>
+            <?php if ( is_active_sidebar( 'footer-2' ) ) : ?>
+                <div class="widget-area" role="complementary">
+                    <?php dynamic_sidebar( 'footer-2' ); ?>
+                </div>
+            <?php endif; ?>
+            <?php if ( is_active_sidebar( 'footer-3' ) ) : ?>
+                <div class="widget-area" role="complementary">
+                    <?php dynamic_sidebar( 'footer-3' ); ?>
+                </div>
+            <?php endif; ?>
+            <?php if ( is_active_sidebar( 'footer-4' ) ) : ?>
+                <div class="widget-area" role="complementary">
+                    <?php dynamic_sidebar( 'footer-4' ); ?>
+                </div>
+            <?php endif; ?>
+        </div>
+
+        <div class="row">
             <div class="col-lg-4 mobile-footer">
                 <?php if ( has_nav_menu( 'footer' ) ) : ?>
                     <?php
