@@ -6,7 +6,7 @@ Template Name: Product Subcategories
 
 <?php get_header(); ?>
 
-<main class="main">
+<main class="main subcategory-main-page">
 
     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 

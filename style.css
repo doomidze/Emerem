@@ -1304,8 +1304,6 @@ ul.products li.product {
     padding: 1em;
     transition: 0.5s all;
 }
-
-
 .product-page .wp-block-column {
     display: flex;
     min-height: 300px;
@@ -1382,6 +1380,9 @@ ul.products li.product {
 .post-323 {
     padding: 0 0 80px;
 }
+.subcategory-main-page {
+    background-color: #a1a1a13b;
+}
 .subcategory-page .entry-content {
     display: block;
 }
@@ -1390,6 +1391,7 @@ ul.products li.product {
     margin-bottom: 25px;
     margin-right: 21px;
     display: inline-block;
+    background-color: #ffffff;
 }
 .subcategory-page .wp-block-column {
     margin: 0!important;
@@ -2095,6 +2097,9 @@ img.hover-shadow {
     }
     .subcategory-page section article {
         width: 265px;
+    }
+    .go-to-projects-btn:hover span svg {
+        margin-left: 130px;
     }
 }
 @media (min-width: 1400px) and (max-width: 1919px) {
