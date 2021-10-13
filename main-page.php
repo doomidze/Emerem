@@ -27,14 +27,6 @@ Template Name: Home Page
     <section class="cat-menu">
         <div class="container">
             <div class="row">
-                <a href="" class="cat-item cat-item-scroll-wrapper col-lg-2" onclick="window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })">
-                    <div class="cat-item-scroll">Скролл вниз</div>
-                    <div class="cat-item-scroll-svg">
-                        <svg width="26" height="31" viewBox="0 0 26 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M15.1001 1.81891C15.1202 1.94273 15.1294 2.06804 15.1278 2.19342L15.1278 23.5421L15.3443 23.0766C15.5597 22.6215 15.8528 22.2076 16.2104 21.8532L22.1971 15.8665C22.9498 15.0781 24.1606 14.9456 25.066 15.5526C26.0307 16.259 26.2402 17.6138 25.5338 18.5787C25.4767 18.6566 25.4144 18.7307 25.3474 18.8004L14.5216 29.6262C13.6765 30.4722 12.3056 30.473 11.4595 29.6279C11.459 29.6274 11.4584 29.6268 11.4579 29.6262L0.632 18.8004C-0.212349 17.9536 -0.210455 16.5827 0.636261 15.7383C0.702908 15.6719 0.773817 15.6098 0.848517 15.5526C1.75389 14.9456 2.9647 15.0781 3.71737 15.8665L9.71489 21.8424C10.0329 22.1601 10.2996 22.5253 10.5052 22.925L10.7975 23.5746L10.7975 2.31257C10.7564 1.2065 11.529 0.236101 12.6162 0.0283125C13.7966 -0.163101 14.9086 0.638553 15.1001 1.81891Z" fill="white"/>
-                        </svg>
-                    </div>
-                </a>
                 <a href="/product-categories/industrial-pumps/" class="cat-item col-lg-2">
                     <div class="cat-item-svg">
                         <svg width="90" height="88" viewBox="0 0 108 88" fill="none" xmlns="http://www.w3.org/2000/svg">
