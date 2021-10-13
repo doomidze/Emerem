@@ -226,6 +226,7 @@ h1.entry-title {
     position: relative;
     display: flex;
     flex-direction: column;
+    align-self: flex-start;
 }
 li.current-menu-item > a {
     color: #EB1C24!important;
@@ -316,6 +317,12 @@ header .nav .menu-item .menu-item a {
 }
 .header .nav .sub-menu a:hover {
     color: #EB1C24;
+}
+.footer-inner {
+    align-items: center;
+}
+.footer-links {
+    padding: 0px;
 }
 .cat-menu {
     box-shadow: inset 0 1px 0 0 #fff;
@@ -551,6 +558,7 @@ header .nav .menu-item .menu-item a {
                         max-height: 0;
                         overflow: hidden;
                         pointer-events: none;
+                        padding-right: 5px;
                     }
                     .projects-list .wp-show-posts-image {
                         margin: 0;
@@ -1438,36 +1446,29 @@ ul.products li.product {
 .category-item:hover {
     background: red;
 }
-
 .category-item:hover .category-header-title {
     color: white;
     text-decoration: none!important;
 }
-
 .category-header {
     cursor: pointer;
     height: 180px;
 }
-
 .category-body-title {
     color: white;
 }
-
 .category-body-title:hover {
     cursor: pointer;
     color: black;
     text-decoration: none;
 }
-
 .header-info-mobile {
     display: none;
 }
-
 .close-responsive {
     display: none;
     cursor: pointer;
 }
-
 .store-products-list {
     flex: 1 1 auto;
     display: flex;
@@ -1483,14 +1484,9 @@ ul.products li.product {
 .product-more-info {
     padding-top: 2rem;
 }
-
-
-
 .product-item-more-info .product-item-more-info-svg {
     margin-left: 80px;
 }
-
-
 .important-links, .pages-links {
     padding-left: 0;
     padding-top: 0.5rem;
@@ -1557,12 +1553,6 @@ ul.products li.product {
     }
     .company-info {
         padding-top: 2rem;
-    }
-    .mobile-footer {
-        display: block;
-    }
-    .desktop-footer {
-        display: none;
     }
     .header-info-mobile {
         display: flex;
@@ -1709,6 +1699,34 @@ ul.products li.product {
     .img-secondary-wrapper img {
         width: 33%;
     }
+    .footer-inner {
+        flex-direction: column;
+        height: 800px;
+        justify-content: space-between;
+    }
+        .company-info {
+            align-self: unset;
+        }
+        .footer-logo {
+            padding-bottom: 0px;
+            text-align: center;
+        }
+        .footer-logo a {
+            display: block;
+        }
+        .footer-about {
+            order: 2;
+            text-align: center;
+        }
+        .footer-projects {
+            order: 3;
+        }
+        .footer-links {
+            order: 4;
+        }
+        .footer .footer-inner .col-6 {
+            width: 300px;
+        }
 }
 /* Modal Products Images */
 .modal {

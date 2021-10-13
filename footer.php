@@ -23,21 +23,13 @@
             <?php endif; ?>
         </div>
 
-        <div class="row">
-            <div class="col-lg-4 mobile-footer">
-                <?php if ( has_nav_menu( 'footer' ) ) : ?>
-                    <?php
-                        wp_nav_menu([
-                                'theme_location'  => 'footer',
-                                'container'       => null,
-                                'menu_class'      => 'important-links',
-                                'fallback_cb'     => false,
-                            ]
-                        );
-                    ?>
-                <?php endif; ?>
+        <div class="row footer-inner">
+            <div class="col-6 col-lg-3 company-info">
+                <div class="footer-logo">
+                    <a href="<?php echo get_home_url(); ?>" id="scroll"><img src="<?php echo wp_get_attachment_image_url(carbon_get_theme_option( 'site_logo_footer' ), 'full'); ?>" alt=""></a>
+                </div>
             </div>
-            <div class="col-lg-4 mobile-footer">
+            <div class="col-6 col-lg-3 desktop-footer footer-projects">
                 <?php if ( has_nav_menu( 'categories' ) ) : ?>
                     <?php
                         wp_nav_menu([
@@ -50,11 +42,20 @@
                     ?>
                 <?php endif; ?>
             </div>
-            <div class="col-lg-4 company-info">
-                <div class="footer-logo">
-                    <a href="<?php echo get_home_url(); ?>" id="scroll"><img src="<?php echo wp_get_attachment_image_url(carbon_get_theme_option( 'site_logo_footer' ), 'full'); ?>" alt=""></a>
-                </div>
-                <div class="footer-links">
+            <div class="col-6 col-lg-3 desktop-footer footer-about">
+                <?php if ( has_nav_menu( 'footer' ) ) : ?>
+                    <?php
+                        wp_nav_menu([
+                                'theme_location'  => 'footer',
+                                'container'       => null,
+                                'menu_class'      => 'important-links',
+                                'fallback_cb'     => false,
+                            ]
+                        );
+                    ?>
+                <?php endif; ?>
+            </div>
+            <div class="col-6 col-lg-3 footer-links">
                     <div class="links-item">
                         <div class="links-item__svg">
                             <svg width="18" height="22" viewBox="0 0 15 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -77,37 +78,10 @@
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M1.18323 0H17.7485C18.4016 0 18.9317 0.530088 18.9317 1.18323V1.85531L9.46587 5.86529L0 1.85649V1.18323C0 0.530088 0.530088 0 1.18323 0ZM9.46587 7.09935C9.54396 7.09935 9.62323 7.08396 9.6966 7.05202L18.9317 3.14143V11.8323C18.9317 12.4854 18.4016 13.0155 17.7485 13.0155H1.18323C0.530088 13.0155 0 12.4854 0 11.8323V3.14143L9.23513 7.05202C9.30849 7.08396 9.38777 7.09935 9.46587 7.09935Z" fill="#EB1C24"/>
                             </svg>
                         </div>
-                        <div class="links-item__link mail"><a href="mailto:<?php echo $GLOBALS['emerem']['email']; ?>"><?php echo $GLOBALS['emerem']['email']; ?></a></div>
+                        <div class="links-item__link footer-mail"><a href="mailto:<?php echo $GLOBALS['emerem']['email']; ?>"><?php echo $GLOBALS['emerem']['email']; ?></a></div>
                     </div>
+                    <div class="copyright"><?php echo $GLOBALS['emerem']['copyright']; ?></div>
                 </div>
-                <div class="copyright"><?php echo $GLOBALS['emerem']['copyright']; ?></div>
-            </div>
-            <div class="col-lg-4 desktop-footer">
-                <?php if ( has_nav_menu( 'footer' ) ) : ?>
-                    <?php
-                        wp_nav_menu([
-                                'theme_location'  => 'footer',
-                                'container'       => null,
-                                'menu_class'      => 'important-links',
-                                'fallback_cb'     => false,
-                            ]
-                        );
-                    ?>
-                <?php endif; ?>
-            </div>
-            <div class="col-lg-4 desktop-footer">
-                <?php if ( has_nav_menu( 'categories' ) ) : ?>
-                    <?php
-                        wp_nav_menu([
-                                'theme_location'  => 'categories',
-                                'container'       => null,
-                                'menu_class'      => 'pages-links',
-                                'fallback_cb'     => false,
-                            ]
-                        );
-                    ?>
-                <?php endif; ?>
-            </div>
         </div>
     </div>
 </footer>
