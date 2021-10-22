@@ -183,7 +183,7 @@ h1.entry-title {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    padding: 23px 0 12px;
+    padding: 23px 0 15px;
 }
 
 .request-call-btn {
@@ -356,6 +356,9 @@ header .nav .menu-item .menu-item a {
 /*MetaSlider*//*MetaSlider*//*MetaSlider*/
 .main-page .entry-content {
     position: relative;
+}
+.flex-viewport {
+    border-top: 1px solid #A5A5A5!important;
 }
 .entry-content .mainmetaslider .caption-wrap {
     background: none;
@@ -916,8 +919,17 @@ header .nav .menu-item .menu-item a {
 .main-link:nth-child(2) {
     margin-left: 5px;
 }
+.header .container-fluid {
+    width: 88%;
+}
 .header-info .logo {
     margin-right: 4rem;
+}
+.header-info .logo a {
+    display: block;
+}
+.header-info .logo img {
+    height: 50px;
 }
 .tablinks {
     position: relative;

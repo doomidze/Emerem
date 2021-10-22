@@ -20,7 +20,7 @@
     <div class="container-fluid">
         <div class="header-info">
             <div class="logo">
-                <a href="<?php echo get_home_url(); ?>"><img src="<?php echo wp_get_attachment_image_url(carbon_get_theme_option( 'site_logo' ), 'full'); ?>" alt="" style="height:78px"></a>
+                <a href="<?php echo get_home_url(); ?>"><img src="<?php echo wp_get_attachment_image_url(carbon_get_theme_option( 'site_logo' ), 'full'); ?>" alt=""></a>
             </div>
             <div class="links-item">
                 <div class="links-item__svg">
