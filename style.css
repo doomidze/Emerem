@@ -2124,6 +2124,9 @@ img.hover-shadow {
     .projects-info-wrapper {
         max-width: 40%;
     }
+    .projects-list .wp-show-posts-columns .wp-show-posts-inner:hover .wp-show-posts-entry-summary {
+        max-width: 225px;
+    }
     .news-wrapper .wp-show-posts-single:nth-child(3n+2), #post-315 .wp-show-posts-single:nth-child(3n+2), #post-319 .wp-show-posts-single:nth-child(3n+2) {
         margin: 0 136px 50px;
     }
@@ -2196,7 +2199,11 @@ img.hover-shadow {
 @media (min-width: 1366px) {
     .projects-info-wrapper__inner, 
     .go-to-projects-btn {
-        padding-left: 22%;
+        padding-left: 5%;
+    }
+    .projects-list .wp-show-posts-image img
+    {
+        width: 100%;
     }
 }
 @media (min-width: 1400px) {
@@ -2212,6 +2219,11 @@ img.hover-shadow {
     .subcategory-page .entry-content {
         margin-right: -21px;
     }
+    @media (min-width: 1366px) {
+        .projects-info-wrapper__inner, 
+        .go-to-projects-btn {
+            padding-left: 16%;
+        }
 }
 @media (min-width: 1600px) {
     .projects-info-wrapper__inner, 
