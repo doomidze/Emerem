@@ -8,7 +8,7 @@
 <?php get_header(); ?>
 <main class="main">
 
-    <section class="map">
+    <section class="map ">
         <div class="map-title container">
         <?php
         if ( function_exists('yoast_breadcrumb') ) {

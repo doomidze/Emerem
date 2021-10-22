@@ -7,7 +7,7 @@
 <?php $page_id = get_the_ID(); ?>
 <?php get_header(); ?>
 
-<main class="main">
+<main class="main ">
     <section class="about-us-page-wrapper container">
     <?php
         if ( function_exists('yoast_breadcrumb') ) {
