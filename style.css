@@ -329,7 +329,6 @@ header .nav .menu-item .menu-item a {
     padding: 0px;
 }
 .cat-menu {
-    box-shadow: inset 0 1px 0 0 #fff;
     background: rgb(0 0 0 / 50%);
     position: absolute;
     bottom: 0;
@@ -341,12 +340,15 @@ header .nav .menu-item .menu-item a {
     justify-content: center;
 }
 .cat-item {
-    border: 1px solid white;
+    border-left: 1px solid #ffffff;
     padding: 20px;
     text-align: center;
     color: white!important;
     text-decoration: none!important;
     transition: 0.5s all;
+}
+.cat-item:last-child {
+    border-right: 1px solid #ffffff;
 }
 .cat-item:hover {
     background: rgba(235,28,36,1);
@@ -2020,10 +2022,7 @@ img.hover-shadow {
     .entry-content .mainmetaslider ol.flex-control-nav.flex-control-paging {
         bottom: 10px;
     }
-    .cat-menu {
-        position: unset;
-        border-top: 0px #ffffff solid;
-    }
+    
     .phone {
         display: none!important;
     }
@@ -2034,6 +2033,13 @@ img.hover-shadow {
     }
     .subcategory-page section article {
         width: 240px;
+    }
+    .cat-menu {
+        position: unset;
+        border-top: 17px solid #ffffff;
+    }
+    .cat-menu .cat-item {
+        border-top: 1px solid #ffffff;
     }
 }
 @media (min-width: 576px) and (max-width: 767px) {
