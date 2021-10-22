@@ -17,6 +17,9 @@ body {
 main {
     flex: 1;
 }
+.map p, .about-us-page-wrapper {
+    font-weight: 500;
+}
 h1 {
     font-size: 43px;
 	font-weight: 700;
