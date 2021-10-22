@@ -928,7 +928,7 @@ header .nav .menu-item .menu-item a {
 .header-info .logo {
     margin-right: 1rem;
 }
-.header-info .logo a {
+.header-info .logo a, .header-info-mobile .logo a {
     display: block;
 }
 .header-info .logo img {
@@ -1515,7 +1515,7 @@ ul.products li.product {
     margin-bottom: 0;
 }
 .about-us-page-wrapper {
-    padding: 0px 0 80px;
+    padding-bottom: 80px;
 }
 .about-us-page-wrapper h2 {
     padding-top: 0.5rem;
@@ -1885,6 +1885,13 @@ img.hover-shadow {
     .projects-info-wrapper h2 {
         font-size: 30px;
     }
+    .logo a img {
+        height: 45px!important;
+    }
+    .request-call-btn {
+        font-size: 11px;
+        padding: 7px 10px;
+    }
 }
 @media (min-width: 480px) and (max-width: 639px) {
     .subcategory-page section article {
@@ -2037,6 +2044,7 @@ img.hover-shadow {
     .cat-menu {
         position: unset;
         border-top: 17px solid #ffffff;
+        background-color: #000000;
     }
     .cat-menu .cat-item {
         border-top: 1px solid #ffffff;
@@ -2206,6 +2214,7 @@ img.hover-shadow {
         width: 100%;
     }
 }
+
 @media (min-width: 1400px) {
     .news-wrapper .wp-show-posts-single, #post-315 .wp-show-posts-single, #post-319 .wp-show-posts-single {
         margin-right: 17px;
@@ -2219,11 +2228,10 @@ img.hover-shadow {
     .subcategory-page .entry-content {
         margin-right: -21px;
     }
-    @media (min-width: 1366px) {
-        .projects-info-wrapper__inner, 
-        .go-to-projects-btn {
-            padding-left: 16%;
-        }
+    .projects-info-wrapper__inner, .go-to-projects-btn {
+        padding-left: 16%;
+    }
+    
 }
 @media (min-width: 1600px) {
     .projects-info-wrapper__inner, 
@@ -2254,8 +2262,6 @@ img.hover-shadow {
         margin-top: 18px;
     }
 }
-
-
 /*Styles???*/
 .more-info {
     color: rgba(235,28,36,1);
@@ -2266,8 +2272,6 @@ img.hover-shadow {
 .more-info:hover {
     color: rgba(235,28,36,1);
 }
-/*.nav-item {*/
-/*    padding: 20px;*/
 .stat-item-number {
     font-size: 40px;
     font-weight: bold;
