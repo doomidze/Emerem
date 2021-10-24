@@ -178,6 +178,8 @@ h1.entry-title {
     color: white!important;
     font-weight: 200;
     margin-top: auto;
+    justify-self: flex-end;
+    min-width: max-content;
 }
 
 .header-info {
@@ -324,6 +326,8 @@ header .nav .menu-item .menu-item a {
 }
 .footer-links {
     padding: 0px;
+    display: flex;
+    flex-direction: column;
 }
 .cat-menu {
     background: rgb(0 0 0 / 50%);
@@ -1720,8 +1724,9 @@ ul.products li.product {
     }
     .footer-inner {
         flex-direction: column;
-        height: 800px;
+        height: 900px;
         justify-content: space-between;
+        align-items: center;
     }
         .company-info {
             align-self: unset;
@@ -1745,6 +1750,9 @@ ul.products li.product {
         }
         .footer .footer-inner .col-6 {
             width: 300px;
+        }
+        .copyright {
+            margin-top: 50px;
         }
 }
 /* Modal Products Images */
@@ -1897,6 +1905,14 @@ img.hover-shadow {
     }
     .subcategory-page .wp-show-posts-entry-title {
         font-size: 18px;
+    }
+    .copyright {
+        font-size: 11px;
+    }
+}
+@media (min-width: 480px) and (max-width: 991px) {
+    .footer-projects {
+        margin-bottom: 50px;
     }
 }
 @media (max-width: 991px) {
