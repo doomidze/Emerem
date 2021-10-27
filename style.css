@@ -13,6 +13,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    font-weight: 500;
 }
 main {
     flex: 1;
@@ -1083,7 +1084,7 @@ header .nav .menu-item .menu-item a {
     /*display: none; !* Hidden by default *!*/
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+    padding-top: 290px; /* Location of the box */
     left: 0;
     top: 0;
     width: 100%;
@@ -1093,8 +1094,8 @@ header .nav .menu-item .menu-item a {
 .modal-content {
     background-color: #fefefe;
     margin: auto;
-    padding: 20px;
-    width: 30%!important;
+    /*padding: 20px 35px 35px;*/
+    width: 385px;
     border-radius: unset;
     border: unset;
 }
@@ -1110,9 +1111,17 @@ header .nav .menu-item .menu-item a {
 }
 .modal-content h1 {
     text-align: center;
+    padding: 20px 35px;
+    font-size: 35px;
+    line-height: 35px;
+    background-color: #000000;
+    color: #ffffff;
+    margin-bottom: 25px;
+    
 }
 .modal-content input {
     color: rgba(235,28,36,1);
+    padding: 0 36px 20px;
 }
 .modal-content button {
     background: transparent;

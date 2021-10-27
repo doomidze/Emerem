@@ -24,7 +24,7 @@
         </div>
 
         <div class="row footer-inner">
-            <div class="col-6 col-lg-3 company-info">
+            <div class="col-12 col-lg-3 company-info">
                 <div class="footer-logo">
                     <a href="<?php echo get_home_url(); ?>" id="scroll"><img src="<?php echo wp_get_attachment_image_url(carbon_get_theme_option( 'site_logo_footer' ), 'full'); ?>" alt=""></a>
                 </div>
@@ -63,6 +63,14 @@
                             </svg>
                         </div>
                         <div class="links-item__link"><a href=""><?php echo $GLOBALS['emerem']['address']; ?></a></div>
+                    </div>
+                    <div class="links-item">
+                        <div class="links-item__svg">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17 12.5C15.755 12.5 14.55 12.3 13.43 11.93C13.085 11.82 12.69 11.9 12.415 12.175L10.215 14.38C7.38005 12.94 5.06503 10.625 3.62503 7.79503L5.82502 5.58502C6.10003 5.31 6.18 4.91503 6.07003 4.57003C5.70005 3.45005 5.50003 2.24503 5.50003 1.00003C5.49998 0.444984 5.055 0 4.5 0H0.999984C0.45 0 0 0.444984 0 0.999984C0 10.39 7.61001 18 17 18C17.555 18 18 17.555 18 17V13.5C18 12.945 17.555 12.5 17 12.5Z" fill="#EB1C24"/>
+                            </svg>
+                        </div>
+                        <div class="links-item__link"><a href="tel:<?php echo $GLOBALS['emerem']['phone_digits']; ?>"><?php echo $GLOBALS['emerem']['phone']; ?></a></div>
                     </div>
                     <div class="links-item">
                         <div class="links-item__svg">

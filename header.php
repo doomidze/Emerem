@@ -50,7 +50,8 @@
                     <a href="tel:<?php echo $GLOBALS['emerem']['phone_digits2']; ?>" class="fw-400"><?php echo $GLOBALS['emerem']['phone2']; ?></a>
                 </div>
             </div>
-            <div class="request-call-btn" onclick="openModal()"><?php echo $GLOBALS['emerem']['call']; ?></div>
+            <!--<div class="request-call-btn" onclick="openModal()"><?php echo $GLOBALS['emerem']['call']; ?></div>-->
+            <div class="request-call-btn popmake-770"></div>
         </div>
         <div class="header-info-mobile">
             <div class="logo">
@@ -76,7 +77,8 @@
                 </div>
                 
             </div>
-            <div class="request-call-btn" onclick="openModal()"><?php echo $GLOBALS['emerem']['call']; ?></div>
+            <!--<div class="request-call-btn" onclick="openModal()"><?php echo $GLOBALS['emerem']['call']; ?></div>-->
+            <div class="request-call-btn" ><?php echo $GLOBALS['emerem']['call']; ?></div>
             <details tabindex="1">
             <summary class="toggle-menu" >
                 <span class="first"></span>
