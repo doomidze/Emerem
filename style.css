@@ -1523,10 +1523,22 @@ ul.products li.product {
 }
 
 .toggle-menu {
-    font-size: 33px;
+    display: flex;
+    flex-direction: column;
     cursor: pointer;
+    align-items: flex-end;
 }
-
+.toggle-menu span {
+    display: block;
+    height: 4px;
+    width: 20px;
+    background-color: #000000;
+    margin-bottom: 4px;
+    border-radius: 2px;
+}
+.toggle-menu .third {
+    width: 15px;
+}
 .mobile-footer {
     display: none;
 }
@@ -1569,10 +1581,21 @@ ul.products li.product {
 
 
 @media (max-width: 991px) {
+    .request-call-btn {
+        display: none;
+    }
+    .header {
+        overflow-x: clip;
+        position: relative;
+    }
+    .header .container-fluid
+    {
+        padding: 0px;
+        padding-left: 25px;
+    }
     .header .nav {
         height: auto;
-        padding-top: 20px;
-        padding-bottom: 20px;
+        padding: 25px 25px;
     }
     .company-info {
         padding-top: 2rem;
@@ -1581,7 +1604,6 @@ ul.products li.product {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 0.5em 0;
     }
     .header-info {
         display: none;
@@ -1592,18 +1614,57 @@ ul.products li.product {
     .nav-mobile {
         position: absolute;
         width: 100%;
-        top: 0;
-        transform: translateX(-150%);
+        top: 78px;
+        right: 0;
+        left: 0;
         transition: 0.5s all;
         z-index: 10;
-    }
-    .header .nav ul.nav-wrapper {
+        border-top: 3px solid #EB1C24;
         display: block;
     }
-    .header .nav ul.nav-wrapper li {
-        padding: 0.5rem 0;
+    .nav-mobile ul {
+        display: block!important;
     }
-    .open-mobile-menu {
+    .nav-mobile ul li {
+        margin-bottom: 23px;
+    }
+    .nav-mobile ul li a {
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+
+    }
+    .nav-mobile ul li a::before {
+        content: '';
+        display: block;
+        height: 4px;
+        width: 4px;
+        border-radius: 2px;
+        background-color: #EB1C24;
+        margin-right: 15px;
+    }
+    .nav-mobile .request-call-btn {
+        display: block;
+        text-align: center;
+        padding: 5px;
+    }
+   
+    details[open] .nav-mobile {
+        animation: showMenu 0.5s linear;
+        animation-fill-mode: forwards;
+    }
+    @keyframes showMenu {
+        0% {
+            overflow: hidden;
+            transform: translateX(1000px);
+            opacity: 0;
+        }
+        100% {
+            transform: translateX(0px);
+            opacity: 1;
+        }
+    } 
+    /*.open-mobile-menu {
         transform: translate(0%);
     }
     .close-responsive {
@@ -1612,13 +1673,14 @@ ul.products li.product {
         top: 0;
         right: 0;
         font-size: 20px;
-    }
+    }*/
     .header .nav .nav-wrapper {
         display: inline-grid;
     }
     .header .nav .nav-wrapper a {
         padding: 0;
-        font-size: 14px;
+        font-size: 12px;
+        line-height: 15px;
     }
     .header .nav .nav-wrapper a:hover {
         color: #eb1c24;
@@ -1754,6 +1816,60 @@ ul.products li.product {
         .copyright {
             margin-top: 50px;
         }
+        details {
+            padding: 15px 25px 15px 10px
+        }
+        .toggle-menu span {
+            height: 3px;
+            margin-bottom: 3px;
+        }
+        .nav-mobile {
+            top: 48px;
+        }
+        .subcategory-page h1.entry-title {
+            font-size: 30px;
+        }
+        .subcategory-page .entry-content {
+            justify-content: center;
+        }
+        .subcategory-page section article {
+            width: 300px;
+            height: 320px;
+        }
+        .post-317 .entry-content .wp-show-posts-columns .wp-show-posts-single, .store-products .entry-content .wp-show-posts-columns .wp-show-posts-single {
+            display: flex;
+            justify-content: space-between;
+            width: 300px;
+        }
+        .entry-content .mainmetaslider .caption-wrap {
+            left: 0;
+        }
+        .go-to-projects-btn {
+            font-size: 12px;
+        }
+        .go-to-projects-btn span svg {
+            margin-left: 10px!important;
+        }
+        .go-to-projects-btn:hover span svg {
+            margin-left: 10px;
+        }
+        .projects-info-wrapper h2 {
+            font-size: 30px;
+        }
+        .logo a img {
+            height: 45px!important;
+        }
+        .request-call-btn {
+            font-size: 11px;
+            padding: 7px 10px;
+        }
+}
+details[open]{
+    background-color: #000000;
+    transition: 0.5s;
+}
+details[open] span {
+    background-color: #ffffff;
 }
 /* Modal Products Images */
 .modal {
@@ -1857,47 +1973,6 @@ img.hover-shadow {
 /*    animation: sub-menu .3s ease-in-out forwards;*/
 /*    animation-delay: .3s;*/
 /*}*/
-
-
-@media (max-width: 479px) {
-    .subcategory-page h1.entry-title {
-        font-size: 30px;
-    }
-    .subcategory-page .entry-content {
-        justify-content: center;
-    }
-    .subcategory-page section article {
-        width: 300px;
-        height: 320px;
-    }
-    .post-317 .entry-content .wp-show-posts-columns .wp-show-posts-single, .store-products .entry-content .wp-show-posts-columns .wp-show-posts-single {
-        display: flex;
-        justify-content: space-between;
-        width: 300px;
-    }
-    .entry-content .mainmetaslider .caption-wrap {
-        left: 0;
-    }
-    .go-to-projects-btn {
-        font-size: 12px;
-    }
-    .go-to-projects-btn span svg {
-        margin-left: 10px!important;
-    }
-    .go-to-projects-btn:hover span svg {
-        margin-left: 10px;
-    }
-    .projects-info-wrapper h2 {
-        font-size: 30px;
-    }
-    .logo a img {
-        height: 45px!important;
-    }
-    .request-call-btn {
-        font-size: 11px;
-        padding: 7px 10px;
-    }
-}
 @media (min-width: 480px) and (max-width: 639px) {
     .subcategory-page section article {
         width: 220px;

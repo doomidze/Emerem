@@ -77,13 +77,33 @@
                 
             </div>
             <div class="request-call-btn" onclick="openModal()"><?php echo $GLOBALS['emerem']['call']; ?></div>
+            <details tabindex="1">
+            <summary class="toggle-menu" >
+                <span class="first"></span>
+                <span class="second"></span>
+                <span class="third"></span>
+            </summary>
+                <nav class="nav nav-mobile">
+                    <?php if ( has_nav_menu( 'primary' ) ) : ?>
+                        <?php
+                            wp_nav_menu([
+                                'theme_location'  => 'primary',
+                                'container'       => null,
+                                'menu_class'      => 'nav-wrapper',
+                                'fallback_cb'     => false,
+                                ]
+                            );
+                        ?>
+                    <?php endif; ?>
+                    <div class="request-call-btn" onclick="openModal()"><?php echo $GLOBALS['emerem']['call']; ?></div>
+                </nav>
+            </details>
             
-            <div class="toggle-menu"><i class="fa fa-bars" style="color: black" id="MobileToggle"></i></div>
         </div>
     </div>
-    <nav class="nav nav-mobile" id="MobileToggleMenu">
+    <!--<nav class="nav nav-mobile" id="MobileToggleMenu">
         <div class="container">
-        <div class="close-responsive"><i class="fa fa-times" style="color: white" id="CloseResponsive"></i></div>
+        <div class="close-responsive"></div>
             <?php if ( has_nav_menu( 'primary' ) ) : ?>
                 <?php
                     wp_nav_menu([
@@ -96,7 +116,7 @@
                 ?>
             <?php endif; ?>
         </div>
-    </nav>
+    </nav>-->
 </header>
 <div class="modal" id="contactModal">
     <div class="modal-content">
