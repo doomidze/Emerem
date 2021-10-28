@@ -192,10 +192,10 @@ h1.entry-title {
     padding: 23px 0 15px;
 }
 
-.request-call-btn {
-    font-size: 16px;
+.request-call-btn, .modal-content button {
+    font-size: 15px;
     font-weight: 600;
-    padding: 7px 16px;
+    padding: 10px 20px;
     border: 2px solid rgba(235,28,36,1);
     text-decoration: none!important;
     color: white;
@@ -203,7 +203,7 @@ h1.entry-title {
     transition: 0.5s all;
     cursor: pointer;
 }
-.request-call-btn:hover {
+.request-call-btn:hover, .modal-content button:hover {
     color: rgba(235,28,36,1);
     background: white;
 }
@@ -1078,77 +1078,6 @@ header .nav .menu-item .menu-item a {
     color: rgba(235,28,36,1);
     text-decoration: none;
 }
-
-
-#contactModal {
-    /*display: none; !* Hidden by default *!*/
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 290px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.4);
-}
-.modal-content {
-    background-color: #fefefe;
-    margin: auto;
-    /*padding: 20px 35px 35px;*/
-    width: 385px;
-    border-radius: unset;
-    border: unset;
-}
-.modal-content input, .modal-content button {
-    width: 100%;
-    padding: 10px;
-    margin-top: 10px;
-    outline: none;
-    border: 1px solid rgba(235,28,36,1);
-}
-.modal-content input::placeholder {
-    color: rgba(235,28,36,1);
-}
-.modal-content h1 {
-    text-align: center;
-    padding: 20px 35px;
-    font-size: 35px;
-    line-height: 35px;
-    background-color: #000000;
-    color: #ffffff;
-    margin-bottom: 25px;
-    
-}
-.modal-content input {
-    color: rgba(235,28,36,1);
-    padding: 0 36px 20px;
-}
-.modal-content button {
-    background: transparent;
-    cursor: pointer;
-    transition: 0.5s all;
-    color: rgba(235,28,36,1);
-}
-.modal-content button:hover {
-    background: rgba(235,28,36,1);
-    cursor: pointer;
-    color: white;
-}
-.close {
-    position: absolute;
-    top: 0;
-    right: 10px;
-    color: #aaaaaa;
-    font-size: 28px;
-    font-weight: bold;
-}
-.close:hover,
-.close:focus {
-    color: rgba(235,28,36,1);
-    text-decoration: none;
-    cursor: pointer;
-}
-
 .link a {
     color: #A5A5A5;
     transition: 0.5s all;
@@ -1160,27 +1089,11 @@ header .nav .menu-item .menu-item a {
 .main-link.post {
     padding-right: 5px;
 }
-
-.bg-fon {
-    height:100%;
-    position:absolute;
-    width:100%;
-    top:0;
-    left:0;
-    filter: brightness(50%);
-}
-
-.slider-section {
-    position: relative;
-}
-
-
 /* WOOCOMMERCE STORE */
 .additional_info {
     padding: 4em 0;
     width: 100%;
 }
-
 div#horizontalTab1 ul {
     align-items: center;
     border-bottom: 1px solid #F3F3F3;
@@ -1190,14 +1103,12 @@ div#horizontalTab1 ul {
     display: flex;
     padding-left: 0;
 }
-
 .resp-tab-item {
     position: relative;
     cursor: pointer;
     font-size: 18px;
     padding: 0 15px;
 }
-
 .resp-tab-active:after {
     content: "";
     position: absolute;
@@ -1207,27 +1118,9 @@ div#horizontalTab1 ul {
     width: 100%;
     bottom: -14px;
 }
-
-.woocommerce-breadcrumb {
-    color: red;
-    padding: 20px 0 0;
-}
-
 .variations_form, .product_meta, .price {
     display: none!important;
 }
-
-.woocommerce-breadcrumb a {
-    color: #A5A5A5!important;
-    transition: 0.5s all;
-    text-decoration: none;
-}
-
-.woocommerce-breadcrumb a:hover {
-    color: red!important;
-    text-decoration: none!important;
-}
-
 .resp-tab-content {
     display: none;
 }
@@ -1555,8 +1448,29 @@ ul.products li.product {
 .desktop-footer {
     display: block;
 }
-
-
+.content {
+    width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+@keyframes showMenu {
+    0% {
+        overflow: hidden;
+        transform: translateX(1000px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+} 
+details[open]{
+    background-color: #000000;
+    transition: 0.5s;
+}
+details[open] span {
+    background-color: #ffffff;
+}
 @media (max-width: 1199px) {
     .category-item {
         width: 100%;
@@ -1587,8 +1501,6 @@ ul.products li.product {
         height: 50px!important;
     }
 }
-
-
 @media (max-width: 991px) {
     .request-call-btn {
         display: none;
@@ -1662,27 +1574,6 @@ ul.products li.product {
         animation: showMenu 0.5s linear;
         animation-fill-mode: forwards;
     }
-    @keyframes showMenu {
-        0% {
-            overflow: hidden;
-            transform: translateX(1000px);
-            opacity: 0;
-        }
-        100% {
-            transform: translateX(0px);
-            opacity: 1;
-        }
-    } 
-    /*.open-mobile-menu {
-        transform: translate(0%);
-    }
-    .close-responsive {
-        display: block;
-        position: absolute;
-        top: 0;
-        right: 0;
-        font-size: 20px;
-    }*/
     .header .nav .nav-wrapper {
         display: inline-grid;
     }
@@ -1694,16 +1585,8 @@ ul.products li.product {
     .header .nav .nav-wrapper a:hover {
         color: #eb1c24;
     }
-    .modal-content-image {
-        width: 55%;
-    }
 }
-
-
 @media (max-width: 767px) {
-    .modal-content {
-        width: 100%!important;
-    }
     .contact-info-wrapper {
         width: 100%;
         position: relative;
@@ -1712,15 +1595,10 @@ ul.products li.product {
     .contact-info-text {
         padding-top: 0;
     }
-    .modal-content-image {
-        width: 100%;
-    }
     .product-page .wp-block-column {
         justify-content: space-around;
     }
 }
-
-
 @media (max-width: 479px) {
     .main-slider .swiper-learn-more {
         width: 70%;
@@ -1768,9 +1646,6 @@ ul.products li.product {
     }
     .main-page {
         overflow-x: hidden;
-    }
-    .modal-content {
-        width: 100%!important;
     }
     .product-item {
         width: 100%;
@@ -1873,115 +1748,11 @@ ul.products li.product {
             padding: 7px 10px;
         }
 }
-details[open]{
-    background-color: #000000;
-    transition: 0.5s;
-}
-details[open] span {
-    background-color: #ffffff;
-}
-/* Modal Products Images */
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 10;
-    padding-top: 100px;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.4);
-}
-/* Modal Content */
-.modal-content-image {
-    position: relative;
-    background-color: #fefefe;
-    margin: auto;
-    padding: 0;
-    width: 30%;
-    max-width: 1200px;
-}
-/* The Close Button */
-.close-image {
-    color: black;
-    position: absolute;
-    top: 10px;
-    right: 25px;
-    font-size: 35px;
-    font-weight: bold;
-}
-.close-image:hover,
-.close-image:focus {
-    color: rgba(235,28,36,1);
-    text-decoration: none;
-    cursor: pointer;
-}
-.slidesProductModal {
-    display: none;
-    padding: 3rem;
-    background: white;
-}
-.cursor {
-    cursor: pointer;
-}
-
-
-/* Number text (1/3 etc) */
-.numbertext {
-    color: black;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
-
-.caption-container {
-    text-align: center;
-    background-color: black;
-    padding: 2px 16px;
-    color: white;
-}
-
-.demo {
-    opacity: 0.6;
-}
-
-.active,
-.demo:hover {
-    opacity: 1;
-}
-
-img.hover-shadow {
-    transition: 0.3s;
-}
-.hover-shadow:hover {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-@keyframes sub-menu {
-    0% {
-        opacity: 0;
-        transform: translateX(20px);
+@media (min-width: 320px) and (max-width: 639px) {
+    .news .wp-show-posts-columns, #post-315 .wp-show-posts-columns, #post-319 .wp-show-posts-columns {
+        justify-content: center;
     }
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-.nav-wrapper .nav-item:hover .nav-item-body li:first-of-type {
-    animation: sub-menu .3s ease-in-out forwards;
-    animation-delay: .1s;
-}
-.nav-wrapper .nav-item:hover .nav-item-body li:nth-of-type(2) {
-    animation: sub-menu .3s ease-in-out forwards;
-    animation-delay: .2s;
-}
-/*.nav-wrapper .nav-item:hover .nav-item-body li:nth-of-type(3) {*/
-/*    animation: sub-menu .3s ease-in-out forwards;*/
-/*    animation-delay: .3s;*/
-/*}*/
+    
 @media (min-width: 480px) and (max-width: 639px) {
     .subcategory-page section article {
         width: 220px;
@@ -2059,24 +1830,7 @@ img.hover-shadow {
         margin-right: unset;
     }
 }
-@media (min-width: 320px) and (max-width: 639px) {
-    .news .wp-show-posts-columns, #post-315 .wp-show-posts-columns, #post-319 .wp-show-posts-columns {
-        justify-content: center;
-    }
-    
-}
-@media (min-width: 640px) and (max-width: 1199px) {
-		.about-us p {
-			max-width: unset;
-		}
-}
-@media (min-width: 1200px) and (max-width: 1799px) {
-	.about-us {
-		padding: 25px 4% 0 4%
-	}
-		.about-us p {
-			max-width: unset;
-		}
+
 }
 @media (min-width: 320px) and (max-width: 767px) {
     .projects-list {
@@ -2117,6 +1871,24 @@ img.hover-shadow {
         .news .wp-show-posts-columns, #post-315 .wp-show-posts-columns, #post-319 .wp-show-posts-columns {
             justify-content: space-between;
         }
+}
+@media (min-width: 640px) and (max-width: 1199px) {
+		.about-us p {
+			max-width: unset;
+		}
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+    .entry-content .mainmetaslider ol.flex-control-nav.flex-control-paging {
+        bottom: 200px;
+    }
+}
+@media (min-width: 1200px) and (max-width: 1799px) {
+	.about-us {
+		padding: 25px 4% 0 4%
+	}
+		.about-us p {
+			max-width: unset;
+		}
 }
 @media (min-width: 320px) and (max-width: 575px) {
     .entry-content .mainmetaslider .caption-wrap {
@@ -2165,11 +1937,6 @@ img.hover-shadow {
     }
     .subcategory-page section article {
         width: 240px;
-    }
-}
-@media (min-width: 768px) and (max-width: 1199px) {
-    .entry-content .mainmetaslider ol.flex-control-nav.flex-control-paging {
-        bottom: 200px;
     }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -2276,11 +2043,6 @@ img.hover-shadow {
         top: 9%;
     }
 }
-.content {
-    width: 100%;
-    padding: 0 15px;
-    box-sizing: border-box;
-}
 @media (min-width: 768px) {
     .content {
         max-width: 720px;
@@ -2301,6 +2063,17 @@ img.hover-shadow {
         padding-right: 30px;
     }
 }
+@media (min-width: 1200px) {
+    .content {
+        max-width: 1175px;
+    }
+    .about-us-wrapper {
+        padding-left: 0;
+    }
+    .pipe-img {
+        margin-top: 18px;
+    }
+}
 @media (min-width: 1366px) {
     .projects-info-wrapper__inner, 
     .go-to-projects-btn {
@@ -2311,7 +2084,6 @@ img.hover-shadow {
         width: 100%;
     }
 }
-
 @media (min-width: 1400px) {
     .news-wrapper .wp-show-posts-single, #post-315 .wp-show-posts-single, #post-319 .wp-show-posts-single {
         margin-right: 17px;
@@ -2348,17 +2120,7 @@ img.hover-shadow {
         padding-left: 57%;
     }
 }
-@media (min-width: 1200px) {
-    .content {
-        max-width: 1175px;
-    }
-    .about-us-wrapper {
-        padding-left: 0;
-    }
-    .pipe-img {
-        margin-top: 18px;
-    }
-}
+
 /*Styles???*/
 .more-info {
     color: rgba(235,28,36,1);
@@ -2372,4 +2134,54 @@ img.hover-shadow {
 .stat-item-number {
     font-size: 40px;
     font-weight: bold;
+}
+/*ModalWiondow*//*ModalWiondow*//*ModalWiondow*/
+.pum-content.popmake-content:focus-visible, .modal-content input:focus-visible {
+    outline: none;
+}
+.modal-title {
+    background-color: #000000;
+    padding: 20px 35px;
+}
+    .modal-title h1 {
+        font-size: 35px;
+        line-height: 35px;
+        color: #ffffff;
+        margin-bottom: 0;
+    }
+.modal-content {
+    padding: 25px 35px 35px ;
+}
+.modal-content input {
+    font-size: 14px;
+    line-height: 35px;
+    text-indent: 45px;
+    border: 1px solid #CACACA;
+}
+.modal-content input::placeholder, .modal-content input {
+    color: rgba(0,0,0,0.5)
+}
+.modal-content input[name="name"], .modal-content input[name="tel"], .modal-content input[name="company"] {
+    background-repeat: no-repeat;
+}
+.modal-content input[name="name"], .modal-content input[name="tel"] {
+    background-image: url(https://emerem.com.ua/wp-content/uploads/2021/10/Vector.png);
+    background-position: 14px 12px;
+}
+.modal-content input[name="company"] {
+    background-image: url(https://emerem.com.ua/wp-content/uploads/2021/10/Vector-1.png);
+    background-position: 14px 10px;
+}
+.modal-content input[name="tel"]  {
+    background-image: url(https://emerem.com.ua/wp-content/uploads/2021/10/Vector-2.png);
+}
+.pum-close {
+    font-size: 12px!important;
+    color: #ffffff!important;
+    opacity: 0.5;
+    transition: 0.5s all;
+}
+.pum-close:hover {
+    color: #eb1c24!important;
+    opacity: 1;
 }
