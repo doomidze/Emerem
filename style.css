@@ -2283,18 +2283,18 @@ summary::marker{
 .modal-content input::placeholder, .modal-content input {
     color: rgba(0,0,0,0.5)
 }
-.modal-content input[name="name"], .modal-content input[name="tel"], .modal-content input[name="company"] {
+.modal-content input[name="yourname"], .modal-content input[name="tel-791"], .modal-content input[name="yourcompany"] {
     background-repeat: no-repeat;
 }
-.modal-content input[name="name"], .modal-content input[name="tel"] {
+.modal-content input[name="yourname"], .modal-content input[name="tel-791"] {
     background-image: url(https://emerem.com.ua/wp-content/uploads/2021/10/Vector.png);
     background-position: 14px 12px;
 }
-.modal-content input[name="company"] {
+.modal-content input[name="yourcompany"] {
     background-image: url(https://emerem.com.ua/wp-content/uploads/2021/10/Vector-1.png);
     background-position: 14px 10px;
 }
-.modal-content input[name="tel"]  {
+.modal-content input[name="tel-791"]  {
     background-image: url(https://emerem.com.ua/wp-content/uploads/2021/10/Vector-2.png);
 }
 .pum-close {
