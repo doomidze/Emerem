@@ -16,9 +16,11 @@ Template Name: Home Page
         the_post();
     ?>
         <div class="entry-content">
+    
         <?php
             the_content();
         ?>
+        
         <section class="cat-menu">
             <div class="container">
                 <div class="row">
@@ -91,7 +93,7 @@ Template Name: Home Page
     <section class="advantages container">
         <h2 class="advantages-title"><?php echo carbon_get_post_meta($page_id, 'advantages_title') ?></h2>
         <div class="advantages-list row">
-            <div class="advantages-list-item col-sm-6 col-xl-3">
+            <div class="advantages-list-item col-6 col-xl-3">
                 <div class="advantages-list-item-circle">
                     <img src="<?php echo wp_get_attachment_image_url(carbon_get_post_meta($page_id, 'advantages_img1'), 'full'); ?>" alt="">
                 </div>
@@ -99,7 +101,7 @@ Template Name: Home Page
                     <?php echo carbon_get_post_meta($page_id, 'advantages1') ?>
                 </div>
             </div>
-            <div class="advantages-list-item col-sm-6 col-xl-3">
+            <div class="advantages-list-item col-6 col-xl-3">
                 <div class="advantages-list-item-circle">
                     <img src="<?php echo wp_get_attachment_image_url(carbon_get_post_meta($page_id, 'advantages_img2'), 'full'); ?>" alt="">
                 </div>
@@ -107,7 +109,7 @@ Template Name: Home Page
                     <?php echo carbon_get_post_meta($page_id, 'advantages2') ?>
                 </div>
             </div>
-            <div class="advantages-list-item col-sm-6 col-xl-3">
+            <div class="advantages-list-item col-6 col-xl-3">
                 <div class="advantages-list-item-circle">
                     <img src="<?php echo wp_get_attachment_image_url(carbon_get_post_meta($page_id, 'advantages_img3'), 'full'); ?>" alt="">
                 </div>
@@ -115,7 +117,7 @@ Template Name: Home Page
                     <?php echo carbon_get_post_meta($page_id, 'advantages3') ?>
                 </div>
             </div>
-            <div class="advantages-list-item col-sm-6 col-xl-3">
+            <div class="advantages-list-item col-6 col-xl-3">
                 <div class="advantages-list-item-circle">
                     <img src="<?php echo wp_get_attachment_image_url(carbon_get_post_meta($page_id, 'advantages_img4'), 'full'); ?>" alt="">
                 </div>

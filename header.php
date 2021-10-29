@@ -56,13 +56,14 @@
             <div class="logo">
                 <a href="/"><img src="https://emerem.com.ua/wp-content/uploads/2021/10/Logo.svg" alt=""></a>
             </div>
+            <div class="links">
             <div class="links-item mail">
                 <div class="links-item__svg">
                     <svg width="18" height="14" viewBox="0 0 19 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M1.18323 0H17.7485C18.4016 0 18.9317 0.530088 18.9317 1.18323V1.85531L9.46587 5.86529L0 1.85649V1.18323C0 0.530088 0.530088 0 1.18323 0ZM9.46587 7.09935C9.54396 7.09935 9.62323 7.08396 9.6966 7.05202L18.9317 3.14143V11.8323C18.9317 12.4854 18.4016 13.0155 17.7485 13.0155H1.18323C0.530088 13.0155 0 12.4854 0 11.8323V3.14143L9.23513 7.05202C9.30849 7.08396 9.38777 7.09935 9.46587 7.09935Z" fill="#EB1C24"></path>
                     </svg>
                 </div>
-                <div class="links-item__link underline"><a href="mailto:info@emerem.com.ua">info@emerem.com.ua</a></div>
+                <div class="links-item__link"><a href="mailto:info@emerem.com.ua">info@emerem.com.ua</a></div>
             </div>
             <div class="links-item phone">
                 <div class="links-item__svg">
@@ -71,17 +72,24 @@
                     </svg>
                 </div>
                 <div class="links-item__link">
-                    <a href="tel:+380447771717" class="fw-400">+380 (44) 777-17-17</a>
-                    <a href="tel:+380447771717" class="fw-400">+380 (44) 777-17-17</a>
+                    <a href="tel:+380447771717">+380 (44) 777-17-17</a>
+                    <a href="tel:+380447771717">+380 (44) 777-17-17</a>
+                </div>
                 </div>
                 
             </div>
             <div class="request-call-btn" onclick="openModal()">Заказать звонок</div>
             
-            <div class="toggle-menu"><i class="fa fa-bars" style="color: black" id="MobileToggle"></i></div>
-        </div>
-    </div>
-    <nav class="nav nav-mobile" id="MobileToggleMenu">
+            <details>
+                
+                <summary tabindex="1">
+                <div class="toggle-menu">
+                    <span class="first"></span>
+                    <span class="second"></span>
+                    <span class="third"></span>
+                </div>
+                </summary>
+                <nav class="nav nav-mobile" id="MobileToggleMenu">
         <div class="container">
         <div class="close-responsive"><i class="fa fa-times" style="color: white" id="CloseResponsive"></i></div>
                             <ul id="menu-%d0%b3%d0%bb%d0%b0%d0%b2%d0%bd%d0%be%d0%b5-%d0%bc%d0%b5%d0%bd%d1%8e" class="nav-wrapper"><li id="menu-item-304" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-298 current_page_item menu-item-304"><a href="/production/about-us/" aria="-" current="page">О компании</a></li>
@@ -104,4 +112,9 @@
 <li id="menu-item-349" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-349"><a href="/contacts/">Контакты</a></li>
 </ul>                    </div>
     </nav>
+            </details>
+
+        </div>
+    </div>
+    
 </header>

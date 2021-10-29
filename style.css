@@ -145,11 +145,6 @@ h1.entry-title {
 .header-info-mobile .phone .links-item__link a:first-child {
     margin-bottom: 10px;
 }
-.links-item__link a {
-    color: white!important;
-    text-decoration: none!important;
-    font-weight: 200;
-}
 .important-links {
     color: white;
     font-weight: 400;
@@ -1471,6 +1466,19 @@ details[open]{
 details[open] span {
     background-color: #ffffff;
 }
+details[open] .nav-mobile {
+    animation: showMenu 0.5s linear;
+    animation-fill-mode: forwards;
+}
+details {
+    padding: 16px 
+}
+summary {
+    display: block;
+}
+summary::marker{
+    font-size: 0;
+  }
 @media (max-width: 1199px) {
     .category-item {
         width: 100%;
@@ -1526,6 +1534,9 @@ details[open] span {
         align-items: center;
         justify-content: space-between;
     }
+    .header-info-mobile .logo {
+        padding: 10px 0;
+    }
     .header-info {
         display: none;
     }
@@ -1570,10 +1581,6 @@ details[open] span {
         padding: 5px;
     }
    
-    details[open] .nav-mobile {
-        animation: showMenu 0.5s linear;
-        animation-fill-mode: forwards;
-    }
     .header .nav .nav-wrapper {
         display: inline-grid;
     }
@@ -1598,6 +1605,35 @@ details[open] span {
     .product-page .wp-block-column {
         justify-content: space-around;
     }
+    .logo a img {
+        height: 30px!important;
+    }
+    .header .container-fluid {
+        padding-left: 15px;
+    }
+    .header-info-mobile .logo {
+        margin-right: auto;
+    }
+    .header-info-mobile .links {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-right: 15px;
+    }
+    .header-info-mobile .links-item svg {
+        width: 8px;
+        display: block;
+    }
+    .header .links-item .links-item__link a {
+        font-size: 10px;
+        margin-bottom: 0;
+    }
+    .header .links-item.mail .links-item__link a {
+        font-size: 8px;
+        font-weight: 400;
+    }
+    .header-info-mobile .phone a:first-child {
+        display: none;
+    }   
 }
 @media (max-width: 479px) {
     .main-slider .swiper-learn-more {
@@ -1700,9 +1736,6 @@ details[open] span {
         .copyright {
             margin-top: 50px;
         }
-        details {
-            padding: 15px 25px 15px 10px
-        }
         .toggle-menu span {
             height: 3px;
             margin-bottom: 3px;
@@ -1728,31 +1761,80 @@ details[open] span {
         .entry-content .mainmetaslider .caption-wrap {
             left: 0;
         }
-        .go-to-projects-btn {
-            font-size: 12px;
-        }
         .go-to-projects-btn span svg {
             margin-left: 10px!important;
         }
         .go-to-projects-btn:hover span svg {
             margin-left: 10px;
         }
-        .projects-info-wrapper h2 {
-            font-size: 30px;
-        }
-        .logo a img {
-            height: 45px!important;
-        }
         .request-call-btn {
             font-size: 11px;
             padding: 7px 10px;
         }
 }
+@media (max-width: 575px) {
+    .entry-content .mainmetaslider .flexslider li img {
+        min-height: 220px;
+    }
+    .entry-content .mainmetaslider .caption-wrap {
+        border-bottom: 60px solid #000000;
+    }
+    .entry-content .mainmetaslider ol.flex-control-nav.flex-control-paging {
+        bottom: 20px;
+        text-align: left;
+        margin-left: 25px;
+        width: 100px;
+    }
+    .entry-content .mainmetaslider .flexslider .flex-control-nav li {
+        margin-right: 4px;
+    }
+    .entry-content .mainmetaslider .flexslider .flex-control-nav li a {
+        border: 1px solid #EB1C24;
+        margin: 0;
+        padding: 0%;
+        height: 4px;
+        width: 16px;
+    }
+    .caption .caption-wrap a {
+        display: none;
+    }
+    .entry-content .mainmetaslider .caption-wrap a {
+        cursor: pointer;
+        background-color: black;
+        display: block;
+        position: absolute;
+        top: 155px;
+        z-index: 999;
+        right: 20px;
+        width: 140px;
+        color: white;
+        font-size: 9px;
+        text-align: center;
+        line-height: 26px;
+        border: 2px solid #EB1C24;
+        padding: 0;
+    }
+    .entry-content .mainmetaslider .caption-wrap a:hover {
+        background-color: #EB1C24;
+        color: #ffffff;
+    }
+    .entry-content .mainmetaslider .caption-wrap .caption h1 {
+        font-size: 16px;
+        line-height: 17px;
+        margin-bottom: 10px;
+    }
+    .entry-content .mainmetaslider .caption-wrap .caption p {
+        font-size: 11px;
+        max-width: 260px;
+        line-height: 14px;
+        font-weight: 600;
+    }
+}
 @media (min-width: 320px) and (max-width: 639px) {
     .news .wp-show-posts-columns, #post-315 .wp-show-posts-columns, #post-319 .wp-show-posts-columns {
         justify-content: center;
     }
-    
+}
 @media (min-width: 480px) and (max-width: 639px) {
     .subcategory-page section article {
         width: 220px;
@@ -1770,6 +1852,16 @@ details[open] span {
         margin-bottom: 50px;
     }
 }
+@media (min-width: 576px) and (max-width: 991px) {
+    .entry-content .mainmetaslider .caption-wrap .caption h1 {
+        font-size: 25px;
+        line-height: 30px;
+        margin-bottom: 10px;
+    }
+    .entry-content .mainmetaslider .flexslider li img {
+        min-height: 300px;
+    }
+}
 @media (max-width: 991px) {
     .our-projects-wrapper {
         display: flex;
@@ -1779,36 +1871,65 @@ details[open] span {
             max-width: 100%;
         }
         .entry-content .mainmetaslider .caption-wrap .caption {
-            top: 5%;
             max-width: 320px;
-        }
-        .entry-content .mainmetaslider .caption-wrap .caption h1 {
-            font-size: 25px;
-            line-height: 30px;
-            margin-bottom: 10px;
         }
         .entry-content .mainmetaslider .caption-wrap .caption p {
             margin-bottom: 35px!important;
         }
-        .entry-content .mainmetaslider .flexslider li img {
-            min-height: 300px;
-        }
-        .entry-content .mainmetaslider .caption-wrap a {
-            padding: 10px 20px 10px 15px;
-            font-size: 15px;
-        }
         .cat-menu .container {
             max-width: 100%;
         }
+        .about-us-wrapper {
+            flex-direction: column;
+            padding: 1px 0;
+        }
+        .about-us {
+            width: 85%;
+            margin: -50px auto;
+            background-color: white;
+            padding: 20px 25px;
+        }
+        .about-us h2 {
+            margin-bottom: 15px;
+        }
+        .about-us p, h6 {
+            font-size: 10px;
+            line-height: 13px;
+            font-weight: 400;
+        }
+        h2 {
+            font-size: 14px;
+            line-height: 14px;
+        }
+        .advantages {
+            padding-top: 80px;
+        }
+        .go-to-about-us-btn {
+            width: 100%;
+            justify-content: space-between;
+            padding: 10px 15px;
+            margin-top: 25px;
+        }
+        .projects-info-wrapper__inner, .go-to-projects-btn {
+            padding-left: 25px;
+            padding-right: 70px;
+        }
+        .projects-info-wrapper h2 {
+            margin: 25px 0 15px;
+        }
+        .projects-info-wrapper p {
+            font-size: 10px;
+            line-height: 13px;
+            font-weight: 400;
+        }
+        .go-to-projects-btn {
+            font-size: 10px;
+        }
+        .go-to-projects-btn:hover span svg {
+            margin-left: 100px;
+        }
 }
 @media (max-width: 1199px) {
-	.about-us-wrapper {
-		flex-direction: column-reverse;
-        padding-top: 50px;
-	}
-		.about-us {
-			padding: 0px 0px 25px 0px;
-		}
 		.pipe-img {
 			max-width: unset;
 			padding: unset;
@@ -1830,8 +1951,6 @@ details[open] span {
         margin-right: unset;
     }
 }
-
-}
 @media (min-width: 320px) and (max-width: 767px) {
     .projects-list {
         font-size: 12px;
@@ -1841,7 +1960,6 @@ details[open] span {
         }
             .projects-info-wrapper p {
                 padding-bottom: 6%;
-                font-size: 12px;
             }
             .go-to-projects-btn span svg {
                 margin-left: 30px;
@@ -1856,9 +1974,6 @@ details[open] span {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-            }
-            .mail {
-                display: none!important;
             }
 }
 @media (min-width: 640px) and (max-width: 767px) {
@@ -1895,13 +2010,6 @@ details[open] span {
         max-width: 100%;
         top: 10%;
     }
-    .entry-content .mainmetaslider ol.flex-control-nav.flex-control-paging {
-        bottom: 10px;
-    }
-    
-    .phone {
-        display: none!important;
-    }
     .subcategory-page .entry-content {
         display: flex;
         justify-content: space-around;
@@ -1912,11 +2020,14 @@ details[open] span {
     }
     .cat-menu {
         position: unset;
-        border-top: 17px solid #ffffff;
+        border-top: none;
         background-color: #000000;
     }
     .cat-menu .cat-item {
         border-top: 1px solid #ffffff;
+    }
+    .cat-menu .cat-item:nth-child(odd) {
+        border-left: none;
     }
 }
 @media (min-width: 576px) and (max-width: 767px) {
@@ -1929,6 +2040,10 @@ details[open] span {
     }
     .entry-content .mainmetaslider ol.flex-control-nav.flex-control-paging {
         bottom: 220px;
+    }
+    .entry-content .mainmetaslider .caption-wrap a {
+        padding: 10px 20px 10px 15px;
+        font-size: 15px;
     }
     .subcategory-page .entry-content {
         display: flex;
@@ -1972,6 +2087,13 @@ details[open] span {
             }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
+    .about-us {
+        padding: 0px 0px 25px 0px;
+    }
+    .about-us-wrapper {
+		flex-direction: column-reverse;
+        padding-top: 50px;
+	}
     .advantages-list-item {
         padding: 0;
     }
