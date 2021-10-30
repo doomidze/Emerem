@@ -2308,7 +2308,7 @@ summary::marker{
         margin-bottom: 0;
     }
 .modal-content {
-    padding: 25px 35px 35px ;
+    padding: 25px 35px 25px ;
 }
 .modal-content input {
     font-size: 14px;
@@ -2332,6 +2332,24 @@ summary::marker{
 }
 .modal-content input[name="tel-791"]  {
     background-image: url(assets/img/Vector-2.png);
+}
+.modal-content input[type="submit"] {
+    background-color: #EB1C24;
+    width: 100%;
+    color: #ffffff;
+    text-indent: 0;
+    font-weight: 600;
+    height: 35px;
+    line-height: 30px;
+    transition: 0.5s all;
+}
+.modal-content input[type="submit"]:hover {
+    border: 1px solid #eb1c24;
+    background-color: #ffffff;
+    color: #eb1c24;
+}
+.modal-content .ajax-loader {
+    display: none;
 }
 .pum-close {
     font-size: 12px!important;
