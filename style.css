@@ -406,7 +406,7 @@ header .nav .menu-item .menu-item a {
 
 .entry-content .mainmetaslider ol.flex-control-nav.flex-control-paging {
     position: absolute;
-    bottom: 180px;
+    bottom: 200px;
 }
 .entry-content .mainmetaslider .flexslider .flex-control-nav a {
     box-shadow: none !important;
@@ -2016,7 +2016,7 @@ summary::marker{
 }
 @media (min-width: 768px) and (max-width: 1199px) {
     .entry-content .mainmetaslider ol.flex-control-nav.flex-control-paging {
-        bottom: 200px;
+        bottom: 220px;
     }
 }
 @media (min-width: 1200px) and (max-width: 1799px) {
@@ -2117,6 +2117,7 @@ summary::marker{
     }
     .entry-content .mainmetaslider .caption-wrap {
         max-width: 720px;
+        top: 10%;
     }
     .store-products .entry-content .wp-show-posts-columns .wp-show-posts-single {
         width: 335px;
@@ -2211,6 +2212,9 @@ summary::marker{
     }
     .content {
         max-width: 880px;
+    }
+    .desktop-footer ul {
+        padding-top: 0;
     }
 }
 @media (min-width: 1024px) {
@@ -2319,15 +2323,15 @@ summary::marker{
     background-repeat: no-repeat;
 }
 .modal-content input[name="yourname"], .modal-content input[name="tel-791"] {
-    background-image: url(https://emerem.com.ua/wp-content/uploads/2021/10/Vector.png);
+    background-image: url(assets/img/Vector.png);
     background-position: 14px 12px;
 }
 .modal-content input[name="yourcompany"] {
-    background-image: url(https://emerem.com.ua/wp-content/uploads/2021/10/Vector-1.png);
+    background-image: url(assets/img/Vector-1.png);
     background-position: 14px 10px;
 }
 .modal-content input[name="tel-791"]  {
-    background-image: url(https://emerem.com.ua/wp-content/uploads/2021/10/Vector-2.png);
+    background-image: url(assets/img/Vector-2.png);
 }
 .pum-close {
     font-size: 12px!important;
