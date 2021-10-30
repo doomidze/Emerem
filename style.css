@@ -1669,6 +1669,9 @@ summary::marker{
     .header-info-mobile .phone a:first-child {
         display: none;
     }
+    .nav-mobile {
+        top: 48px;
+    }
     .about-us {
         width: 85%;
         margin: -50px auto;
@@ -1760,9 +1763,6 @@ summary::marker{
         .toggle-menu span {
             height: 3px;
             margin-bottom: 3px;
-        }
-        .nav-mobile {
-            top: 48px;
         }
         .subcategory-page h1.entry-title {
             font-size: 30px;
@@ -2090,6 +2090,12 @@ summary::marker{
     }
     .go-to-projects-btn {
         width: 100%;
+    }
+    .header-info-mobile details{
+        padding: 23px;
+    }
+    .nav-mobile {
+        top: 68px;
     }
     .projects-list .wp-show-posts-single {
         width: 33.333%;
