@@ -331,6 +331,7 @@ header .nav .menu-item .menu-item a {
     bottom: 0;
     width: 100%;
     border-top: 18px #ffffff solid;
+    border-bottom: 18px#ffffff solid;
 }
 .cat-menu .row {
     display: flex;
@@ -640,6 +641,9 @@ header .nav .menu-item .menu-item a {
                 max-width: 281px;
                 margin: 0!important;       
             }
+                .news-wrapper .wp-show-posts-inner img, #post-315 .wp-show-posts-inner img, #post-319 .wp-show-posts-inner img {
+                    width: 100%;
+                }
                 .news-wrapper .wp-show-posts-entry-title a, #post-315 .wp-show-posts-entry-title a, #post-319 .wp-show-posts-entry-title a {
                     display: inline-block;
                     color: #000000;
@@ -1439,7 +1443,10 @@ ul.products li.product {
 .mobile-footer {
     display: none;
 }
-
+.footer-inner a {
+    color: #ffffff;
+    font-weight: 400!important;
+}
 .desktop-footer {
     display: block;
 }
@@ -1457,6 +1464,7 @@ ul.products li.product {
     100% {
         transform: translateX(0px);
         opacity: 1;
+        overflow: hidden;
     }
 } 
 details[open]{
@@ -1510,6 +1518,9 @@ summary::marker{
     }
 }
 @media (max-width: 991px) {
+    body {
+        font-size: 10px!important;
+    }
     .request-call-btn {
         display: none;
     }
@@ -1525,9 +1536,7 @@ summary::marker{
     .header .nav {
         height: auto;
         padding: 25px 25px;
-    }
-    .company-info {
-        padding-top: 2rem;
+        transform: translateX(991px);
     }
     .header-info-mobile {
         display: flex;
@@ -1592,6 +1601,32 @@ summary::marker{
     .header .nav .nav-wrapper a:hover {
         color: #eb1c24;
     }
+    .footer-inner {
+        justify-content: space-around;
+    }
+    .footer-logo {
+        padding: 0 0 25px;
+        text-align: center;
+    }
+    .footer-inner .desktop-footer {
+        margin-bottom: 30px;
+    }
+    .footer-links {
+      flex-direction: row;  
+    }
+    .footer-links .links-item, .header .links-item {
+        margin-bottom: 5px;
+    }
+    .footer-links .links-item:nth-child(3) {
+        order: 4;
+    }
+    .footer-links .copyright {
+        order: 5;
+        margin-top: 35px;
+    }
+    .footer-inner .footer-links .tel .links-item__link a {
+        font-weight: 600!important;
+    }
 }
 @media (max-width: 767px) {
     .contact-info-wrapper {
@@ -1633,7 +1668,19 @@ summary::marker{
     }
     .header-info-mobile .phone a:first-child {
         display: none;
-    }   
+    }
+    .about-us {
+        width: 85%;
+        margin: -50px auto;
+        background-color: white;
+    }
+    .about-us-wrapper {
+        flex-direction: column;
+    }
+    .news-wrapper .wp-show-posts-single, #post-315 .wp-show-posts-single, #post-319 .wp-show-posts-single {
+        width: 45%;
+        margin-bottom: 50px;   
+    }
 }
 @media (max-width: 479px) {
     .main-slider .swiper-learn-more {
@@ -1645,25 +1692,28 @@ summary::marker{
     }
     .main-slider .title-swiper {
         font-size: 20px;
+    }.advantages-list {
+        justify-content: space-around;
+    }
+    .advantages-list-item {
+        padding: 0;
+        
     }
     .news {
         padding-top: 1em;
         padding-bottom: 7em;
-        max-width: 320px;
         position: relative;
     }
-    .news-header {
-        display: block;
-        text-align: center;
-    }
+   
     .news-secondary-title {
-        width: 100%;
-        text-align: center;
+        width: 85%;
     }
     .go-to-news-btn {
-        position: absolute;
-        bottom: 5em;
-        width: 296px
+        /*position: absolute;
+        bottom: 5em;*/
+        width: 190px;
+        padding: 5px;
+        justify-content: center;
     }
     ul.products li.product {
         width: 345px!important;
@@ -1704,37 +1754,8 @@ summary::marker{
     .img-secondary-wrapper img {
         width: 33%;
     }
-    .footer-inner {
-        flex-direction: column;
-        height: 900px;
-        justify-content: space-between;
-        align-items: center;
-    }
-        .company-info {
-            align-self: unset;
-        }
-        .footer-logo {
-            padding-bottom: 0px;
-            text-align: center;
-        }
         .footer-logo a {
             display: block;
-        }
-        .footer-about {
-            order: 2;
-            text-align: center;
-        }
-        .footer-projects {
-            order: 3;
-        }
-        .footer-links {
-            order: 4;
-        }
-        .footer .footer-inner .col-6 {
-            width: 300px;
-        }
-        .copyright {
-            margin-top: 50px;
         }
         .toggle-menu span {
             height: 3px;
@@ -1773,6 +1794,9 @@ summary::marker{
         }
 }
 @media (max-width: 575px) {
+    .advantages-list-item {
+        max-width: 49%;
+    }
     .entry-content .mainmetaslider .flexslider li img {
         min-height: 220px;
     }
@@ -1829,10 +1853,11 @@ summary::marker{
         line-height: 14px;
         font-weight: 600;
     }
-}
-@media (min-width: 320px) and (max-width: 639px) {
-    .news .wp-show-posts-columns, #post-315 .wp-show-posts-columns, #post-319 .wp-show-posts-columns {
-        justify-content: center;
+    .news-wrapper .wpsp-read-more a:hover::after, #post-315 .wpsp-read-more a:hover::after, #post-319 .wpsp-read-more a:hover::after {
+        right: -45px;
+    }
+    .news-wrapper .wpsp-read-more a, #post-315 .wpsp-read-more a, #post-319 .wpsp-read-more a {
+        font-size: 12px;
     }
 }
 @media (min-width: 480px) and (max-width: 639px) {
@@ -1880,13 +1905,9 @@ summary::marker{
             max-width: 100%;
         }
         .about-us-wrapper {
-            flex-direction: column;
-            padding: 1px 0;
+            padding: 0;
         }
         .about-us {
-            width: 85%;
-            margin: -50px auto;
-            background-color: white;
             padding: 20px 25px;
         }
         .about-us h2 {
@@ -1897,13 +1918,14 @@ summary::marker{
             line-height: 13px;
             font-weight: 400;
         }
-        h2 {
+        h2, h3 {
             font-size: 14px;
             line-height: 14px;
         }
         .advantages {
             padding-top: 80px;
         }
+        
         .go-to-about-us-btn {
             width: 100%;
             justify-content: space-between;
@@ -1928,6 +1950,9 @@ summary::marker{
         .go-to-projects-btn:hover span svg {
             margin-left: 100px;
         }
+        .news .wp-show-posts-columns, #post-315 .wp-show-posts-columns, #post-319 .wp-show-posts-columns {
+            justify-content: space-between;
+        }
 }
 @media (max-width: 1199px) {
 		.pipe-img {
@@ -1937,6 +1962,9 @@ summary::marker{
 	.advantages-list {
 		margin: 0;
 	}
+    .advantages-list {
+        justify-content: space-around;
+    }
     .projects-list .wp-show-posts-image img {
         width: 100%;
     }
@@ -1980,12 +2008,6 @@ summary::marker{
     .projects-list .wp-show-posts-single {
         width: 33.333%;
     }
-    .news.container, #post-315 .container, #post-319 .container {
-        max-width: 100%;
-    }
-        .news .wp-show-posts-columns, #post-315 .wp-show-posts-columns, #post-319 .wp-show-posts-columns {
-            justify-content: space-between;
-        }
 }
 @media (min-width: 640px) and (max-width: 1199px) {
 		.about-us p {
@@ -2021,6 +2043,7 @@ summary::marker{
     .cat-menu {
         position: unset;
         border-top: none;
+        border-bottom: 1px solid #ffffff;
         background-color: #000000;
     }
     .cat-menu .cat-item {
@@ -2053,47 +2076,53 @@ summary::marker{
     .subcategory-page section article {
         width: 240px;
     }
+    .advantages-list-item {
+        max-width: 49%;
+    }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-            .go-to-projects-btn {
-                width: 100%;
-            }
-            .projects-list .wp-show-posts-single {
-                width: 33.333%;
-            }
-            .news-wrapper .wp-show-posts-single:nth-child(odd), #post-315 .wp-show-posts-single:nth-child(odd), #post-319 .wp-show-posts-single:nth-child(odd) {
-                margin: 0px 134px 50px 0;
-            }
-            .subcategory-page section article {
-                width: 220px;
-            }
-            .subcategory-page .entry-content section:nth-child(3n+1) {
-                margin: 0 14px;
-            }
-            .post-317 .entry-content .wp-show-posts-columns .wp-show-posts-single {
-                width: 338px;
-            }
-            .entry-content .mainmetaslider .flexslider li img {
-                min-height: 550px;
-            }
-            .entry-content .mainmetaslider .caption-wrap {
-                max-width: 720px;
-            }
-            .store-products .entry-content .wp-show-posts-columns .wp-show-posts-single {
-                width: 335px;
-            }
-            .store-products .wp-show-posts-entry-summary p, .store-products .wpsp-read-more {
-                padding: 0 30px;
-            }
+    .header-info-mobile .links {
+        display: flex;
+        align-items: center;
+    }
+    .header-info-mobile .links .links-item.mail {
+        margin-right: 100px;
+    }
+    .go-to-projects-btn {
+        width: 100%;
+    }
+    .projects-list .wp-show-posts-single {
+        width: 33.333%;
+    }
+    .news-wrapper .wp-show-posts-single:nth-child(odd), #post-315 .wp-show-posts-single:nth-child(odd), #post-319 .wp-show-posts-single:nth-child(odd) {
+        margin: 0px 134px 50px 0;
+    }
+    .subcategory-page section article {
+        width: 220px;
+    }
+    .subcategory-page .entry-content section:nth-child(3n+1) {
+        margin: 0 14px;
+    }
+    .post-317 .entry-content .wp-show-posts-columns .wp-show-posts-single {
+        width: 338px;
+    }
+    .entry-content .mainmetaslider .flexslider li img {
+        min-height: 550px;
+    }
+    .entry-content .mainmetaslider .caption-wrap {
+        max-width: 720px;
+    }
+    .store-products .entry-content .wp-show-posts-columns .wp-show-posts-single {
+        width: 335px;
+    }
+    .store-products .wp-show-posts-entry-summary p, .store-products .wpsp-read-more {
+        padding: 0 30px;
+    }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
     .about-us {
-        padding: 0px 0px 25px 0px;
+        padding: 0px 25px 20px;
     }
-    .about-us-wrapper {
-		flex-direction: column-reverse;
-        padding-top: 50px;
-	}
     .advantages-list-item {
         padding: 0;
     }
@@ -2191,9 +2220,6 @@ summary::marker{
     }
     .about-us-wrapper {
         padding-left: 0;
-    }
-    .pipe-img {
-        margin-top: 18px;
     }
 }
 @media (min-width: 1366px) {

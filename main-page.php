@@ -69,10 +69,10 @@ Template Name: Home Page
 
     <section class="about-us-container">
         <div class="about-us-wrapper">
-            <div class="pipe-img col-xs-12 col-sm-12 col-xl-6 ">
+            <div class="pipe-img col-xs-12 col-sm-12 col-md-6 ">
                 <img src="<?php echo wp_get_attachment_image_url(carbon_get_post_meta($page_id, 'about_us_img'), 'full'); ?>" alt="" style="width:100%;height:auto">
             </div>
-            <div class="about-us col-xs-12 col-sm-12 col-xl-6 ">
+            <div class="about-us col-xs-12 col-sm-12 col-md-6 ">
                 <h2 class="about-us-title"><?php echo carbon_get_post_meta($page_id, 'about_us_title') ?></h2>
                 <div class="about-us-info">
                     <?php echo carbon_get_post_meta($page_id, 'about_us_subtitle') ?>
