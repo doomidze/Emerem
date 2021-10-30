@@ -378,6 +378,7 @@ header .nav .menu-item .menu-item a {
 .entry-content .mainmetaslider .caption-wrap .caption {
     max-width: 515px;
     padding: 0;
+    text-shadow: 0px 0px 5px #000000;
 }
 .entry-content .mainmetaslider .caption-wrap p {
     font-size: 16px;
@@ -395,6 +396,7 @@ header .nav .menu-item .menu-item a {
     font-size: 16px;
     font-weight: 600;
     letter-spacing: 1px;
+    text-shadow: none;
 }
 .entry-content .mainmetaslider .caption-wrap a:hover {
     background-color: #ffffff;
@@ -1506,9 +1508,6 @@ summary::marker{
     .header-info .logo {
         margin-right: 0;
     }
-    .request-call-btn {
-        font-size: 15px;
-    }
     .header .links-item .links-item__link a {
         font-size: 13px;
         line-height: 13px;
@@ -1516,11 +1515,31 @@ summary::marker{
     .logo a img {
         height: 50px!important;
     }
+    .pipe-img {
+        max-width: unset;
+        padding: unset;
+    }
+    .advantages-list {
+        margin: 0;
+    }
+    .advantages-list {
+        justify-content: space-around;
+    }
+    .projects-list .wp-show-posts-image img {
+        width: 100%;
+    }
+    .projects-list .wp-show-posts-columns .wp-show-posts-inner .wp-show-posts-entry-header {
+        bottom: 5px;
+    }
+    .post-317 .entry-content .wp-show-posts-columns, .entry-content .wp-show-posts-columns {
+        display: flex;
+        justify-content: space-between;
+    }
+    .subcategory-page section {
+        margin-right: unset;
+    }
 }
 @media (max-width: 991px) {
-    body {
-        font-size: 10px!important;
-    }
     .request-call-btn {
         display: none;
     }
@@ -1589,7 +1608,6 @@ summary::marker{
         text-align: center;
         padding: 5px;
     }
-   
     .header .nav .nav-wrapper {
         display: inline-grid;
     }
@@ -1626,6 +1644,65 @@ summary::marker{
     }
     .footer-inner .footer-links .tel .links-item__link a {
         font-weight: 600!important;
+    }
+    .our-projects-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    .projects-info-wrapper {
+        max-width: 100%;
+    }
+    .entry-content .mainmetaslider .caption-wrap .caption {
+        max-width: 320px;
+    }
+    .entry-content .mainmetaslider .caption-wrap .caption p {
+        margin-bottom: 35px!important;
+    }
+    .cat-menu .container {
+        max-width: 100%;
+    }
+    .about-us-wrapper {
+        padding: 0;
+    }
+    .about-us {
+        padding: 20px 25px;
+    }
+    .about-us h2 {
+        margin-bottom: 15px;
+    }
+    .advantages {
+        padding-top: 80px;
+    }
+    .go-to-about-us-btn {
+        width: 100%;
+        justify-content: space-between;
+        padding: 10px 15px;
+        margin-top: 25px;
+    }
+    .projects-info-wrapper__inner, .go-to-projects-btn {
+        padding-left: 25px;
+        padding-right: 70px;
+    }
+    .projects-info-wrapper h2 {
+        margin: 25px 0 15px;
+    }
+    .go-to-projects-btn:hover span svg {
+        margin-left: 100px;
+    }
+    .news .wp-show-posts-columns, #post-315 .wp-show-posts-columns, #post-319 .wp-show-posts-columns {
+        justify-content: space-between;
+    }
+    body {
+        font-size: 12px!important;
+    }
+    .about-us p, h6, .go-to-projects-btn, .projects-info-wrapper p {
+        font-size: 12px;
+        line-height: 15px;
+        font-weight: 400;
+    }
+    h2, h3 {
+        font-size: 16px;
+        line-height: 16px;
     }
 }
 @media (max-width: 767px) {
@@ -1794,6 +1871,18 @@ summary::marker{
         }
 }
 @media (max-width: 575px) {
+    body {
+        font-size: 10px!important;
+    }
+    .about-us p, h6, .go-to-projects-btn, .projects-info-wrapper p {
+        font-size: 10px;
+        line-height: 13px;
+        font-weight: 400;
+    }
+    h2, h3 {
+        font-size: 14px;
+        line-height: 14px;
+    }
     .advantages-list-item {
         max-width: 49%;
     }
@@ -1885,98 +1974,6 @@ summary::marker{
     }
     .entry-content .mainmetaslider .flexslider li img {
         min-height: 300px;
-    }
-}
-@media (max-width: 991px) {
-    .our-projects-wrapper {
-        display: flex;
-        flex-direction: column;
-    }
-        .projects-info-wrapper {
-            max-width: 100%;
-        }
-        .entry-content .mainmetaslider .caption-wrap .caption {
-            max-width: 320px;
-        }
-        .entry-content .mainmetaslider .caption-wrap .caption p {
-            margin-bottom: 35px!important;
-        }
-        .cat-menu .container {
-            max-width: 100%;
-        }
-        .about-us-wrapper {
-            padding: 0;
-        }
-        .about-us {
-            padding: 20px 25px;
-        }
-        .about-us h2 {
-            margin-bottom: 15px;
-        }
-        .about-us p, h6 {
-            font-size: 10px;
-            line-height: 13px;
-            font-weight: 400;
-        }
-        h2, h3 {
-            font-size: 14px;
-            line-height: 14px;
-        }
-        .advantages {
-            padding-top: 80px;
-        }
-        
-        .go-to-about-us-btn {
-            width: 100%;
-            justify-content: space-between;
-            padding: 10px 15px;
-            margin-top: 25px;
-        }
-        .projects-info-wrapper__inner, .go-to-projects-btn {
-            padding-left: 25px;
-            padding-right: 70px;
-        }
-        .projects-info-wrapper h2 {
-            margin: 25px 0 15px;
-        }
-        .projects-info-wrapper p {
-            font-size: 10px;
-            line-height: 13px;
-            font-weight: 400;
-        }
-        .go-to-projects-btn {
-            font-size: 10px;
-        }
-        .go-to-projects-btn:hover span svg {
-            margin-left: 100px;
-        }
-        .news .wp-show-posts-columns, #post-315 .wp-show-posts-columns, #post-319 .wp-show-posts-columns {
-            justify-content: space-between;
-        }
-}
-@media (max-width: 1199px) {
-		.pipe-img {
-			max-width: unset;
-			padding: unset;
-		}
-	.advantages-list {
-		margin: 0;
-	}
-    .advantages-list {
-        justify-content: space-around;
-    }
-    .projects-list .wp-show-posts-image img {
-        width: 100%;
-    }
-    .projects-list .wp-show-posts-columns .wp-show-posts-inner .wp-show-posts-entry-header {
-        bottom: 5px;
-    }
-    .post-317 .entry-content .wp-show-posts-columns, .entry-content .wp-show-posts-columns {
-        display: flex;
-        justify-content: space-between;
-    }
-    .subcategory-page section {
-        margin-right: unset;
     }
 }
 @media (min-width: 320px) and (max-width: 767px) {
@@ -2300,6 +2297,7 @@ summary::marker{
 .modal-title {
     background-color: #000000;
     padding: 20px 35px;
+    text-align: center;
 }
     .modal-title h1 {
         font-size: 35px;
@@ -2309,6 +2307,9 @@ summary::marker{
     }
 .modal-content {
     padding: 25px 35px 25px ;
+}
+.modal-content div[role="form"] {
+    max-width: 332px;
 }
 .modal-content input {
     font-size: 14px;
@@ -2377,6 +2378,7 @@ summary::marker{
     font-size: 20px;
     transition: 0.5s all;
     border: 2px solid #eb1c24;
+    box-shadow: 0px 0px 13px rgb(164 47 47);
 }
 .request-call-button.round:hover {
     color: #eb1c24;

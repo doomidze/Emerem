@@ -119,6 +119,7 @@
                             <li id="menu-item-349" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-349"><a href="/contacts/">Контакты</a></li>
                         </ul>                    
                     </div>
+                    <div class="request-call-btn" onclick="openModal()">Заказать звонок</div>
                 </nav>
             </details>
 
