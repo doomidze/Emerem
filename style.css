@@ -2361,3 +2361,26 @@ summary::marker{
     color: #eb1c24!important;
     opacity: 1;
 }
+/*Fixed Call Button*//*Fixed Call Button*//*Fixed Call Button*/
+.request-call-button.round {
+    position: fixed;
+    color: #ffffff;
+    background-color: red;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    text-align: center;
+    line-height: 58px;
+    right: 20px;
+    z-index: 9999;
+    top: 25%;
+    font-size: 20px;
+    transition: 0.5s all;
+    border: 2px solid #eb1c24;
+}
+.request-call-button.round:hover {
+    color: #eb1c24;
+    background-color: #ffffff;
+    border: 2px solid #eb1c24;
+}
+

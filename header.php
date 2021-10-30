@@ -16,6 +16,7 @@
     <?php wp_head(); ?>
 </head>
 <body>
+<div class="request-call-button round" href="#"><i class="fas fa-phone-alt"></i></div>
 <header class="header">
     <div class="container-fluid">
         <div class="header-info">
