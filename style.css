@@ -176,6 +176,7 @@ h1.entry-title {
     margin-top: auto;
     justify-self: flex-end;
     min-width: max-content;
+    font-size: 12px;
 }
 
 .header-info {
