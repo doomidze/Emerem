@@ -1568,6 +1568,9 @@ summary::marker{
     .request-call-btn {
         display: none;
     }
+    body .request-call-button.round {
+        display: block;
+    }
     .header {
         overflow-x: clip;
         position: relative;
@@ -2238,9 +2241,6 @@ summary::marker{
     .desktop-footer ul {
         padding-top: 0;
     }
-    .request-call-button.round {
-        position: fixed;
-    }
 }
 @media (min-width: 1024px) {
     .projects-info-wrapper__inner, 
@@ -2411,6 +2411,7 @@ summary::marker{
 }
 .request-call-button.round {
     display: none;
+    position: fixed;
     color: #ffffff;
     background-color: red;
     width: 60px;
