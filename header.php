@@ -124,31 +124,23 @@
         </div>
     </div>
     <nav class="nav nav-mobile" id="MobileToggleMenu">
-            <div class="container">
-                <div class="close-responsive">
-                    <i class="fa fa-times" style="color: white" id="CloseResponsive"></i>
-                </div>
-                <ul id="menu-%d0%b3%d0%bb%d0%b0%d0%b2%d0%bd%d0%be%d0%b5-%d0%bc%d0%b5%d0%bd%d1%8e" class="nav-wrapper">
-                    <li id="menu-item-304" class="menu-item menu-item-type-post_type menu-item-object-page page_item page-item-298 current_page_item menu-item-304"><a href="/production/about-us/" aria="-" current="page">О компании</a></li>
-                    <li id="menu-item-345" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor current-page-parent menu-item-has-children menu-item-345"><a href="/production/">Продукция</a>
-                        <ul class="sub-menu">
-                            <li id="menu-item-766" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-766"><a href="/production/industrial-pumps/centrifugal-pumps/">Центробежные насосы</a></li>
-                            <li id="menu-item-760" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-760"><a href="/production/industrial-pumps/gc-pipes/">Гигиенические центробежные насосы</a></li>
-                            <li id="menu-item-765" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-765"><a href="/production/industrial-pumps/p-pipes/">Перистальтические насосы</a></li>
-                            <li id="menu-item-763" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-763"><a href="/production/industrial-pumps/m-pipes/">Мембранные насосы</a></li>
-                            <li id="menu-item-761" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-761"><a href="/production/industrial-pumps/dosing-pumps-and-systems/">Дозирующие насосы и системы</a></li>
-                            <li id="menu-item-759" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-759"><a href="/production/industrial-pumps/v-pipes/">Винтовые насосы</a></li>
-                            <li id="menu-item-758" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-758"><a href="/production/industrial-pumps/vac-pipes/">Вакуумные насосы</a></li>
-                            <li id="menu-item-762" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-762"><a href="/production/industrial-pumps/impeller-pumps/">Импеллерные насосы</a></li>
-                            <li id="menu-item-764" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-764"><a href="/production/industrial-pumps/magnetic-drive-pumps/">Насосы с магнитной муфтой</a></li>
-                        </ul>
-                    </li>
-                    <li id="menu-item-347" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-347"><a href="/projects/">Реализованные проекты</a></li>
-                    <li id="menu-item-346" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-346"><a href="/information/">Полезная информация</a></li>
-                    <li id="menu-item-348" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-348"><a href="/news/">Новости</a></li>
-                    <li id="menu-item-349" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-349"><a href="/contacts/">Контакты</a></li>
-                </ul>                    
-            </div>
-        </nav>
+        <div class="container">
+            <div class="close-responsive">
+                <i class="fa fa-times" style="color: white" id="CloseResponsive"></i>
+            </div>      
+
+            <?php if ( has_nav_menu( 'footer' ) ) : ?>
+                <?php
+                    wp_nav_menu([
+                            'theme_location'  => 'primary',
+                            'container'       => null,
+                            'menu_class'      => 'nav-wrapper',
+                            'fallback_cb'     => false,
+                        ]
+                    );
+                ?>
+            <?php endif; ?>
+        </div>
+    </nav>
     
 </header>
