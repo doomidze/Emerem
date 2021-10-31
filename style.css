@@ -1450,6 +1450,10 @@ ul.products li.product {
     color: #ffffff;
     font-weight: 400!important;
 }
+.footer-inner a:hover,
+.footer-inner a:focus {
+    color: rgba(235,28,36,1);
+}
 .desktop-footer {
     display: block;
 }
@@ -2214,6 +2218,9 @@ summary::marker{
     .desktop-footer ul {
         padding-top: 0;
     }
+    .request-call-button.round {
+        position: fixed;
+    }
 }
 @media (min-width: 1024px) {
     .projects-info-wrapper__inner, 
@@ -2318,22 +2325,9 @@ summary::marker{
     text-indent: 45px;
     border: 1px solid #CACACA;
 }
-.modal-content input::placeholder, .modal-content input {
+.modal-content input::placeholder, 
+.modal-content input {
     color: rgba(0,0,0,0.5)
-}
-.modal-content input[name="yourname"], .modal-content input[name="tel-791"], .modal-content input[name="yourcompany"] {
-    background-repeat: no-repeat;
-}
-.modal-content input[name="yourname"], .modal-content input[name="tel-791"] {
-    background-image: url(assets/img/Vector.png);
-    background-position: 14px 12px;
-}
-.modal-content input[name="yourcompany"] {
-    background-image: url(assets/img/Vector-1.png);
-    background-position: 14px 10px;
-}
-.modal-content input[name="tel-791"]  {
-    background-image: url(assets/img/Vector-2.png);
 }
 .modal-content input[type="submit"] {
     background-color: #EB1C24;
@@ -2344,6 +2338,23 @@ summary::marker{
     height: 35px;
     line-height: 30px;
     transition: 0.5s all;
+}
+.modal-content input[name="yourname"], 
+.modal-content input[name="tel-791"], 
+.modal-content input[name="yourcompany"] {
+    background-repeat: no-repeat;
+}
+.modal-content input[name="yourname"], 
+.modal-content input[name="tel-791"] {
+    background-image: url(./assets/img/Vector.png);
+    background-position: 14px 12px;
+}
+.modal-content input[name="yourcompany"] {
+    background-image: url(./assets/img/icon-company.png);
+    background-position: 14px 10px;
+}
+.modal-content input[name="tel-791"]  {
+    background-image: url(./assets/img/icon-tel.png);
 }
 .modal-content input[type="submit"]:hover {
     border: 1px solid #eb1c24;
@@ -2364,8 +2375,10 @@ summary::marker{
     opacity: 1;
 }
 /*Fixed Call Button*//*Fixed Call Button*//*Fixed Call Button*/
+@media (min-width: 992px) {
+}
 .request-call-button.round {
-    position: fixed;
+    display: none;
     color: #ffffff;
     background-color: red;
     width: 60px;
