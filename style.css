@@ -2324,20 +2324,20 @@ summary::marker{
 }
 .modal-title {
     background-color: #000000;
-    padding: 20px 35px;
+    padding: 19px 35px 14px;
     text-align: center;
 }
     .modal-title h1 {
-        font-size: 35px;
-        line-height: 35px;
+        font-size: 24px;
+        line-height: 24px;
         color: #ffffff;
         margin-bottom: 0;
     }
 .modal-content {
-    padding: 25px 35px 0 35px;
+    padding: 25px 28px 28px 28px;
 }
 .modal-content div[role="form"] {
-    max-width: 332px;
+    max-width: 250px;
 }
 .wpcf7-form label {
     display: block;
@@ -2353,9 +2353,12 @@ summary::marker{
     display: block;
     width: 100%;
     font-size: 14px;
-    line-height: 35px;
-    text-indent: 45px;
+    line-height: 28px;
+    text-indent: 30px;
     border: 1px solid #CACACA;
+}
+.modal-content p {
+    margin-bottom: 14px;
 }
 .modal-content input::placeholder, 
 .modal-content input {
@@ -2370,23 +2373,24 @@ summary::marker{
     height: 35px;
     line-height: 30px;
     transition: 0.5s all;
+    letter-spacing: 1px;
 }
 .modal-content input[name="yourname"], 
 .modal-content input[name="tel-791"], 
 .modal-content input[name="yourcompany"] {
     background-repeat: no-repeat;
 }
-.modal-content input[name="yourname"], 
-.modal-content input[name="tel-791"] {
+.modal-content input[name="yourname"]  {
     background-image: url(./assets/img/Vector.png);
-    background-position: 14px 12px;
+    background-position: 10px 10px;
 }
 .modal-content input[name="yourcompany"] {
     background-image: url(./assets/img/icon-company.png);
-    background-position: 14px 10px;
+    background-position: 10px 7px;
 }
 .modal-content input[name="tel-791"]  {
     background-image: url(./assets/img/icon-tel.png);
+    background-position: 10px 7px;
 }
 .modal-content input[type="submit"]:hover {
     border: 1px solid #eb1c24;
@@ -2397,10 +2401,14 @@ summary::marker{
     display: none;
 }
 .pum-close {
-    font-size: 12px!important;
+    font-size: 10px!important;
     color: #ffffff!important;
     opacity: 0.5;
     transition: 0.5s all;
+    top: 3px!important;
+    height: unset!important;
+    width: unset!important;
+    display: block;
 }
 .pum-close:hover {
     color: #eb1c24!important;
