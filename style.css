@@ -1274,6 +1274,9 @@ ul.products li.product {
     bottom: 10px;
     max-height: 50px;
     transition: 0.5s all;
+    padding: 0 5px;
+    left: 0;
+    right: 0;
 }
 .product-page section:first-of-type article:hover {
     height: 257px;
@@ -2443,4 +2446,12 @@ summary::marker{
     background-color: #ffffff;
     border: 2px solid #eb1c24;
 }
-
+/*NO-redirect*//*NO-redirect*//*NO-redirect*/
+.cat-item.no-redirect {
+    pointer-events: none;
+    cursor: default;
+}
+section#wpsp-333, section#wpsp-334,section#wpsp-335 {
+    pointer-events: none;
+    cursor: default; 
+}
