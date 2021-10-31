@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -7,8 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title><?php bloginfo('description'); ?></title>
     <link rel="shortcut icon" href="<?php bloginfo('template_url'); ?>/assets/img/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://emerem.com.ua/wp-content/themes/Emerem/assets/css/slick.css">
-    <link rel="stylesheet" href="https://emerem.com.ua/wp-content/themes/Emerem/assets/css/slick-theme.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">

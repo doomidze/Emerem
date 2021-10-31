@@ -1,12 +1,31 @@
-@charset "UTF-8";
 /*
 Theme Name: Emerem
 */
+
+@font-face {
+    font-family: 'SegoeUI';
+    src: url('./fonts/SegoeUI.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+header,
+footer,
+.pum
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
 .footer .sub-menu {
     display: none;
 }
 body {
-    font-family: 'Montserrat', sans-serif!important;
+    font-family: 'SegoeUI', sans-serif;
     scroll-behavior: smooth;
 	font-size: 14px;
     color: #000000;
@@ -18,7 +37,8 @@ body {
 main {
     flex: 1;
 }
-.contact-info-text p, .about-us-page-wrapper p {
+.contact-info-text p, 
+.about-us-page-wrapper p {
     font-weight: 500;
 }
 h1 {
