@@ -2349,6 +2349,9 @@ summary::marker{
 .wpcf7 form .wpcf7-response-output {
     margin-top: 1em;
 }
+.wpcf7-spinner {
+    display: none;
+}
 .modal-content input {
     display: block;
     width: 100%;
