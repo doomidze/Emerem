@@ -2314,12 +2314,24 @@ summary::marker{
         margin-bottom: 0;
     }
 .modal-content {
-    padding: 25px 35px 25px ;
+    padding: 25px 35px 0 35px;
 }
 .modal-content div[role="form"] {
     max-width: 332px;
 }
+.wpcf7-form label {
+    display: block;
+}
+.wpcf7-form p:last-of-type {
+    margin-bottom: 0;
+    text-align: center;
+}
+.wpcf7 form .wpcf7-response-output {
+    margin-top: 1em;
+}
 .modal-content input {
+    display: block;
+    width: 100%;
     font-size: 14px;
     line-height: 35px;
     text-indent: 45px;
