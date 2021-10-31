@@ -399,7 +399,7 @@ header .nav .menu-item .menu-item a {
 .entry-content .mainmetaslider .caption-wrap .caption {
     max-width: 515px;
     padding: 0;
-    text-shadow: 0px 0px 5px #000000;
+    text-shadow: 0px 0px 3px #000000;
 }
 .entry-content .mainmetaslider .caption-wrap p {
     font-size: 16px;
