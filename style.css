@@ -1513,6 +1513,7 @@ details {
 }
 summary {
     display: block;
+    font-size: 0;
 }
 summary::marker{
     font-size: 0;
@@ -2322,7 +2323,9 @@ summary::marker{
     font-weight: bold;
 }
 /*ModalWiondow*//*ModalWiondow*//*ModalWiondow*/
-.pum-content.popmake-content:focus-visible, .modal-content input:focus-visible {
+.pum-content.popmake-content:focus-visible, .modal-content input:focus-visible,
+.pum-content.popmake-content:focus, .modal-content input:focus,
+.pum-content.popmake-content, .modal-content input {
     outline: none;
 }
 .modal-title {
