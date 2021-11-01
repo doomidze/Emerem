@@ -86,10 +86,9 @@ a {
         color: #EB1C24;
         font-weight: 600;
     }
-li {
-    list-style: none!important;
-}
-
+    #breadcrumbs li {
+        list-style: none!important;
+    }
 .underline {
     text-decoration: underline!important;
 }
@@ -1376,6 +1375,9 @@ ul.products li.product {
 .subcategory-page section article .wp-show-posts-entry-header {
     height: inherit;
     margin: 0px;
+}
+.subcategory-page section article .wp-show-posts-entry-summary {
+    display: none;
 }
 .subcategory-page .wp-show-posts-entry-title {
     height: inherit;
