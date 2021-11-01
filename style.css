@@ -766,7 +766,7 @@ header .nav .menu-item .menu-item a {
         margin: 0!important;
         padding-bottom: 30px;
     }
-    .post-317 .wp-show-posts a, .store-products .wp-show-posts a {
+    .post-317 .wp-show-posts .wp-show-posts-entry-title a, .store-products .wp-show-posts .wp-show-posts-entry-title a {
         color: #000000;
         padding: 0px;
         display: inline-block;
@@ -1669,9 +1669,6 @@ summary::marker{
     }
     .footer-inner .footer-links {
         padding-top: 5px;
-    }
-    .footer-links .links-item, .header .links-item {
-        margin-bottom: 15px;
     }
     .footer-links .links-item.tel {
         order: 4;
