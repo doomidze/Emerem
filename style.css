@@ -1652,7 +1652,7 @@ summary::marker{
         color: #eb1c24;
     }
     .footer-inner {
-        justify-content: space-around;
+        justify-content: center;
     }
     .footer-logo {
         padding: 0 0 25px;
