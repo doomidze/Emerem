@@ -131,7 +131,7 @@ h1.entry-title {
 }
 .footer-links .links-item, .header .links-item {
     display: flex;
-    align-items: baseline;
+    align-items: center;
     margin-bottom: 15px;
 }
 .links-item__link.mail:hover {
@@ -1661,17 +1661,23 @@ summary::marker{
     .footer-inner .desktop-footer {
         margin-bottom: 30px;
     }
-    .footer-links {
-      flex-direction: row;  
+    .footer-inner .desktop-footer ul {
+        padding-top: 0;
+    }
+    .footer-inner .footer-projects {
+        display: none;
+    }
+    .footer-inner .footer-links {
+        padding-top: 5px;
     }
     .footer-links .links-item, .header .links-item {
-        margin-bottom: 5px;
+        margin-bottom: 15px;
     }
-    .footer-links .links-item:nth-child(3) {
+    .footer-links .links-item.tel {
         order: 4;
     }
-    .footer-links .copyright {
-        order: 5;
+    .footer-links .links-item.mail {}
+    .copyright {
         margin-top: 35px;
     }
     .footer-inner .footer-links .tel .links-item__link a {
