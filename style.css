@@ -1676,7 +1676,6 @@ summary::marker{
     .footer-links .links-item.tel {
         order: 4;
     }
-    .footer-links .links-item.mail {}
     .copyright {
         margin-top: 35px;
     }
@@ -1689,6 +1688,9 @@ summary::marker{
     }
     .projects-info-wrapper {
         max-width: 100%;
+    }
+    .go-to-projects-btn {
+        padding: 20px;
     }
     .entry-content .mainmetaslider .caption-wrap .caption {
         max-width: 320px;
@@ -1716,10 +1718,6 @@ summary::marker{
         justify-content: space-between;
         padding: 10px 15px;
         margin-top: 25px;
-    }
-    .projects-info-wrapper__inner, .go-to-projects-btn {
-        padding-left: 25px;
-        padding-right: 70px;
     }
     .projects-info-wrapper h2 {
         margin: 25px 0 15px;
@@ -1798,6 +1796,10 @@ summary::marker{
     .news-wrapper .wp-show-posts-single, #post-315 .wp-show-posts-single, #post-319 .wp-show-posts-single {
         width: 45%;
         margin-bottom: 50px;   
+    }
+    .projects-info-wrapper__inner, .go-to-projects-btn {
+        padding-left: 25px;
+        padding-right: 70px;
     }
 }
 @media (max-width: 479px) {
@@ -2009,6 +2011,13 @@ summary::marker{
     }
     .entry-content .mainmetaslider .flexslider li img {
         min-height: 300px;
+    }
+    .projects-info-wrapper__inner, .go-to-projects-btn {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .projects-info-wrapper__inner p {
+        margin-bottom: 5%;
     }
 }
 @media (min-width: 320px) and (max-width: 767px) {
