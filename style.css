@@ -1921,9 +1921,6 @@ summary::marker{
     .entry-content .mainmetaslider .flexslider li img {
         min-height: 220px;
     }
-    .entry-content .mainmetaslider .caption-wrap {
-        border-bottom: 60px solid #000000;
-    }
     .entry-content .mainmetaslider ol.flex-control-nav.flex-control-paging {
         bottom: 20px;
         text-align: left;
@@ -2228,6 +2225,9 @@ summary::marker{
     }
     .entry-content .mainmetaslider .caption-wrap {
         top: 9%;
+    }
+    .entry-content .mainmetaslider .flexslider li img {
+        min-height: 600px;
     }
 }
 @media (min-width: 768px) {
