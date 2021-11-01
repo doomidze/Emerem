@@ -1379,8 +1379,6 @@ ul.products li.product {
 }
 .subcategory-page .wp-show-posts-entry-title {
     height: inherit;
-    font-size: 20px;
-    line-height: 25px;
     color: white;
     margin: 0 auto;
     letter-spacing: -1px;
@@ -1986,18 +1984,6 @@ summary::marker{
         font-size: 12px;
     }
 }
-@media (min-width: 480px) and (max-width: 639px) {
-    .subcategory-page section article {
-        width: 220px;
-        height: 310px;
-    }
-    .subcategory-page .wp-show-posts-entry-title {
-        font-size: 18px;
-    }
-    .copyright {
-        font-size: 11px;
-    }
-}
 @media (min-width: 480px) and (max-width: 991px) {
     .footer-projects {
         margin-bottom: 50px;
@@ -2075,11 +2061,12 @@ summary::marker{
     }
     .subcategory-page .entry-content {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         flex-wrap: wrap;
     }
     .subcategory-page section article {
-        width: 240px;
+        width: 210px;
+        height: 240px;
     }
     .cat-menu {
         position: unset;
@@ -2116,6 +2103,7 @@ summary::marker{
     }
     .subcategory-page section article {
         width: 240px;
+        height: 270px;
     }
     .advantages-list-item {
         max-width: 49%;
@@ -2146,6 +2134,7 @@ summary::marker{
     }
     .subcategory-page section article {
         width: 220px;
+        height: 250px;
     }
     .subcategory-page .entry-content section:nth-child(3n+1) {
         margin: 0 14px;
@@ -2259,6 +2248,11 @@ summary::marker{
     }
     .desktop-footer ul {
         padding-top: 0;
+    }
+    .subcategory-page .wp-show-posts-entry-title {
+        height: inherit;
+        font-size: 20px;
+        line-height: 25px;
     }
 }
 @media (min-width: 1024px) {

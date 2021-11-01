@@ -47,28 +47,32 @@
                         <a href=""><?php echo $GLOBALS['emerem']['address']; ?></a>
                     </div>
                 </div>
-                <div class="contact-info-item">
-                    <div class="contact-info-item-svg">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M22.6667 16.6667C21.0067 16.6667 19.4 16.4 17.9067 15.9067C17.4467 15.76 16.92 15.8667 16.5534 16.2334L13.6201 19.1734C9.84006 17.2534 6.75338 14.1667 4.83337 10.3934L7.76669 7.44669C8.13338 7.08 8.24 6.55338 8.09338 6.09338C7.60006 4.60006 7.33337 2.99337 7.33337 1.33337C7.33331 0.593313 6.74 0 6 0H1.33331C0.6 0 0 0.593313 0 1.33331C0 13.8533 10.1467 24 22.6667 24C23.4067 24 24 23.4067 24 22.6667V18C24 17.26 23.4067 16.6667 22.6667 16.6667Z" fill="#EB1C24"/>
-                        </svg>
+                    <div class="contact-info-item">
+                        <div class="contact-info-item-svg">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22.6667 16.6667C21.0067 16.6667 19.4 16.4 17.9067 15.9067C17.4467 15.76 16.92 15.8667 16.5534 16.2334L13.6201 19.1734C9.84006 17.2534 6.75338 14.1667 4.83337 10.3934L7.76669 7.44669C8.13338 7.08 8.24 6.55338 8.09338 6.09338C7.60006 4.60006 7.33337 2.99337 7.33337 1.33337C7.33331 0.593313 6.74 0 6 0H1.33331C0.6 0 0 0.593313 0 1.33331C0 13.8533 10.1467 24 22.6667 24C23.4067 24 24 23.4067 24 22.6667V18C24 17.26 23.4067 16.6667 22.6667 16.6667Z" fill="#EB1C24"/>
+                            </svg>
+                            <i class="fab fa-telegram"></i>
+                            <i class="fab fa-viber"></i>
+                        </div>
+                        <div class="contact-info-item-text">
+                            <div class="contact-info-item-title">Номер:</div>
+                            <a href="tel:<?php echo $GLOBALS['emerem']['phone_digits']; ?>" class="fw-400"><?php echo $GLOBALS['emerem']['phone']; ?></a>
+                            <a href="https://telegram.me/YourUsername">Telegram</a>
+                            <a class="viber-but" href="viber://chat?number=%2B75555555559">Viber</a>
+                        </div>
                     </div>
-                    <div class="contact-info-item-text">
-                        <div class="contact-info-item-title">Номер:</div>
-                        <a href="tel:<?php echo $GLOBALS['emerem']['phone_digits']; ?>" class="fw-400"><?php echo $GLOBALS['emerem']['phone']; ?></a>
+                    <div class="contact-info-item">
+                        <div class="contact-info-item-svg">
+                            <svg width="26" height="17" viewBox="0 0 26 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.3599 0H23.9962C24.8493 0 25.5416 0.692361 25.5416 1.54545V2.42326L13.178 7.66078L0.814453 2.42481V1.54545C0.814453 0.692361 1.50681 0 2.3599 0ZM13.178 9.27262C13.28 9.27262 13.3836 9.25253 13.4794 9.2108L25.5416 4.10309V15.4544C25.5416 16.3075 24.8493 16.9999 23.9962 16.9999H2.3599C1.50681 16.9999 0.814453 16.3075 0.814453 15.4544V4.10309L12.8767 9.2108C12.9725 9.25253 13.076 9.27262 13.178 9.27262Z" fill="#EB1C24"/>
+                            </svg>
+                        </div>
+                        <div class="contact-info-item-text">
+                            <div class="contact-info-item-title">Почта:</div>
+                            <a href="mailto:<?php echo $GLOBALS['emerem']['email']; ?>"><?php echo $GLOBALS['emerem']['email']; ?></a>
+                        </div>
                     </div>
-                </div>
-                <div class="contact-info-item">
-                    <div class="contact-info-item-svg">
-                        <svg width="26" height="17" viewBox="0 0 26 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M2.3599 0H23.9962C24.8493 0 25.5416 0.692361 25.5416 1.54545V2.42326L13.178 7.66078L0.814453 2.42481V1.54545C0.814453 0.692361 1.50681 0 2.3599 0ZM13.178 9.27262C13.28 9.27262 13.3836 9.25253 13.4794 9.2108L25.5416 4.10309V15.4544C25.5416 16.3075 24.8493 16.9999 23.9962 16.9999H2.3599C1.50681 16.9999 0.814453 16.3075 0.814453 15.4544V4.10309L12.8767 9.2108C12.9725 9.25253 13.076 9.27262 13.178 9.27262Z" fill="#EB1C24"/>
-                        </svg>
-                    </div>
-                    <div class="contact-info-item-text">
-                        <div class="contact-info-item-title">Почта:</div>
-                        <a href="mailto:<?php echo $GLOBALS['emerem']['email']; ?>"><?php echo $GLOBALS['emerem']['email']; ?></a>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
