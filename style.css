@@ -2473,4 +2473,15 @@ section#wpsp-333, section#wpsp-334,section#wpsp-335 {
 .store-products .wp-show-posts-columns .wp-show-posts-single:not(.wp-show-posts-masonry-block) .wp-show-posts-image img {
     height: 171px;
     width: auto;
+    padding: 25px;
+}
+.store-products .wp-show-posts-columns .wp-show-posts-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    .store-products .entry-content .wp-show-posts-columns {
+        justify-content: space-around;
+    }
 }
