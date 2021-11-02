@@ -800,6 +800,7 @@ header .nav .menu-item .menu-item a {
         font-size: 14px;
         font-weight: 600;
         text-transform: uppercase;
+        padding: 0;
     }
     .post-317 .wpsp-read-more a::after, .store-products .wpsp-read-more a::after {
         content: '';
