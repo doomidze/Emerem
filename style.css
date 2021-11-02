@@ -2467,3 +2467,10 @@ section#wpsp-333, section#wpsp-334,section#wpsp-335 {
     pointer-events: none;
     cursor: default; 
 }
+
+
+/* Wp Posts */
+.store-products .wp-show-posts-columns .wp-show-posts-single:not(.wp-show-posts-masonry-block) .wp-show-posts-image img {
+    height: 171px;
+    width: auto;
+}
