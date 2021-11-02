@@ -2476,7 +2476,9 @@ section#wpsp-333, section#wpsp-334,section#wpsp-335 {
 .store-products .wp-show-posts-columns .wp-show-posts-single:not(.wp-show-posts-masonry-block) .wp-show-posts-image img {
     height: 171px;
     width: auto;
-    padding: 25px;
+}
+.store-products .wp-show-posts-image {
+    padding: 25px 25px 0;
 }
 .store-products .wp-show-posts-columns .wp-show-posts-inner {
     display: flex;
