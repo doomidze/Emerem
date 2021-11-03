@@ -2484,7 +2484,10 @@ section#wpsp-333, section#wpsp-334,section#wpsp-335 {
 .store-products .wp-show-posts-columns .wp-show-posts-inner {
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: flex-start;
+}
+.store-products .wp-show-posts-columns .wp-show-posts-inner .wpsp-read-more {
+    margin-top: auto;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
     .store-products .entry-content .wp-show-posts-columns {
