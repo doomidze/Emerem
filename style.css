@@ -8,7 +8,15 @@ Theme Name: Emerem
     font-weight: normal;
     font-style: normal;
 }
-
+@font-face {
+    font-family: 'SegoeUISemibold';
+    src: url('SegoeUI-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+.footer-inner .footer-links .tel .links-item__link a {
+    font-family: 'SegoeUISemibold', sans-serif;
+}
 header,
 .pum,
 h1,
@@ -2095,11 +2103,14 @@ summary::marker{
         width: 265%;
     }
     .entry-content .mainmetaslider ol.flex-control-nav.flex-control-paging {
-        bottom: 210px;
+        bottom: 190px;
     }
     .entry-content .mainmetaslider .caption-wrap a {
         padding: 10px 20px 10px 15px;
         font-size: 15px;
+    }
+    .cat-item {
+        padding: 10px;
     }
     .subcategory-page .entry-content {
         display: flex;
@@ -2125,8 +2136,11 @@ summary::marker{
     .entry-content .mainmetaslider .caption-wrap .caption p {
         margin-bottom: 35px!important;
     }
+    .entry-content .mainmetaslider .caption-wrap a {
+        padding: 12px 20px 12px 20px;
+    }
     .entry-content .mainmetaslider ol.flex-control-nav.flex-control-paging {
-        bottom: 210px;
+        bottom: 220px;
     }
     .go-to-projects-btn {
         width: 100%;
@@ -2182,6 +2196,9 @@ summary::marker{
     }
     .entry-content .mainmetaslider .flexslider li img {
         width: 180%;
+    }
+    .cat-item {
+        padding: 10px;
     }   
     .entry-content .mainmetaslider .caption-wrap {
         max-width: 960px;
