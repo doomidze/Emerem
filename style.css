@@ -10,14 +10,20 @@ Theme Name: Emerem
 }
 
 header,
-footer,
 .pum,
 h1,
 h2,
 h3,
 h4,
 h5,
-h6 {
+.go-to-projects-btn,
+.go-to-about-us-btn,
+.go-to-news-btn,
+.news-wrapper .wpsp-read-more a, 
+#post-315 .wpsp-read-more a, 
+#post-319 .wpsp-read-more a,
+.cat-menu a,
+.entry-content .mainmetaslider .caption-wrap .caption p {
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -1976,7 +1982,7 @@ summary::marker{
     }
     .entry-content .mainmetaslider .caption-wrap .caption p {
         font-size: 8px;
-        max-width: 150px;
+        max-width: 160px;
         line-height: 9px;
         font-weight: 500;
     }
