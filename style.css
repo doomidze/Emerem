@@ -1950,7 +1950,7 @@ summary::marker{
         display: none;
     }
     .entry-content .mainmetaslider .caption-wrap a {
-        cursor: pointer;
+        /*cursor: pointer;
         background-color: black;
         display: block;
         position: absolute;
@@ -1963,7 +1963,8 @@ summary::marker{
         text-align: center;
         line-height: 26px;
         border: 2px solid #EB1C24;
-        padding: 0;
+        padding: 0;*/
+        display: none;
     }
     .entry-content .mainmetaslider .caption-wrap a:hover {
         background-color: #EB1C24;
