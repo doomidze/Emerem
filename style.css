@@ -429,6 +429,7 @@ header .nav .menu-item .menu-item a {
 .entry-content .mainmetaslider ol.flex-control-nav.flex-control-paging {
     position: absolute;
     bottom: 200px;
+    line-height: 3px;
 }
 .entry-content .mainmetaslider .flexslider .flex-control-nav a {
     box-shadow: none !important;
@@ -1693,12 +1694,6 @@ summary::marker{
     .go-to-projects-btn {
         padding: 20px;
     }
-    .entry-content .mainmetaslider .caption-wrap .caption {
-        max-width: 320px;
-    }
-    .entry-content .mainmetaslider .caption-wrap .caption p {
-        margin-bottom: 35px!important;
-    }
     .cat-menu .container {
         max-width: 100%;
     }
@@ -1801,6 +1796,9 @@ summary::marker{
     .projects-info-wrapper__inner, .go-to-projects-btn {
         padding-left: 25px;
         padding-right: 70px;
+    }
+    .entry-content .mainmetaslider .caption-wrap .caption p {
+        margin-bottom: 25px!important;
     }
 }
 @media (max-width: 479px) {
@@ -1927,11 +1925,12 @@ summary::marker{
     .advantages-list-item {
         max-width: 49%;
     }
-    .entry-content .mainmetaslider .flexslider li img {
-        min-height: 220px;
+    .entry-content .mainmetaslider .caption-wrap .caption {
+        max-width: 191px;
     }
+    
     .entry-content .mainmetaslider ol.flex-control-nav.flex-control-paging {
-        bottom: 20px;
+        bottom: 10px;
         text-align: left;
         margin-left: 25px;
         width: 100px;
@@ -1971,15 +1970,15 @@ summary::marker{
         color: #ffffff;
     }
     .entry-content .mainmetaslider .caption-wrap .caption h1 {
-        font-size: 16px;
-        line-height: 17px;
-        margin-bottom: 10px;
+        font-size: 14px;
+        line-height: 15px;
+        margin-bottom: 5px;
     }
     .entry-content .mainmetaslider .caption-wrap .caption p {
-        font-size: 11px;
-        max-width: 260px;
-        line-height: 14px;
-        font-weight: 600;
+        font-size: 8px;
+        max-width: 150px;
+        line-height: 9px;
+        font-weight: 500;
     }
     .news-wrapper .wpsp-read-more a:hover::after, #post-315 .wpsp-read-more a:hover::after, #post-319 .wpsp-read-more a:hover::after {
         right: -45px;
@@ -1998,9 +1997,6 @@ summary::marker{
         font-size: 25px;
         line-height: 30px;
         margin-bottom: 10px;
-    }
-    .entry-content .mainmetaslider .flexslider li img {
-        min-height: 300px;
     }
     .projects-info-wrapper__inner, .go-to-projects-btn {
         padding-left: 100px;
@@ -2045,11 +2041,6 @@ summary::marker{
 			max-width: unset;
 		}
 }
-@media (min-width: 768px) and (max-width: 1199px) {
-    .entry-content .mainmetaslider ol.flex-control-nav.flex-control-paging {
-        bottom: 220px;
-    }
-}
 @media (min-width: 1200px) and (max-width: 1799px) {
 	.about-us {
 		padding: 25px 4% 0 4%
@@ -2090,11 +2081,14 @@ summary::marker{
         max-width: 540px;
         top: 7%;
     }
+    .entry-content .mainmetaslider .caption-wrap .caption {
+        max-width: 300px;
+    }
     .entry-content .mainmetaslider .flexslider li img {
-        min-height: 500px;
+        width: 265%;
     }
     .entry-content .mainmetaslider ol.flex-control-nav.flex-control-paging {
-        bottom: 220px;
+        bottom: 210px;
     }
     .entry-content .mainmetaslider .caption-wrap a {
         padding: 10px 20px 10px 15px;
@@ -2120,6 +2114,12 @@ summary::marker{
     }
     .header-info-mobile .links .links-item.mail {
         margin-right: 100px;
+    }
+    .entry-content .mainmetaslider .caption-wrap .caption p {
+        margin-bottom: 35px!important;
+    }
+    .entry-content .mainmetaslider ol.flex-control-nav.flex-control-paging {
+        bottom: 210px;
     }
     .go-to-projects-btn {
         width: 100%;
@@ -2147,7 +2147,7 @@ summary::marker{
         width: 338px;
     }
     .entry-content .mainmetaslider .flexslider li img {
-        min-height: 550px;
+        width: 200%;
     }
     .entry-content .mainmetaslider .caption-wrap {
         max-width: 720px;
@@ -2174,8 +2174,8 @@ summary::marker{
         margin: 0px 46px 50px;
     }
     .entry-content .mainmetaslider .flexslider li img {
-        min-height: 550px;
-    }
+        width: 180%;
+    }   
     .entry-content .mainmetaslider .caption-wrap {
         max-width: 960px;
         top: 5%;
@@ -2205,7 +2205,7 @@ summary::marker{
         top: 7%;
     }
     .entry-content .mainmetaslider .flexslider li img {
-        min-height: 600px;
+        width: 150%;
     }
     .subcategory-page .entry-content {
         margin-right: -15px;
@@ -2235,7 +2235,7 @@ summary::marker{
         top: 9%;
     }
     .entry-content .mainmetaslider .flexslider li img {
-        min-height: 600px;
+        width: 125%;
     }
 }
 @media (min-width: 768px) {
