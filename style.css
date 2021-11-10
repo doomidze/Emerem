@@ -1445,10 +1445,14 @@ ul.products li.product {
     padding-bottom: 1rem;
     flex-wrap: wrap;
 }
-.product-item-title, .product-item-more-info-title {
+.product-item-title, 
+.product-item-more-info-title {
     font-weight: 500;
 }
-.product-main-info-img img, img.product-main-info-img-secondary {
+.product-main-info-img img, 
+img.product-main-info-img-secondary {
+    max-width: 100%;
+    height: auto;
     cursor: pointer;
 }
 .product-more-info {
