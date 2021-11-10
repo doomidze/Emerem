@@ -951,6 +951,8 @@ header .nav .menu-item .menu-item a {
 }
 .product-main-info-img {
     height: 320px;
+    display: flex;
+    justify-content: center;
 }
 .img-secondary-wrapper img {
     height: 100%;
@@ -2523,3 +2525,8 @@ section#wpsp-333, section#wpsp-334,section#wpsp-335 {
         justify-content: space-around;
     }
 }
+.mfp-title {
+    position:absolute;
+    color: #FFF;
+    background: red;
+  }
