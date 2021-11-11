@@ -1447,6 +1447,7 @@ ul.products li.product {
 }
 .product-main-info-img img, 
 img.product-main-info-img-secondary {
+    width: auto !important;
     max-width: 100% !important;
     height: auto !important;
     cursor: pointer;
