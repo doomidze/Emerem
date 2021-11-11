@@ -12,12 +12,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Magnific Popup core CSS file -->
-    <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
+    <link rel="stylesheet" href="//emerem/wp-content/themes/emerem/assets/css/magnific-popup.css">
     <!-- jQuery 1.7.2+ or Zepto.js 1.0+ -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <!-- Magnific Popup core JS file -->
-    <script src="magnific-popup/jquery.magnific-popup.js"></script>
-    <script src="magnific-popup/jquery.magnific-popup-control.js"></script>
+    <script src="//emerem/wp-content/themes/emerem/assets/js/jquery.magnific-popup.js"></script>
+    <script src="//emerem/wp-content/themes/emerem/assets/js/jquery.magnific-popup-control.js"></script>
     <?php wp_head(); ?>
 </head>
 <body>
