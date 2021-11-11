@@ -22,7 +22,7 @@
                 if (have_posts()) {
                     while (have_posts()) {
                         the_post(); ?>
-                        <section class="project-item container">
+                        <section id="project-item" class="project-item container">
                                 <h1 class="project-item-title"><?php the_title()?></h1>
                                 <div class="row">
                                     <div class="col-md-12">

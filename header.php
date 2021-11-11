@@ -7,17 +7,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title><?php bloginfo('description'); ?></title>
     <link rel="shortcut icon" href="<?php bloginfo('template_url'); ?>/assets/img/logo.png" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Magnific Popup core CSS file -->
-    <link rel="stylesheet" href="/wp-content/themes/emerem/assets/css/magnific-popup.css">
-    <!-- jQuery 1.7.2+ or Zepto.js 1.0+ -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <!-- Magnific Popup core JS file -->
-    <script src="/wp-content/themes/emerem/assets/js/jquery.magnific-popup.js"></script>
-    <script src="/wp-content/themes/emerem/assets/js/jquery.magnific-popup-control.js"></script>
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.3.0/css/lightgallery-bundle.min.css" integrity="sha512-fqfjVCJd1qT62UGUU3+8ByzjvSv6O9vM1muZ/cH5KrX6OqaUe2OTYjmT3R8pp6qYmh4Nv2l5I8WohRwDNzdriw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.3.0/lightgallery.min.js" integrity="sha512-+1CyleTPoFvPO15/CfBZ5h6k/mu/qCQe9uxq1tEfO7SRJ52MnCAQ561bAYkvrsGtnG7AkcvKtVwdeoZc8ps7bQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" integrity="sha512-Velp0ebMKjcd9RiCoaHhLXkR1sFoCCWXNp6w4zj1hfMifYB5441C+sKeBl/T/Ka6NjBiRfBBQRaQq65ekYz3UQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js" integrity="sha512-YibiFIKqwi6sZFfPm5HNHQYemJwFbyyYHjrr3UT+VobMt/YBo1kBxgui5RWc4C3B4RJMYCdCAJkbXHt+irKfSA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    
     <?php wp_head(); ?>
 </head>
 <body>
