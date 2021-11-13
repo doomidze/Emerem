@@ -24,9 +24,6 @@ add_action('wp_enqueue_scripts', 'crea_load_styles', 10);
 /* Load Scripts */
 function crea_load_scripts()
 {
-  // вместо библиотеки jQuery из состава WordPress подключаем её CDN-копию (только при острой необходимости)
-  wp_deregister_script( 'jquery' );
-  wp_register_script( 'jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js', array(), NULL, false);
   wp_enqueue_script( 'jquery' );
   // подключаем скрипт mfp в <head>
   wp_enqueue_script('magnific-popup-control', get_template_directory_uri() . '/assets/js/jquery.magnific-popup-control.js', array('jquery'), NULL, true);

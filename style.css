@@ -832,6 +832,7 @@ header .nav .menu-item .menu-item a {
     .post-317 .wpsp-read-more a:hover, .store-products .wpsp-read-more a:hover {
         color: #EB1C24;
         background: none;
+        border: none;
     }
     .post-317 .wpsp-read-more a:hover::after, .store-products .wpsp-read-more a:hover::after {
         right: -150px;
@@ -849,10 +850,9 @@ header .nav .menu-item .menu-item a {
     .wpsp-load-more {
         display: inline-block;
         max-width: 565px;
-        margin: 0 auto;
+        margin: 40px auto;
         font-weight: 400;
         font-size: 18px;
-        margin-top: 60px;
     }
     .wpsp-load-more a {
         color: #000000;
@@ -1025,13 +1025,14 @@ header .nav .menu-item .menu-item a {
     font-size: 14px;
     padding: 10px;
 }
-
-.versions {
-    padding: 40px 0;
+.graphs {
+    padding-bottom: 50px;
+}
+.versions, .graphs {
+    padding-top: 40px;
 }
 .versions .row {
-    padding: 10px;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .versions .version-item {
     display: flex;
@@ -1453,7 +1454,7 @@ img.product-main-info-img-secondary {
     cursor: pointer;
 }
 .product-more-info {
-    padding-top: 2rem;
+    padding-top: 50px
 }
 .product-item-more-info .product-item-more-info-svg {
     margin-left: 80px;
@@ -2239,7 +2240,7 @@ summary::marker{
         margin-right: 15px;
     }
     .subcategory-page section article {
-        width: 265px;
+        width: 255px;
     }
     .go-to-projects-btn:hover span svg {
         margin-left: 130px;
