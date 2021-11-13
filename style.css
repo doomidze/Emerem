@@ -2518,7 +2518,7 @@ section#wpsp-333, section#wpsp-334,section#wpsp-335 {
 }
 @media (min-width: 992px) and (max-width: 1199px) {
     .store-products .entry-content .wp-show-posts-columns {
-        justify-content: space-around;
+        justify-content: space-between;
     }
 }
 .mfp-title {

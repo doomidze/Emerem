@@ -1,3 +1,4 @@
-$(document).ready(function(){
-    $('.video').magnificPopup({}); 
-})
+$('.test-popup-link').magnificPopup({
+    type: 'iframe'
+    // other options
+  }); 
