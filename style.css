@@ -10,7 +10,7 @@ Theme Name: Emerem
 }
 @font-face {
     font-family: 'SegoeUISemibold';
-    src: url('SegoeUI-SemiBold.ttf') format('truetype');
+    src: url('./fonts/SegoeUI-SemiBold.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
