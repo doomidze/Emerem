@@ -10,7 +10,6 @@ wp_enqueue_style('font-awesome' , get_template_directory_uri() . '/assets/css/fo
 wp_enqueue_style('styles', get_template_directory_uri() . '/style.css', array() , null, 'all');
 
 wp_enqueue_script( 'estore-navigation', get_template_directory_uri() . '/assets/js/navigation.js', array(), '20151215', true );
-wp_enqueue_script('main' , get_template_directory_uri() . '/assets/js/main.js', array('jquery'), null, true);
 
 //add_action( 'wp_enqueue_styles', 'estore_styles' );
 function estore_styles() {
