@@ -2526,3 +2526,50 @@ section#wpsp-333, section#wpsp-334,section#wpsp-335 {
     color: #FFF;
     background: red;
   }
+.mfp-content {
+    height: 300px;
+}
+.mfp-content iframe {
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    position: absolute;
+}
+.mfp-close-btn-in .mfp-close {
+    color: #ffffff!important;
+    position: absolute;
+    top: -50px;
+    left: 0;
+    right: -550px;
+    margin: 0 auto;
+    font-weight: 900;
+    transition: 0.5s;
+}
+/**
+ * Simple fade transition,
+ */
+ .mfp-fade.mfp-bg {
+	opacity: 0;
+	-webkit-transition: all 0.15s ease-out; 
+	-moz-transition: all 0.15s ease-out; 
+	transition: all 0.15s ease-out;
+}
+.mfp-fade.mfp-bg.mfp-ready {
+	opacity: 0.8;
+}
+.mfp-fade.mfp-bg.mfp-removing {
+	opacity: 0;
+}
+
+.mfp-fade.mfp-wrap .mfp-content {
+	opacity: 0;
+	-webkit-transition: all 0.15s ease-out; 
+	-moz-transition: all 0.15s ease-out; 
+	transition: all 0.15s ease-out;
+}
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+	opacity: 1;
+}
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+	opacity: 0;
+}

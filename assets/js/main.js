@@ -3,7 +3,20 @@
     $('#openModal').on('click', function () {
         $("#contactModal").show()
     });
-
+    /*$(document).ready(function() {
+        $('.video').magnificPopup();
+    
+    });*/
+    $(document).ready(function() {
+        $('.video').magnificPopup({
+            disableOn: 700,
+            mainClass: 'mfp-fade',
+            removalDelay: 160,
+            preloader: false,
+    
+            fixedContentPos: false
+        });
+    });
     // lightGallery(document.querySelector('.img-secondary-wrapper', '.product-main-info-img'), {
     //     thumbnail: true,
     // });
