@@ -1,22 +1,29 @@
-(function ($) {
+jQuery(document).ready(function ($) {
 
+    // Contact form popup
     $('#openModal').on('click', function () {
         $("#contactModal").show()
     });
+
+
+    // Product media popup
+    $('.video').magnificPopup({
+        disableOn: 700,
+        mainClass: 'mfp-fade',
+        removalDelay: 160,
+        preloader: false,
+
+        fixedContentPos: false
+    });
+
+
+
+
+
     /*$(document).ready(function() {
         $('.video').magnificPopup();
     
     });*/
-    $(document).ready(function() {
-        $('.video').magnificPopup({
-            disableOn: 700,
-            mainClass: 'mfp-fade',
-            removalDelay: 160,
-            preloader: false,
-    
-            fixedContentPos: false
-        });
-    });
     // lightGallery(document.querySelector('.img-secondary-wrapper', '.product-main-info-img'), {
     //     thumbnail: true,
     // });
@@ -46,4 +53,4 @@
     //     document.body.style.height = 'unset';
     // }
 
-})(jQuery);
+});

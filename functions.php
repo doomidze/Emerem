@@ -27,6 +27,7 @@ function crea_load_scripts() {
   // подключаем скрипт mfp в <head>
   
   wp_enqueue_script('magnific-popup.js', get_template_directory_uri() . '/assets/js/jquery.magnific-popup.js', array('jquery'), NULL, true);
+  wp_enqueue_script('main' , get_template_directory_uri() . '/assets/js/main.js', array('jquery'), null, true);
 }
 add_action('wp_enqueue_scripts', 'crea_load_scripts', 10);
 /*
