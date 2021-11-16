@@ -1454,7 +1454,8 @@ img.product-main-info-img-secondary {
     cursor: pointer;
 }
 .product-more-info {
-    padding-top: 50px
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 .product-item-more-info .product-item-more-info-svg {
     margin-left: 80px;
@@ -2577,9 +2578,9 @@ section#wpsp-333, section#wpsp-334,section#wpsp-335 {
 TABS
 */
 .tabs {
-    max-width: 350px;
     margin-left: auto;
     margin-right: auto;
+    min-height: 300px;
   }
 
   .tabs>input[type="radio"] {
@@ -2587,15 +2588,13 @@ TABS
   }
 
   .tabs>input[type="radio"]:checked+label {
-    background-color: #bdbdbd;
-    border-bottom: 2px solid red;
+    border-bottom-color: #eb1c24;
   }
 
   .tabs>div {
     /* скрыть контент по умолчанию */
     display: none;
-    border: 1px solid #eee;
-    padding: 10px 15px;
+    
     border-radius: 4px;
   }
 
@@ -2605,27 +2604,17 @@ TABS
   #tab-btn-3:checked~#content-3 {
     display: block;
   }
-   #tab-btn-1:checked,
-  #tab-btn-2:checked,
-  #tab-btn-3:checked {
-     border-bottom: 2px solid red; 
-    }
-
   .tabs>label {
-    display: inline-block;
-    text-align: center;
+    display: inline-block;;
     vertical-align: middle;
     user-select: none;
-    background-color: #eee;
-    border: 1px solid transparent;
-    padding: 2px 8px;
-    font-size: 16px;
-    line-height: 1.5;
-    border-radius: 4px;
-    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
-    margin-left: 6px;
+    border-bottom: 3px solid #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    transition: border-color 0.3s ease-in-out;
+    margin-left: 20px;
     cursor: pointer;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
 
   .tabs>label:first-of-type {
