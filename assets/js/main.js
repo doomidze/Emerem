@@ -15,7 +15,14 @@ jQuery(document).ready(function ($) {
 
         fixedContentPos: false
     });
+    $('.photo').magnificPopup({
+      disableOn: 700,
+      mainClass: 'mfp-fade',
+      removalDelay: 160,
+      preloader: false,
 
+      fixedContentPos: false
+  });
 
 
 

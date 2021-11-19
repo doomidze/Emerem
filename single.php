@@ -8,7 +8,7 @@
 
 <?php get_header(); ?>
 
-<main class="main">
+<main class="main product">
 
     <div class="container">
 
