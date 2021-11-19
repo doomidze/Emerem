@@ -949,6 +949,7 @@ header .nav .menu-item .menu-item a {
 .store-products .wp-show-posts-columns .wp-show-posts-single {
     width: 22%;
     margin: 25px auto;
+    min-width: 250px;
 }
 .product-main-info-secondary-img {
     display: flex;
@@ -1766,9 +1767,6 @@ summary::marker{
         font-size: 16px;
         line-height: 16px;
     }
-    .store-products .entry-content .wp-show-posts-columns .wp-show-posts-single {
-        width: 335px;
-    }
 }
 @media (max-width: 767px) {
     .contact-info-wrapper {
@@ -2019,6 +2017,9 @@ summary::marker{
     .news-wrapper .wpsp-read-more a, #post-315 .wpsp-read-more a, #post-319 .wpsp-read-more a {
         font-size: 12px;
     }
+    .store-products .wp-show-posts-columns .wp-show-posts-single {
+        min-width: 320px;
+    }
 }
 @media (min-width: 480px) and (max-width: 991px) {
     .footer-projects {
@@ -2060,8 +2061,6 @@ summary::marker{
             }
             .post-317 .entry-content .wp-show-posts-columns, .store-products .entry-content section {
                 display: flex;
-                flex-direction: column;
-                align-items: center;
             }
 }
 @media (min-width: 640px) and (max-width: 767px) {
