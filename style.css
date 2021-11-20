@@ -410,7 +410,6 @@ header .nav .menu-item .menu-item a {
     padding-left: var(--bs-gutter-x,.75rem);
 }
 .entry-content .mainmetaslider .caption-wrap .caption {
-    max-width: 515px;
     padding: 0;
     text-shadow: 0px 0px 3px #000000;
 }
@@ -418,7 +417,6 @@ header .nav .menu-item .menu-item a {
     font-size: 16px;
     font-weight: 500;
     line-height: 20px;
-    max-width: 330px;
     margin-bottom: 55px!important;
 }
 .entry-content .mainmetaslider .caption-wrap a {
@@ -950,8 +948,11 @@ header .nav .menu-item .menu-item a {
 }
 .store-products .wp-show-posts-columns .wp-show-posts-single {
     width: 22%;
-    margin: 25px auto;
+    margin: 0 auto 40px 0;
     min-width: 250px;
+}
+.store-products .wp-show-posts-columns .wp-show-posts-single:nth-child(4n+4) {
+    margin-right: 0;
 }
 .product-main-info-secondary-img {
     display: flex;
