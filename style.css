@@ -17,6 +17,11 @@ Theme Name: Emerem
 .footer-inner .footer-links .tel .links-item__link a {
     font-family: 'SegoeUISemibold', sans-serif;
 }
+
+.container-fluid {
+    width: 96%;
+}
+
 header,
 .pum,
 h1,
@@ -148,9 +153,6 @@ h1.entry-title {
 
 .links-item__svg {
     padding-right: 10px;
-}
-.header .container-fluid {
-    width: 96%;
 }
 .header .links-item {
     margin: unset;
@@ -1070,6 +1072,9 @@ header .nav .menu-item .menu-item a {
 .project-item-title {
     padding-bottom: 20px;
 }
+#project-item .container {
+    max-width: 100%;
+}
 
 
 #map {
@@ -1615,11 +1620,6 @@ summary::marker{
         overflow-x: clip;
         position: relative;
     }
-    .header .container-fluid
-    {
-        padding: 0px;
-        padding-left: 25px;
-    }
     .header .nav {
         height: auto;
         padding: 25px 25px;
@@ -1782,9 +1782,6 @@ summary::marker{
     }
     .logo a img {
         height: 30px!important;
-    }
-    .header .container-fluid {
-        padding-left: 15px;
     }
     .header-info-mobile .logo {
         margin-right: auto;
@@ -2162,6 +2159,7 @@ summary::marker{
     }
     .header-info-mobile details{
         padding: 23px;
+        margin-right: calc(var(--bs-gutter-x,.75rem) *-1 - 2%);
     }
     .nav-mobile {
         top: 68px;
