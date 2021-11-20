@@ -947,8 +947,8 @@ header .nav .menu-item .menu-item a {
     display: none;
 }
 .store-products .wp-show-posts-columns .wp-show-posts-single {
-    width: 22%;
-    margin: 0 auto 40px 0;
+    width: calc(25% - 3%);
+    margin: 0 4% 40px 0;
     min-width: 250px;
 }
 .store-products .wp-show-posts-columns .wp-show-posts-single:nth-child(4n+4) {
