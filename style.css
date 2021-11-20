@@ -949,10 +949,6 @@ header .nav .menu-item .menu-item a {
 .store-products .wp-show-posts-columns .wp-show-posts-single {
     width: calc(25% - 3%);
     margin: 0 4% 40px 0;
-    min-width: 250px;
-}
-.store-products .wp-show-posts-columns .wp-show-posts-single:nth-child(4n+4) {
-    margin-right: 0;
 }
 .product-main-info-secondary-img {
     display: flex;
@@ -1919,7 +1915,7 @@ summary::marker{
             width: 300px;
             height: 320px;
         }
-        .post-317 .entry-content .wp-show-posts-columns .wp-show-posts-single, .store-products .entry-content .wp-show-posts-columns .wp-show-posts-single {
+        .post-317 .entry-content .wp-show-posts-columns .wp-show-posts-single {
             display: flex;
             justify-content: space-between;
             width: 300px;
@@ -2016,7 +2012,8 @@ summary::marker{
         font-size: 12px;
     }
     .store-products .wp-show-posts-columns .wp-show-posts-single {
-        min-width: 320px;
+        width: 90%;
+        margin: 0 auto 40px;
     }
 }
 @media (min-width: 480px) and (max-width: 991px) {
@@ -2036,6 +2033,13 @@ summary::marker{
     }
     .projects-info-wrapper__inner p {
         margin-bottom: 5%;
+    }
+    .store-products .wp-show-posts-columns .wp-show-posts-single {
+        width: calc(50% - 2%);
+        margin-right: 4%;
+    }
+    .store-products .wp-show-posts-columns .wp-show-posts-single:nth-child(even) {
+        margin-right: 0;
     }
 }
 @media (min-width: 320px) and (max-width: 767px) {
@@ -2216,6 +2220,13 @@ summary::marker{
     .subcategory-page .entry-content section:nth-child(3n+1) {
         margin: 0 51px;
     }
+    .store-products .wp-show-posts-columns .wp-show-posts-single {
+        width: calc(34% - 2%);
+        margin-right: 2%;
+    }
+    .store-products .wp-show-posts-columns .wp-show-posts-single:nth-child(3n+3) {
+        margin-right: 0;
+    }
 }
 @media (min-width: 1200px) and (max-width: 1399px) {
     .projects-info-wrapper {
@@ -2304,6 +2315,9 @@ summary::marker{
     }
     .about-us-wrapper {
         padding-left: 0;
+    }
+    .store-products .wp-show-posts-columns .wp-show-posts-single:nth-child(4n+4) {
+        margin-right: 0;
     }
 }
 @media (min-width: 1366px) {
@@ -2521,11 +2535,6 @@ section#wpsp-333, section#wpsp-334,section#wpsp-335 {
 }
 .store-products .wp-show-posts-columns .wp-show-posts-inner .wpsp-read-more {
     margin-top: auto;
-}
-@media (min-width: 992px) and (max-width: 1199px) {
-    .store-products .entry-content .wp-show-posts-columns {
-        justify-content: space-between;
-    }
 }
 .mfp-title {
     position:absolute;
