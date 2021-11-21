@@ -8,7 +8,7 @@ jQuery(document).ready(function ($) {
 
     // Product media popup
     $('.video').magnificPopup({
-        disableOn: 700,
+        /*disableOn: 700,*/
         mainClass: 'mfp-fade',
         removalDelay: 160,
         preloader: false,
@@ -16,7 +16,7 @@ jQuery(document).ready(function ($) {
         fixedContentPos: false
     });
     $('.photo').magnificPopup({
-      disableOn: 700,
+      /*disableOn: 700,*/
       mainClass: 'mfp-fade',
       removalDelay: 160,
       preloader: false,
