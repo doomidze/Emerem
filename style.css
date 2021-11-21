@@ -2448,6 +2448,9 @@ summary::marker{
     .go-to-projects-btn {
         padding-left: 27%;
     }
+    .versions .version-item {
+        max-width: 300px;
+    }
 }
 @media (min-width: 1920px) {
     .projects-info-wrapper__inner, 
