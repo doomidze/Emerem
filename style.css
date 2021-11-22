@@ -2448,8 +2448,12 @@ summary::marker{
     .go-to-projects-btn {
         padding-left: 27%;
     }
+    .versions .row {
+        justify-content: flex-start;
+    }
     .versions .version-item {
-        max-width: 300px;
+        max-width: 250px;
+        margin-right: 30px;
     }
 }
 @media (min-width: 1920px) {
