@@ -2631,7 +2631,7 @@ section#wpsp-333, section#wpsp-334,section#wpsp-335 {
     margin: 0 auto;
     left: 0;
     right: 0;
-    max-width: 500px;
+    max-width: 500px!important;
 }
 .mfp-close-btn-in .mfp-close {
     color: #ffffff!important;
