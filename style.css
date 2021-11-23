@@ -2910,3 +2910,6 @@ MFP / Slick
         font-size: 48px;
     }
 }
+.popup-gallery .photo img, .slick-current.slick-active img {
+    cursor: zoom-in;
+}
