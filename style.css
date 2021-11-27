@@ -951,16 +951,13 @@ header .nav .menu-item .menu-item a {
     margin: 0 4% 40px 0;
 }
 .product-main-info-secondary-img {
-    display: flex;
-    padding-top: 20px;
-    align-items: center;
+    display: inline-flex;
+    max-width: 64%;
 }
-.product-main-info-secondary-img a {
-    max-width: 32%;
+.product-main-info-secondary-img a:nth-child(odd) {
     margin-right: 15px;
 }
 .product-main-info-secondary-img a img {
-    width: 100%;
     height: auto;
 }
 .product-main-info-secondary-img .photo img {
@@ -2357,6 +2354,20 @@ summary::marker{
     .content {
         max-width: 720px;
     }
+    .product-main-info-secondary-img {
+        display: inline-block;
+        max-width: 66%;
+    }
+    .product-main-info-secondary-img .video {
+        max-width: 100px;
+        display: inline-flex!important;
+    }
+    .product-main-info-secondary-img a img {
+        width: 100%;
+    }
+    .slider-nav .item-slick {
+        max-width: 100px!important;
+    }
 }
 @media (min-width: 992px) {
     .header .nav .nav-wrapper > .menu-item > a:hover {
@@ -2762,7 +2773,8 @@ MFP / Slick
   }
   
   .slider-nav {
-    margin: auto;
+    display: inline-block!important;
+    max-width: 33%;
   }
   
   .slider-nav .item-slick {
@@ -2776,7 +2788,6 @@ MFP / Slick
     background-size: cover;
     background-position: center;
   }
-  
   .slick-arrow {
     position: absolute;
     top: 50%;
