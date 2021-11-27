@@ -1975,6 +1975,13 @@ summary::marker{
         .nav-mobile {
             top: 60px;
         }
+        .product #project-item .product-main-info {
+            margin-top: 20px;
+        }
+        .product-main-info-secondary-img {
+            max-width: 100%;
+            margin-top: 10px;
+        }
     }
 @media (max-width: 575px) {
     body {
