@@ -2373,7 +2373,7 @@ summary::marker{
         width: 100%;
     }
     .slider-nav .item-slick {
-        max-width: 100px!important;
+        max-width: 100px;
     }
 }
 @media (min-width: 992px) {
@@ -2415,6 +2415,12 @@ summary::marker{
     }
     .store-products .wp-show-posts-columns .wp-show-posts-single:nth-child(4n+4) {
         margin-right: 0;
+    }
+    .slider-nav {
+        max-width: 140px;
+    }
+    .slider-nav .item-slick {
+        max-width: 130px;
     }
 }
 @media (min-width: 1366px) {
@@ -2781,11 +2787,9 @@ MFP / Slick
   
   .slider-nav {
     display: inline-block!important;
-    max-width: 33%;
   }
   
   .slider-nav .item-slick {
-    max-width: 200px;
     margin-right: 15px;
     outline: none !important;
     cursor: pointer;
