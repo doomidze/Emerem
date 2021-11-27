@@ -2372,6 +2372,9 @@ summary::marker{
     .product-main-info-secondary-img a img {
         width: 100%;
     }
+    .slider-nav {
+        max-width: 110px;
+    }
     .slider-nav .item-slick {
         max-width: 100px;
     }
