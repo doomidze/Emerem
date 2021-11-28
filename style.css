@@ -2782,10 +2782,12 @@ MFP / Slick
     margin-bottom: 15px;
   }
   .slider-for img {
-    width: 100%;
-    min-height: 100%;
+    /* width: 100%; */
+    /* min-height: 100%; */
     max-width: 500px;
     margin: 0 auto;
+    max-height: 353px;
+    width: auto;
   }
   
   .slider-nav {
