@@ -147,6 +147,17 @@ h1.entry-title {
     align-items: center;
     margin-bottom: 15px;
 }
+.footer-links .social {
+    margin-top: auto;
+}
+.footer-links .social .links-item__svg {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    font-size: 20px;
+    color: #ffffff;
+    cursor: pointer;
+}
 .links-item__link.mail:hover {
     text-decoration: underline;
 }
@@ -456,7 +467,8 @@ header .nav .menu-item .menu-item a {
 }
 /*AboutUs block*/
 .about-us-wrapper {
-    display: flex;  
+    display: flex; 
+    flex-direction: row-reverse; 
     padding-bottom: 25px;
     padding-right: var(--bs-gutter-x,.75rem);
     padding-left: var(--bs-gutter-x,.75rem);
@@ -498,13 +510,13 @@ header .nav .menu-item .menu-item a {
     padding-left: var(--bs-gutter-x,.75rem);
 }
     .advantages-secondary-title {
-     padding: 30px;
+        padding: 30px;
     }
     .advantages-list-item-circle {
-        border: 1px solid black;
-        border-radius: 50%;
-        width: 80px;
-        height: 80px;
+        background: #21306C;
+        border-radius: 10px;
+        width: 66px;
+        height: 66px;
         text-align: center;
         margin: auto;
         position: relative;
@@ -668,16 +680,19 @@ header .nav .menu-item .menu-item a {
             margin: 0!important;
             justify-content: flex-start;
         }
-            .news-wrapper .wp-show-posts-single, #post-315 .wp-show-posts-single, #post-319 .wp-show-posts-single {
+            #post-315 .wp-show-posts-single, #post-319 .wp-show-posts-single {
                 width: 281px;
                 margin-bottom: 50px;
             }
             .news-wrapper .wp-show-posts-inner, #post-315 .wp-show-posts-inner, #post-319 .wp-show-posts-inner {
-                max-width: 281px;
                 margin: 0!important;       
+            }
+            #post-315 .wp-show-posts-inner, #post-319 .wp-show-posts-inner {
+                max-width: 281px;      
             }
                 .news-wrapper .wp-show-posts-inner img, #post-315 .wp-show-posts-inner img, #post-319 .wp-show-posts-inner img {
                     width: 100%;
+                    object-fit: unset!important;
                 }
                 .news-wrapper .wp-show-posts-entry-title a, #post-315 .wp-show-posts-entry-title a, #post-319 .wp-show-posts-entry-title a {
                     display: inline-block;
@@ -704,8 +719,12 @@ header .nav .menu-item .menu-item a {
                         line-height: 14px;
                         position: relative;      
                     }
-                    .news-wrapper .wpsp-read-more a:hover, #post-315 .wpsp-read-more a:hover, #post-319 .wpsp-read-more a:hover, .post-317 .wpsp-read-more a:hover {
+                    .news-wrapper .wpsp-read-more a:hover, .news-wrapper .wpsp-read-more a:focus, #post-315 .wpsp-read-more a:hover, #post-319 .wpsp-read-more a:hover, .post-317 .wpsp-read-more a:hover {
                         background: none;
+                        border: none;
+                    }
+                    .news-wrapper .wpsp-read-more a:hover, .news-wrapper .wpsp-read-more a:visited {
+                        color: #EB1C24;
                     }
                     .news-wrapper .wpsp-read-more a:hover::after, #post-315 .wpsp-read-more a:hover::after, #post-319 .wpsp-read-more a:hover::after {
                         right: -100px;
@@ -739,6 +758,9 @@ header .nav .menu-item .menu-item a {
             padding: 10px;
             transition: 0.4s color ease, 0.3s background-color ease;
             font-weight: 600;
+            justify-content: center;
+            margin-top: 40px;
+
         }
             .go-to-news-btn:hover, .go-to-about-us-btn:hover {
                 color: white;
@@ -1363,7 +1385,10 @@ ul.products li.product {
     background-color: #a1a1a13b;
 }
 .subcategory-page .entry-content {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
 }
 .subcategory-page section {
     max-width: 275px;
@@ -1371,17 +1396,17 @@ ul.products li.product {
     margin-right: 21px;
     display: inline-block;
     background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px rgb(0 0 0 / 20%);
 }
 .subcategory-page .wp-block-column {
     margin: 0!important;
 }
 .subcategory-page section article {
     width: 275px;
-    height: 300px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 15px rgb(0 0 0 / 20%);
     transition: 0.5s all;
     position: relative;
+    height: 100%;
 }
 .subcategory-page section article .wp-show-posts-inner {
     height: 100%;
@@ -1524,6 +1549,18 @@ img.product-main-info-img-secondary {
     padding: 0 15px;
     box-sizing: border-box;
 }
+.contacts-page .contact-info-item-text a:first-of-type {
+    display: block;
+}
+.contacts-page .contact-info-item-text .socials a {
+    display: inline-block;
+    margin-left: 5px;
+    font-size: 20px;
+}
+.contacts-page .contact-info-item-svg svg {
+    width: 32px;
+    height: 30px;
+}
 @keyframes showMenu {
     0% {
         overflow: hidden;
@@ -1553,10 +1590,15 @@ details {
 summary {
     display: block;
     font-size: 0;
+    outline: none;
 }
 summary::marker{
     font-size: 0;
   }
+::-webkit-details-marker {
+    display: none;
+    
+}
 @media (max-width: 1199px) {
     .category-item {
         width: 100%;
@@ -1605,6 +1647,9 @@ summary::marker{
     }
     .subcategory-page section {
         margin-right: unset;
+    }
+    .news .wp-show-posts-single {
+        margin-bottom: 20px;
     }
 }
 @media (max-width: 991px) {
@@ -1706,6 +1751,10 @@ summary::marker{
     }
     .footer-links .links-item.tel {
         order: 4;
+    }
+    .footer-links .links-item.social {
+        order: 5;
+        max-width: 250px;
     }
     .copyright {
         margin-top: 35px;
@@ -1819,7 +1868,7 @@ summary::marker{
     .about-us-wrapper {
         flex-direction: column;
     }
-    .news-wrapper .wp-show-posts-single, #post-315 .wp-show-posts-single, #post-319 .wp-show-posts-single {
+    #post-315 .wp-show-posts-single, #post-319 .wp-show-posts-single {
         width: 45%;
         margin-bottom: 50px;   
     }
@@ -1853,6 +1902,16 @@ summary::marker{
         flex-direction: row;
         margin-bottom: 10px!important;
     }
+    .contacts-page .contact-info-item-svg svg {
+        width: 16px;
+        height: 15px;
+    }
+    .contacts-page .contact-info-item {
+        margin-bottom: 20px;
+    }
+    .contacts-page .contact-info-item:last-child {
+        margin-bottom: 0px;
+    }
 }
 @media (max-width: 479px) {
     .main-slider .swiper-learn-more {
@@ -1878,7 +1937,7 @@ summary::marker{
     }
    
     .news-secondary-title {
-        width: 85%;
+        width: 90%;
     }
     .go-to-news-btn {
         /*position: absolute;
@@ -1939,10 +1998,6 @@ summary::marker{
         .subcategory-page .entry-content {
             justify-content: center;
         }
-        .subcategory-page section article {
-            width: 300px;
-            height: 320px;
-        }
         .post-317 .entry-content .wp-show-posts-columns .wp-show-posts-single {
             display: flex;
             justify-content: space-between;
@@ -1982,6 +2037,14 @@ summary::marker{
             max-width: 100%;
             margin-top: 10px;
         }
+        .news .wp-show-posts-columns .wp-show-posts-single {
+            width: calc(50% - 10px);
+            margin-right: 20px;
+        }
+        .news .wp-show-posts-columns .wp-show-posts-single:nth-child(2n+2) {
+            margin-right: 0px;
+        }
+            
     }
 @media (max-width: 575px) {
     body {
@@ -2068,6 +2131,15 @@ summary::marker{
         width: 40%;
         margin-bottom: 15px;
     }
+    .subcategory-page section {
+        width: calc(50% - 10px);
+    }
+    .subcategory-page section article {
+        width: 100%;
+    }
+    .subcategory-page section article a {
+        padding: 20px 25px 0px;
+    }
 }
 @media (min-width: 480px) and (max-width: 767px) {
     .product-main-info .col-md-6:first-child {
@@ -2082,6 +2154,13 @@ summary::marker{
         padding-top: 10px;
         padding-bottom: 50px;
     }
+    .news .wp-show-posts-columns .wp-show-posts-single {
+        width: calc(50% - 20px);
+        margin-right: 40px;
+    }
+    .news .wp-show-posts-columns .wp-show-posts-single:nth-child(2n+2) {
+        margin-right: 0px;
+    }    
 }
 @media (min-width: 480px) and (max-width: 991px) {
     .footer-projects {
@@ -2165,10 +2244,6 @@ summary::marker{
         justify-content: space-between;
         flex-wrap: wrap;
     }
-    .subcategory-page section article {
-        width: 210px;
-        height: 240px;
-    }
     .cat-menu {
         position: unset;
         border-top: none;
@@ -2215,8 +2290,10 @@ summary::marker{
         flex-wrap: wrap;
     }
     .subcategory-page section article {
-        width: 240px;
-        height: 270px;
+        width: 160px;
+    }
+    .subcategory-page .wp-show-posts-entry-title a {
+        font-size: 14px;
     }
     .advantages-list-item {
         max-width: 49%;
@@ -2248,15 +2325,11 @@ summary::marker{
     .projects-list .wp-show-posts-single {
         width: 33.333%;
     }
-    .news-wrapper .wp-show-posts-single:nth-child(odd), #post-315 .wp-show-posts-single:nth-child(odd), #post-319 .wp-show-posts-single:nth-child(odd) {
+    #post-315 .wp-show-posts-single:nth-child(odd), #post-319 .wp-show-posts-single:nth-child(odd) {
         margin: 0px 134px 50px 0;
     }
     .subcategory-page section article {
         width: 220px;
-        height: 250px;
-    }
-    .subcategory-page .entry-content section:nth-child(3n+1) {
-        margin: 0 14px;
     }
     .post-317 .entry-content .wp-show-posts-columns .wp-show-posts-single {
         width: 338px;
@@ -2271,6 +2344,15 @@ summary::marker{
         padding: 0 30px;
     }
 }
+@media (min-width: 768px) and (max-width: 1199px) {
+    .news .wp-show-posts-single {
+        width: calc(33% - 20px);
+        margin-right: 30px;
+    }
+    .news .wp-show-posts-single:nth-child(3n+3) {
+        margin-right: 0px;
+    }    
+} 
 @media (min-width: 992px) and (max-width: 1199px) {
     .about-us {
         padding: 0px 25px 20px;
@@ -2281,7 +2363,7 @@ summary::marker{
     .projects-list .wp-show-posts-single {
         width: 50%;
     }
-    .news-wrapper .wp-show-posts-single:nth-child(3n+2), #post-315 .wp-show-posts-single:nth-child(3n+2), #post-319 .wp-show-posts-single:nth-child(3n+2) {
+    #post-315 .wp-show-posts-single:nth-child(3n+2), #post-319 .wp-show-posts-single:nth-child(3n+2) {
         margin: 0px 46px 50px;
     }
     .entry-content .mainmetaslider .flexslider li img {
@@ -2292,9 +2374,6 @@ summary::marker{
     }   
     .entry-content .mainmetaslider .caption-wrap {
         top: 5%;
-    }
-    .subcategory-page .entry-content section:nth-child(3n+1) {
-        margin: 0 51px;
     }
     .store-products .wp-show-posts-columns .wp-show-posts-single {
         width: calc(34% - 2%);
@@ -2311,7 +2390,7 @@ summary::marker{
     .projects-list .wp-show-posts-columns .wp-show-posts-inner:hover .wp-show-posts-entry-summary {
         max-width: 225px;
     }
-    .news-wrapper .wp-show-posts-single:nth-child(3n+2), #post-315 .wp-show-posts-single:nth-child(3n+2), #post-319 .wp-show-posts-single:nth-child(3n+2) {
+    #post-315 .wp-show-posts-single:nth-child(3n+2), #post-319 .wp-show-posts-single:nth-child(3n+2) {
         margin: 0 136px 50px;
     }
     .post-317 .entry-content .wp-show-posts-columns .wp-show-posts-single:nth-child(3n+2) {
@@ -2425,6 +2504,13 @@ summary::marker{
     .slider-nav .item-slick {
         max-width: 130px;
     }
+    .news-wrapper .wp-show-posts-single {
+        width: calc(25% - 30px);
+        margin-right: 40px;
+    }
+    .news-wrapper .wp-show-posts-single:nth-child(4n+4) {
+        margin-right: 0;
+    }
 }
 @media (min-width: 1366px) {
     .projects-info-wrapper__inner, 
@@ -2437,10 +2523,10 @@ summary::marker{
     }
 }
 @media (min-width: 1400px) {
-    .news-wrapper .wp-show-posts-single, #post-315 .wp-show-posts-single, #post-319 .wp-show-posts-single {
+    #post-315 .wp-show-posts-single, #post-319 .wp-show-posts-single {
         margin-right: 17px;
     }
-    .news-wrapper .wp-show-posts-single:nth-child(4n), #post-315 .wp-show-posts-single:nth-child(4n), #post-319 .wp-show-posts-single:nth-child(4n) {
+    #post-315 .wp-show-posts-single:nth-child(4n), #post-319 .wp-show-posts-single:nth-child(4n) {
         margin-right: 0;
     }
     .entry-content .mainmetaslider .caption-wrap {
@@ -2495,9 +2581,12 @@ summary::marker{
     font-weight: bold;
 }
 /*ModalWiondow*//*ModalWiondow*//*ModalWiondow*/
+html.pum-open.pum-open-overlay.pum-open-scrollable body>[aria-hidden] {
+    padding-right: 0!important;
+}
 .pum-content.popmake-content:focus-visible, .modal-content input:focus-visible,
 .pum-content.popmake-content:focus, .modal-content input:focus,
-.pum-content.popmake-content, .modal-content input {
+.pum-content.popmake-content, .modal-content input, .modal-title {
     outline: none;
 }
 .modal-title {

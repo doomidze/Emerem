@@ -157,9 +157,15 @@ Template Name: Home Page
     </section>
 
 
-    <section class="news container">
+    <section class="news container-fluid">
         <div class="news-header">
             <h2 class="news-header-title"><?php echo carbon_get_post_meta($page_id, 'news_title') ?></h2>
+            
+        </div>
+        <div class="news-secondary-title"><?php echo carbon_get_post_meta($page_id, 'news_text') ?></div>
+        
+        <div class="news-wrapper">
+            <?php if ( function_exists( 'wpsp_display' ) ) wpsp_display( 570 ); ?>
             <a href="<?php echo carbon_get_post_meta($page_id, 'news_link') ?>" class="go-to-news-btn">
                 <div class="go-to-news-btn-text"><?php echo carbon_get_post_meta($page_id, 'news_button') ?></div>
                 <div class="go-to-news-btn-svg">
@@ -168,11 +174,6 @@ Template Name: Home Page
                     </svg>
                 </div>
             </a>
-        </div>
-        <div class="news-secondary-title"><?php echo carbon_get_post_meta($page_id, 'news_text') ?></div>
-        
-        <div class="news-wrapper">
-            <?php if ( function_exists( 'wpsp_display' ) ) wpsp_display( 570 ); ?>
         </div>
     </section>
 
