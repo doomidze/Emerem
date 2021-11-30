@@ -67,8 +67,8 @@ Template Name: Home Page
     
 
 
-    <section class="about-us-container">
-        <div class="about-us-wrapper">
+    <section class="about-us-container ">
+        <div class="about-us-wrapper container-fluid">
             <div class="pipe-img col-xs-12 col-sm-12 col-md-6 ">
                 <img src="<?php echo wp_get_attachment_image_url(carbon_get_post_meta($page_id, 'about_us_img'), 'full'); ?>" alt="" style="width:100%;height:auto">
             </div>

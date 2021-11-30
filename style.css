@@ -419,6 +419,7 @@ header .nav .menu-item .menu-item a {
     margin: 0 auto;
     padding-right: var(--bs-gutter-x,.75rem);
     padding-left: var(--bs-gutter-x,.75rem);
+    width: 96%;
 }
 .entry-content .mainmetaslider .caption-wrap .caption {
     padding: 0;
@@ -490,9 +491,6 @@ header .nav .menu-item .menu-item a {
             .about-us p:last-child {
                 margin-bottom: 15px;
             }
-    .pipe-img {
-        max-width: 46%;
-    }
         .pipe-img img {
             max-height: 800px;
         }
@@ -1779,9 +1777,6 @@ summary::marker{
     .about-us-wrapper {
         padding: 0;
     }
-    .about-us {
-        padding: 20px 25px;
-    }
     .about-us h2 {
         margin-bottom: 15px;
     }
@@ -1868,6 +1863,9 @@ summary::marker{
     }
     .about-us-wrapper {
         flex-direction: column;
+    }
+    .about-us {
+        padding: 20px 25px;
     }
     #post-315 .wp-show-posts-single, #post-319 .wp-show-posts-single {
         width: 45%;
@@ -2352,12 +2350,12 @@ summary::marker{
     }
     .news .wp-show-posts-single:nth-child(3n+3) {
         margin-right: 0px;
+    }
+    .about-us {
+        padding: 0px 25px 20px 0px;
     }    
 } 
 @media (min-width: 992px) and (max-width: 1199px) {
-    .about-us {
-        padding: 0px 25px 20px;
-    }
     .advantages-list-item {
         padding: 0;
     }
@@ -2492,9 +2490,6 @@ summary::marker{
 @media (min-width: 1200px) {
     .content {
         max-width: 1175px;
-    }
-    .about-us-wrapper {
-        padding-left: 0;
     }
     .store-products .wp-show-posts-columns .wp-show-posts-single:nth-child(4n+4) {
         margin-right: 0;
