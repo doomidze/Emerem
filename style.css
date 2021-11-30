@@ -2755,11 +2755,15 @@ section#wpsp-333, section#wpsp-334,section#wpsp-335 {
     color: #FFF;
     background: red;
   }
-.mfp-content iframe, .mfp-content img {
+.mfp-content iframe, 
+.mfp-content img {
     margin: 0 auto;
     left: 0;
-    right: 0;
-    
+    right: 0;    
+}
+.mfp-content img {
+    max-width: 100%;
+    height: auto;
 }
 .mfp-close-btn-in .mfp-close {
     color: #ffffff!important;
