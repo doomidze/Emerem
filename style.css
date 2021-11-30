@@ -2820,7 +2820,7 @@ TABS
 
   .tabs>div {
     /* скрыть контент по умолчанию */
-    /*display: none;*/
+    display: none;
     
     border-radius: 4px;
     opacity: 0;
