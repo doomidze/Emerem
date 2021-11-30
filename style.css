@@ -1583,6 +1583,7 @@ details[open] span {
 details[open] .nav-mobile {
     animation: showMenu 0.5s linear;
     animation-fill-mode: forwards;
+    display: block;
 }
 details {
     padding: 16px 
@@ -1590,7 +1591,6 @@ details {
 summary {
     display: block;
     font-size: 0;
-    outline: none;
 }
 summary::marker{
     font-size: 0;
@@ -1667,6 +1667,7 @@ summary::marker{
         height: auto;
         padding: 25px 25px;
         transform: translateX(991px);
+        display: none;
     }
     .header-info-mobile {
         display: flex;
@@ -2586,8 +2587,19 @@ html.pum-open.pum-open-overlay.pum-open-scrollable body>[aria-hidden] {
 }
 .pum-content.popmake-content:focus-visible, .modal-content input:focus-visible,
 .pum-content.popmake-content:focus, .modal-content input:focus,
-.pum-content.popmake-content, .modal-content input, .modal-title {
-    outline: none;
+.pum-content.popmake-content, .modal-content input, .modal-title, .summary, 
+.pum-content.popmake-content:focus-visible, 
+.pum-content *:focus,
+.pum-overlay .pum-content
+{
+	outline: none !important;
+}
+@media not all and (min-resolution:.001dpcm) { 
+    @supports (-webkit-appearance:none) {
+        .pum-overlay .pum-content, input {
+            outline: none !important;
+        }
+    }
 }
 .modal-title {
     background-color: #000000;
