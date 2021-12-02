@@ -102,10 +102,10 @@
                 </div>
                 <div class="links-item social col-12 ">
                     <div class="links-item__svg">
-                    <a href=""><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.youtube.com/channel/UCWWJZqRYpYWKPs9kIUH1iMQ" title="youtube"><i class="fab fa-youtube"></i></a>
                     <a href=""><i class="fab fa-linkedin"></i></a>
                     <a href=""><i class="fab fa-instagram"></i></a>
-                    <a href=""><i class="fab fa-facebook-square"></i></a>
+                    <a href="https://www.facebook.com/Emerem.Business" title="Facebook"><i class="fab fa-facebook-square"></i></a>
                     <a href=""><i class="fab fa-viber"></i></a>
                     <a href=""><i class="fab fa-telegram"></i></a>
                     </div>
