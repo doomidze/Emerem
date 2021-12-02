@@ -333,15 +333,16 @@ header .menu-item {
 }
 header .menu-item .sub-menu {
     position: absolute;
-    top: 70px;
+    top: 102px;
     left: 0;
     min-width: 330px;
     padding: 15px;
     background-color: #000;
     opacity: 0;
     visibility: hidden;
-    box-shadow: 0px -3px 0 0 #eb1c24;
-    transition: 0.5s all;
+    transition: box-shadow 1.5s, 0.5s all cubic-bezier(0.01, 0.01, 1, 1);
+    max-height: 0px;
+    pointer-events: none;
 }
 @media (max-width: 991px) {
     header .menu-item .sub-menu {
@@ -351,6 +352,11 @@ header .menu-item .sub-menu {
 .header .nav .nav-wrapper li:hover a + .sub-menu {
     opacity: 1;
     visibility: visible;
+    top: 70px;
+    max-height: 500px;
+    display: inline-table;
+    pointer-events: all;
+    box-shadow: 0px -3px 0 0 #eb1c24;
 }
 header .menu-item .menu-item {
     margin-bottom: 10px;
