@@ -479,6 +479,10 @@ header .nav .menu-item .menu-item a {
     padding-bottom: 25px;
     padding-right: var(--bs-gutter-x,.75rem);
     padding-left: var(--bs-gutter-x,.75rem);
+}
+.about-us-wrapper.container-fluid {
+    margin-right: 0;
+    width: 98%;
 }   
     .about-us {
         display:flex;
@@ -2469,7 +2473,7 @@ summary::marker{
         max-width: 880px;
     }
     .go-to-news-btn, .go-to-about-us-btn {
-        min-width: 230px;
+        width: 230px;
     }
     .desktop-footer ul {
         padding-top: 0;
