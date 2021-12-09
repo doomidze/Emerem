@@ -479,37 +479,27 @@ header .nav .menu-item .menu-item a {
     padding-bottom: 25px;
     padding-right: var(--bs-gutter-x,.75rem);
     padding-left: var(--bs-gutter-x,.75rem);
-}
-.about-us-wrapper.container-fluid {
-    margin-left: 0;
-    width: 98%;
-}   
+}  
     .about-us {
         display:flex;
         flex-direction:column;
         align-items: flex-start;
         padding: 50px 0 0 3%;
     }
-        .about-us-info {
-            line-height: 1.786;
-        }
         .about-us p {
             max-width: 700px;
             font-size: 14px;
-            margin-bottom: 25px;
+            margin-bottom: 0px;
         }	
-            .about-us p:last-child {
-                margin-bottom: 15px;
-            }
         .pipe-img img {
             max-height: 800px;
         }
-    .go-to-about-us-btn {
-        margin-top: 20px;
-    }
-
-
-/*Advantages block*/
+        .go-to-about-us-btn {
+            margin-top: auto;
+        }
+/*
+Advantages block
+*/
 .advantages {
     text-align: center;
     padding-top: 50px;
@@ -565,34 +555,26 @@ header .nav .menu-item .menu-item a {
                 margin-bottom: 0px;
             }
             .go-to-projects-btn {
-                min-width: 465px;
-                width: 30%;
+                max-width: 350px;
                 padding: 23px;
                 display: flex;
                 margin-top: 27px;
                 line-height: 14px;
                 font-weight: 600;
-                text-transform: uppercase;
                 border: 2px solid rgba(235,28,36,1);
                 /*background: rgba(235,28,36,1);*/
                 color: #ffffff;
                 margin-bottom: 60px;
-
-            }   .go-to-projects-btn:hover {
-                color: #ffffff;
-            }
-                .go-to-projects-btn:hover svg path {
+                justify-content: space-between;
+            } 
+                .go-to-projects-btn:hover, .go-to-projects-btn:hover svg path {
                    fill: #ffffff;
                 }
                 .go-to-projects-btn svg path {
                     fill: #eb1c24;
                 }
-                .go-to-projects-btn:hover span svg {
-                    margin-left: 140px;
-                }
                 .go-to-projects-btn span svg {
                     transition: 0.5s all;
-                    margin-left: 30px;
                 }
         .projects-list .wp-show-posts-columns { /*блок картинок*/
             margin: 0!important;
@@ -663,6 +645,25 @@ header .nav .menu-item .menu-item a {
         }
         .projects-list .wp-show-posts-columns .wp-show-posts-inner .wp-show-posts-entry-summary {
             bottom: 25px;
+        }
+        .about-us h2 {
+            margin-bottom: 25px;
+        }
+        .about-us .about-us-info p {
+            line-height: 1.25;
+        }
+    }
+    @media (min-width: 1360px) {
+        .about-us h2 {
+            margin-bottom: 35px;
+        }
+        .about-us .about-us-info p {
+            line-height: 1.5;
+        }
+    }
+    @media (min-width: 1600px) {
+        .about-us .about-us-info p {
+            line-height: 1.75;
         }
     }
 
@@ -766,8 +767,9 @@ header .nav .menu-item .menu-item a {
             transition: 0.4s color ease, 0.3s background-color ease;
             font-weight: 600;
             justify-content: center;
+        }
+        .go-to-news-btn {
             margin-top: 40px;
-
         }
             .go-to-news-btn:hover, .go-to-about-us-btn:hover {
                 color: white;
@@ -1809,9 +1811,10 @@ summary::marker{
     }
     .about-us p, h6, .go-to-projects-btn, .projects-info-wrapper p {
         font-size: 12px;
-        line-height: 15px;
+        line-height: 14px;
         font-weight: 400;
     }
+    
     h2, h3 {
         font-size: 16px;
         line-height: 16px;
@@ -2220,18 +2223,10 @@ summary::marker{
         width: 33.333%;
     }
 }
-@media (min-width: 640px) and (max-width: 1199px) {
-		.about-us p {
-			max-width: unset;
-		}
-}
-@media (min-width: 1200px) and (max-width: 1799px) {
+@media (min-width: 1200px) and (max-width: 1599px) {
 	.about-us {
-		padding: 25px 0 0 3%;
+		padding: 0px 0 0 2%;
 	}
-		.about-us p {
-			max-width: unset;
-		}
 }
 @media (min-width: 320px) and (max-width: 575px) {
     .entry-content .mainmetaslider .caption-wrap {
@@ -2348,7 +2343,7 @@ summary::marker{
         margin-right: 0px;
     }
     .about-us {
-        padding: 0px 0px 20px 25px;
+        padding: 0px 0px 0px 25px;
     }    
 } 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -2444,6 +2439,14 @@ summary::marker{
     .content {
         max-width: 880px;
     }
+    .about-us h2 {
+        margin-bottom: 15px;
+    }
+    .about-us p {
+        font-size: 12px;
+        min-width: unset;
+        line-height: 1.1;
+    }
     .go-to-news-btn, .go-to-about-us-btn {
         width: 230px;
     }
@@ -2464,6 +2467,10 @@ summary::marker{
     }
 }
 @media (min-width: 1200px) {
+    
+    .about-us p {
+        font-size: 14px;
+    }
     .content {
         max-width: 1175px;
     }
@@ -2983,12 +2990,32 @@ MFP / Slick
 @media (min-width: 1200px) {
     .metaslider .caption h2 {
         font-size: 40px;
+    }
+    .main .projects-info-wrapper .slider-item-info h3 {
+        font-size: 12px;
+        line-height: 15px;
+    } 
+}
+@media (min-width: 1400px) {
+    .main .projects-info-wrapper .slider-item-info h3 {
+        font-size: 14px;
+        line-height: 16px;
     } 
 }
 @media (min-width: 1600px) {
     .metaslider .caption h2 {
         font-size: 48px;
     }
+    .main .projects-info-wrapper .slider-item-info h3 {
+        font-size: 16px;
+        line-height: 20px;
+    } 
+}
+@media (min-width: 1920px) {
+    .main .projects-info-wrapper .slider-item-info h3 {
+        font-size: 20px;
+        line-height: 30px;
+    } 
 }
 .popup-gallery .photo img, .slick-current.slick-active img {
     cursor: zoom-in;
@@ -3043,17 +3070,25 @@ MFP / Slick
     width: 100%;
 }
 .main .projects-wrapper .projects-slider-for .slider-item-info {
-    position: absolute;
-    top: 50%;
-    left: 50px;
-    text-shadow: 0px 0px 5px #000000;
-    color: #ffffff;
+    text-shadow: 1px 2px 3px #000000;
+    padding: 40px;
 }
 .main .projects-wrapper .projects-slider-for .slider-item-info h3 {
     font-size: 26px;
 }
 .main .projects-wrapper .projects-slider-for .slider-item-info p {
     font-size: 18px;
+    max-height: 0px;
+    opacity: 0;
+    transition: 0.5s all;
+}
+.main .projects-wrapper .projects-slider-for .item-slick:hover .slider-item-info {
+    padding: 15px;
+}
+.main .projects-wrapper .projects-slider-for .item-slick:hover .slider-item-info p {
+    max-height: 300px;
+    opacity: 1;
+    padding: 10px 20px;
 }
 .main .projects-info-wrapper .projects-slider-nav {
     margin-top: auto;
@@ -3064,7 +3099,7 @@ MFP / Slick
     position: absolute;
     top: -45px;
     right: 35px;
-    font-size: 30px;
+    font-size: 25px;
     transition: 0.5s all;
 }
 .main .projects-info-wrapper .projects-slider-nav .fa-arrow-left.slick-arrow {
@@ -3105,28 +3140,35 @@ MFP / Slick
 .main .projects-info-wrapper .projects-slider-nav .slick-dots li button {
     display: none;
 }
-.main .projects-info-wrapper .slider-item-info {
+.main .projects-info-wrapper .projects-slider-nav .item-slick:hover .slider-item-info {
+    padding: 5px 5px;
+}
+.main .projects-info-wrapper .projects-slider-nav .item-slick.slick-active img {
+    filter: none;
+}
+.main .projects-info-wrapper .slider-item-info, .main .projects-wrapper .slider-item-info {
     position: absolute;
     left: 0px;
     top: 0px;
-    transition: 0.3s all;
-    text-shadow: 0px 0px 5px #000000;
+    transition: 0.5s all;
+    text-shadow: 0px 0px 3px #000000;
+    color: #ffffff;
     width: 100%;
     height: 100%;
-    padding: 20px;
+    padding: 30px 15px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-}
-.main .projects-info-wrapper .slider-item-info h3 {
-    line-height: 22px;
 }
 .main .projects-info-wrapper .slider-item-info p {
     max-height: 0px;
     opacity: 0;
     transition: 0.7s all;
 }
-.main .projects-info-wrapper .projects-slider-nav .item-slick:hover .slider-item-info p{
+.main .projects-info-wrapper .slider-item-info h3 {
+    margin-bottom: 0px;
+}
+.main .projects-info-wrapper .projects-slider-for .item-slick:hover .slider-item-info p{
     max-height: 70%;
     opacity: 1;
 }

@@ -69,10 +69,10 @@ Template Name: Home Page
 
     <section class="about-us-container ">
         <div class="about-us-wrapper container-fluid">
-            <div class="pipe-img col-xs-12 col-sm-12 col-md-6 col-xl-7 ">
+            <div class="pipe-img col-xs-12 col-sm-12 col-md-6">
                 <img src="<?php echo wp_get_attachment_image_url(carbon_get_post_meta($page_id, 'about_us_img'), 'full'); ?>" alt="" style="width:100%;height:auto">
             </div>
-            <div class="about-us col-xs-12 col-sm-12 col-md-6 col-xl-5 ">
+            <div class="about-us col-xs-12 col-sm-12 col-md-6">
                 <h2 class="about-us-title"><?php echo carbon_get_post_meta($page_id, 'about_us_title') ?></h2>
                 <div class="about-us-info">
                     <?php echo carbon_get_post_meta($page_id, 'about_us_subtitle') ?>
@@ -151,28 +151,24 @@ Template Name: Home Page
                         <img alt='' src='<?php esc_url( the_field( 'projects-gallery-image1' ) );?>'>
                         <div class="slider-item-info">    
                             <h3><?php the_field('projects-gallery-title1'); ?></h3>
-                            <p><?php the_field('projects-gallery-info1'); ?></p>
                         </div>  
                     </div>
                     <div class="item-slick">
                         <img alt='' src='<?php esc_url( the_field( 'projects-gallery-image2' ) );?>'>
                         <div class="slider-item-info">    
                             <h3><?php the_field('projects-gallery-title2'); ?></h3>
-                            <p><?php the_field('projects-gallery-info2'); ?></p>
                         </div>
                     </div>
                     <div class="item-slick">
                         <img alt='' src='<?php esc_url( the_field( 'projects-gallery-image3' ) );?>'>
                         <div class="slider-item-info">    
                             <h3><?php the_field('projects-gallery-title3'); ?></h3>
-                            <p><?php the_field('projects-gallery-info3'); ?></p>
                         </div>
                     </div>
                     <div class="item-slick">
                         <img alt='' src='<?php esc_url( the_field( 'projects-gallery-image4' ) );?>'>
                         <div class="slider-item-info">    
                             <h3><?php the_field('projects-gallery-title4'); ?></h3>
-                            <p><?php the_field('projects-gallery-info4'); ?></p>
                         </div>
                     </div>
                 </div>
