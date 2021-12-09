@@ -130,8 +130,8 @@ Template Name: Home Page
 
 
     <section class="our-projects">
-        <div class="our-projects-wrapper">
-            <div class="projects-info-wrapper">
+        <div class="our-projects-wrapper row">
+            <div class="projects-info-wrapper col-lg-8">
                 <div class="projects-info-wrapper__inner">
                     <h2><?php echo carbon_get_post_meta($page_id, 'projects_title') ?></h2>
                     <div class="projects-info-comment">
@@ -146,11 +146,111 @@ Template Name: Home Page
                         </svg>
                     </span>
                 </a>
+                <div class="projects-slider-nav">
+                    <div class="item-slick">
+                        <img alt='' src='<?php esc_url( the_field( 'projects-gallery-image1' ) );?>'>
+                        <div class="slider-item-info">    
+                            <h3><?php the_field('projects-gallery-title1'); ?></h3>
+                            <p><?php the_field('projects-gallery-info1'); ?></p>
+                        </div>  
+                    </div>
+                    <div class="item-slick">
+                        <img alt='' src='<?php esc_url( the_field( 'projects-gallery-image2' ) );?>'>
+                        <div class="slider-item-info">    
+                            <h3><?php the_field('projects-gallery-title2'); ?></h3>
+                            <p><?php the_field('projects-gallery-info2'); ?></p>
+                        </div>
+                    </div>
+                    <div class="item-slick">
+                        <img alt='' src='<?php esc_url( the_field( 'projects-gallery-image3' ) );?>'>
+                        <div class="slider-item-info">    
+                            <h3><?php the_field('projects-gallery-title3'); ?></h3>
+                            <p><?php the_field('projects-gallery-info3'); ?></p>
+                        </div>
+                    </div>
+                    <div class="item-slick">
+                        <img alt='' src='<?php esc_url( the_field( 'projects-gallery-image4' ) );?>'>
+                        <div class="slider-item-info">    
+                            <h3><?php the_field('projects-gallery-title4'); ?></h3>
+                            <p><?php the_field('projects-gallery-info4'); ?></p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="projects-wrapper">
+            <div class="projects-wrapper col-lg-4">
                 <div class="projects-list">
+                    <!--<div class="slider-nav">
+                        <div class="item-slick"><img alt='' src='<?php esc_url( the_field( 'projects-gallery-image1' ) );?>'></div>
+                        <div class="item-slick"><img alt='' src='<?php esc_url( the_field( 'projects-gallery-image2' ) );?>'></div>
+                        <div class="item-slick"><img alt='' src='<?php esc_url( the_field( 'projects-gallery-image3' ) );?>'></div>
+                        <div class="item-slick"><img alt='' src='<?php esc_url( the_field( 'projects-gallery-image4' ) );?>'></div>
+                        <div class="item-slick"><img alt='' src='<?php esc_url( the_field( 'projects-gallery-image1' ) );?>'></div>
+                        <div class="item-slick"><img alt='' src='<?php esc_url( the_field( 'projects-gallery-image2' ) );?>'></div>
+                        <div class="item-slick"><img alt='' src='<?php esc_url( the_field( 'projects-gallery-image3' ) );?>'></div>
+                        <div class="item-slick"><img alt='' src='<?php esc_url( the_field( 'projects-gallery-image4' ) );?>'></div>
+                    </div>-->
+                    <div class="projects-slider-for">
+                        <?php 
 
-                    <?php if ( function_exists( 'wpsp_display' ) ) wpsp_display( 569 ); ?>
+                            $link = get_field('projects-gallery-link1');
+
+                            if( $link ): ?>
+            
+                            <a class="item-slick" href="<?php echo $link; ?>">
+                                <img alt='' src='<?php esc_url( the_field( 'projects-gallery-image1' ) );?>'>
+                                <div class="slider-item-info">    
+                                    <h3><?php the_field('projects-gallery-title1'); ?></h3>
+                                    <p><?php the_field('projects-gallery-info1'); ?></p>
+                                </div>
+                            </a>
+
+                            <?php endif; ?>
+                        <?php 
+
+                            $link = get_field('projects-gallery-link2');
+
+                            if( $link ): ?>
+            
+                            <a class="item-slick" href="<?php echo $link; ?>">
+                                <img alt='' src='<?php esc_url( the_field( 'projects-gallery-image2' ) );?>'>
+                                <div class="slider-item-info">    
+                                    <h3><?php the_field('projects-gallery-title2'); ?></h3>
+                                    <p><?php the_field('projects-gallery-info2'); ?></p>
+                                </div>
+                            </a>
+
+                            <?php endif; ?>
+                        <?php 
+
+                            $link = get_field('projects-gallery-link3');
+
+                            if( $link ): ?>
+            
+                            <a class="item-slick" href="<?php echo $link; ?>">
+                                <img alt='' src='<?php esc_url( the_field( 'projects-gallery-image3' ) );?>'>
+                                <div class="slider-item-info">    
+                                    <h3><?php the_field('projects-gallery-title3'); ?></h3>
+                                    <p><?php the_field('projects-gallery-info3'); ?></p>
+                                </div>
+                            </a>
+
+                            <?php endif; ?>
+                        <?php 
+
+                            $link = get_field('projects-gallery-link4');
+
+                            if( $link ): ?>
+            
+                            <a class="item-slick" href="<?php echo $link; ?>">
+                                <img alt='' src='<?php esc_url( the_field( 'projects-gallery-image4' ) );?>'>
+                                <div class="slider-item-info">    
+                                    <h3><?php the_field('projects-gallery-title4'); ?></h3>
+                                    <p><?php the_field('projects-gallery-info4'); ?></p>
+                                </div>
+                            </a>
+
+                            <?php endif; ?>
+                    </div>
                 </div>
             </div>
         </div>
