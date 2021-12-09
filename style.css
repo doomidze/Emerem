@@ -343,7 +343,7 @@ header .menu-item .sub-menu {
     background-color: #000;
     opacity: 0;
     visibility: hidden;
-    transition: box-shadow 1.5s, 0.5s all cubic-bezier(0.01, 0.01, 1, 1);
+    transition: box-shadow 0.7s, 0.25s all cubic-bezier(0.01, 0.01, 1, 1);
     max-height: 0px;
     pointer-events: none;
 }
@@ -473,7 +473,7 @@ header .nav .menu-item .menu-item a {
 /*AboutUs block*/
 .about-us-wrapper {
     display: flex; 
-    flex-direction: row; 
+    flex-direction: row-reverse; 
     padding-bottom: 25px;
     padding-right: var(--bs-gutter-x,.75rem);
     /*padding-left: var(--bs-gutter-x,.75rem);*/
