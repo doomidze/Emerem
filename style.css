@@ -403,6 +403,9 @@ header .nav .menu-item .menu-item a {
 .cat-item-svg svg {
     padding-bottom: 5px;
 }
+.cat-item.no-redirect .cat-item-svg, .cat-item.no-redirect .cat-item-title {
+    display: none;
+}
 .important-links li a:hover, .pages-links li a:hover {
     color: rgba(235,28,36,1)!important;
 }
@@ -475,9 +478,10 @@ header .nav .menu-item .menu-item a {
     display: flex; 
     flex-direction: row-reverse; 
     padding-bottom: 25px;
-    padding-right: var(--bs-gutter-x,.75rem);
-    /*padding-left: var(--bs-gutter-x,.75rem);*/
+    /*padding-right: var(--bs-gutter-x,.75rem);
+    padding-left: var(--bs-gutter-x,.75rem);*/
     padding-left: 0px;
+    padding-right: 0px;
     width: 100%;
 }  
     .about-us {
