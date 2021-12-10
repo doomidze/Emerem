@@ -602,7 +602,7 @@ Projects block
                     position: relative;
                 }
                     .main .projects-info-wrapper .projects-slider-nav .item-slick img {
-                        filter: opacity(0.7);
+                        filter: opacity(0.6);
                         max-width: 100%;
                     }
                     .main .projects-info-wrapper .projects-slider-nav .slider-item-info {
