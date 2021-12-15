@@ -2299,10 +2299,6 @@ summary::marker{
     .cat-item {
         padding: 10px;
     }
-    .subcategory-page .entry-content {
-        display: flex;
-        flex-wrap: wrap;
-    }
     .subcategory-page section article {
         width: 160px;
     }
@@ -2311,6 +2307,15 @@ summary::marker{
     }
     .advantages-list-item {
         max-width: 49%;
+    }
+}
+@media (min-width: 576px) and (max-width: 991px) {
+    .subcategory-page .entry-content section {
+        width: calc(33% - 6px);
+        margin-right: 9px;
+    }
+    .subcategory-page .entry-content section:nth-child(3n+3) {
+        margin-right: 0px;
     }
 }
 @media (min-width: 768px) and (max-width: 991px) {
