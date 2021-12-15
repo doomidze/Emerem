@@ -600,10 +600,12 @@ Projects block
                     margin-right: 3px;
                     min-width: calc(25% - 6px);
                     position: relative;
+                    height: unset;
                 }
                     .main .projects-info-wrapper .projects-slider-nav .item-slick img {
                         filter: opacity(0.6);
                         max-width: 100%;
+                        min-height: 100%;
                     }
                     .main .projects-info-wrapper .projects-slider-nav .slider-item-info {
                         display: none;
@@ -1437,7 +1439,6 @@ ul.products li.product {
     display: flex;
     flex-wrap: wrap;
     align-items: stretch;
-    justify-content: space-between;
 }
 .subcategory-page section {
     max-width: 275px;
@@ -2300,7 +2301,6 @@ summary::marker{
     }
     .subcategory-page .entry-content {
         display: flex;
-        justify-content: space-between;
         flex-wrap: wrap;
     }
     .subcategory-page section article {
@@ -2738,7 +2738,15 @@ section#wpsp-333, section#wpsp-334,section#wpsp-335 {
     pointer-events: none;
     cursor: default; 
 }
-
+/*
+Custom products tables
+*/
+.characteristics-items-wrapper.custom .characteristics-item-info, .characteristics-items-wrapper.custom .characteristics-item-title {
+    text-align: center;
+}
+.characteristics-items-wrapper.custom .characteristics-item-info:nth-of-type(2n+3) {
+    background-color: #cfcfcf40;
+}
 
 /* Wp Posts */
 .store-products .wp-show-posts-columns .wp-show-posts-single:not(.wp-show-posts-masonry-block) .wp-show-posts-image img {
