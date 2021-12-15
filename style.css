@@ -2311,11 +2311,11 @@ summary::marker{
 }
 @media (min-width: 576px) and (max-width: 991px) {
     .subcategory-page .entry-content section {
-        width: calc(33% - 6px);
-        margin-right: 9px;
+        width: 32%;
+        margin-right: 2%;
     }
     .subcategory-page .entry-content section:nth-child(3n+3) {
-        margin-right: 0px;
+        margin-right: 0;
     }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -2412,6 +2412,13 @@ summary::marker{
         margin-right: 0;
     }
 }
+@media (min-width: 992px) and (max-width: 1399px) {
+    .subcategory-page section {
+        margin-right: 15px;
+        width: 24%;
+        margin-right: 1%;
+    }
+}
 @media (min-width: 1200px) and (max-width: 1399px) {
     #post-315 .wp-show-posts-single:nth-child(3n+2), #post-319 .wp-show-posts-single:nth-child(3n+2) {
         margin: 0 136px 50px;
@@ -2430,12 +2437,6 @@ summary::marker{
     }
     .subcategory-page .entry-content {
         margin-right: -15px;
-    }
-    .subcategory-page section {
-        margin-right: 15px;
-    }
-    .subcategory-page section article {
-        width: 255px;
     }
     .go-to-projects-btn:hover span svg {
         margin-left: 130px;
@@ -2565,9 +2566,6 @@ summary::marker{
     }
     .entry-content .mainmetaslider .caption-wrap {
         max-width: 96%;
-    }
-    .subcategory-page .entry-content {
-        margin-right: -21px;
     }
     
 }
