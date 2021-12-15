@@ -1441,19 +1441,21 @@ ul.products li.product {
     align-items: stretch;
 }
 .subcategory-page section {
-    max-width: 275px;
+    width: calc(25% - 15px);
+    margin-right: 20px;
     margin-bottom: 25px;
-    margin-right: 21px;
     display: inline-block;
     background-color: #ffffff;
     border-radius: 5px;
     box-shadow: 0px 0px 15px rgb(0 0 0 / 20%);
 }
+.subcategory-page section:nth-of-type(4n+4) {
+    margin-right: 0;
+}
 .subcategory-page .wp-block-column {
     margin: 0!important;
 }
 .subcategory-page section article {
-    width: 275px;
     transition: 0.5s all;
     position: relative;
     height: 100%;
@@ -1863,6 +1865,9 @@ summary::marker{
     }
     .go-to-projects-btn {
         max-width: 270px;
+    }
+    .characteristics-items-wrapper.custom .characteristics-item {
+        padding: 0px;
     }
 }
 @media (max-width: 767px) {
@@ -2414,9 +2419,11 @@ summary::marker{
 }
 @media (min-width: 992px) and (max-width: 1399px) {
     .subcategory-page section {
-        margin-right: 15px;
-        width: 24%;
-        margin-right: 1%;
+        margin-right: 10px;
+        width: calc(25% - 8px);
+    }
+    .subcategory-page section:nth-of-type(4n+4) {
+        margin-right: 0;
     }
 }
 @media (min-width: 1200px) and (max-width: 1399px) {
@@ -2434,9 +2441,6 @@ summary::marker{
     }
     .entry-content .mainmetaslider .flexslider li img {
         width: 150%;
-    }
-    .subcategory-page .entry-content {
-        margin-right: -15px;
     }
     .go-to-projects-btn:hover span svg {
         margin-left: 130px;
@@ -2741,11 +2745,19 @@ section#wpsp-333, section#wpsp-334,section#wpsp-335 {
     pointer-events: none;
     cursor: default; 
 }
+.characteristics-item-info div:nth-child(2) {
+    text-align: right;
+    margin-left: 50px;
+}
 /*
 Custom products tables
 */
 .characteristics-items-wrapper.custom .characteristics-item-info, .characteristics-items-wrapper.custom .characteristics-item-title {
     text-align: center;
+    justify-content: center;
+}
+.characteristics-items-wrapper.custom .characteristics-item {
+    width: unset;
 }
 .characteristics-items-wrapper.custom .characteristics-item-info:nth-of-type(2n+3) {
     background-color: #cfcfcf40;
