@@ -2745,9 +2745,12 @@ section#wpsp-333, section#wpsp-334,section#wpsp-335 {
     pointer-events: none;
     cursor: default; 
 }
-.characteristics-item-info div:nth-child(2) {
+.characteristics-item-info div:nth-child(1) {
+    margin-right: 25px;
+    max-width: 50%;
+}
+.characteristics-item-info div:nth-child(1) {
     text-align: right;
-    margin-left: 50px;
 }
 /*
 Custom products tables
