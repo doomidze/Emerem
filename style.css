@@ -2925,7 +2925,7 @@ MFP / Slick
   .product .slider-for img {
     width: auto;
     /* min-height: 100%; */
-    max-width: 500px;
+    max-width: 100%;
     margin: 0 auto;
     max-height: 353px;
   }
